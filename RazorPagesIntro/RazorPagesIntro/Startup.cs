@@ -43,7 +43,7 @@ namespace RazorPagesIntro
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action=About}/{id?}");
+                    template: "{controller=About}/{action=Index}/{id?}");
             });
         }
     }
