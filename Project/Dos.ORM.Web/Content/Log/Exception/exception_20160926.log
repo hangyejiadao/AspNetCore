@@ -1,0 +1,432 @@
+
+#############################################################################
+
+1、时间：2016-09-26 16:51:10,745
+2、优先级别：ERROR
+3、线程ID：13
+4、耗时：58370
+5、行号：74
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 18:04:07,265
+2、优先级别：ERROR
+3、线程ID：9
+4、耗时：12840
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 20:25:20,294
+2、优先级别：ERROR
+3、线程ID：11
+4、耗时：10712
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 20:30:01,826
+2、优先级别：ERROR
+3、线程ID：9
+4、耗时：292243
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtRadioBoxList[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, Object htmlAttributes) 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1019
+   在 ASP._Page_Areas_MsBus_Views_BannerInfo_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsBus\Views\BannerInfo\Detail.cshtml:行号 54
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 20:30:41,540
+2、优先级别：ERROR
+3、线程ID：27
+4、耗时：8530
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 20:40:27,344
+2、优先级别：ERROR
+3、线程ID：48
+4、耗时：594333
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.FormatException: 无法识别的 GUID 格式。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 Dos.ORM.Web.Areas.MsBus.Controllers.BannerInfoController.Detail() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsBus\Controllers\BannerInfoController.cs:行号 83
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 20:40:50,365
+2、优先级别：ERROR
+3、线程ID：32
+4、耗时：617354
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.FormatException: 无法识别的 GUID 格式。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 Dos.ORM.Web.Areas.MsBus.Controllers.BannerInfoController.Detail() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsBus\Controllers\BannerInfoController.cs:行号 83
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 21:01:59,797
+2、优先级别：ERROR
+3、线程ID：55
+4、耗时：8165
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 21:02:14,956
+2、优先级别：ERROR
+3、线程ID：59
+4、耗时：23324
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtRadioBoxList[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, IEnumerable`1 selectList, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1019
+   在 ASP._Page_Areas_MsBus_Views_NewsInfo_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsBus\Views\NewsInfo\Detail.cshtml:行号 82
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 21:04:09,251
+2、优先级别：ERROR
+3、线程ID：62
+4、耗时：6973
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 21:15:07,647
+2、优先级别：ERROR
+3、线程ID：17
+4、耗时：13433
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 21:16:18,840
+2、优先级别：ERROR
+3、线程ID：58
+4、耗时：84626
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.ArgumentException: 对于“Dos.ORM.Web.Areas.MsBus.Controllers.NewsInfoController”中方法“System.Web.Mvc.JsonResult GetNewsTypes(System.Guid)”的不可以为 null 的类型“System.Guid”的参数“comId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 21:18:19,725
+2、优先级别：ERROR
+3、线程ID：18
+4、耗时：7518
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 21:26:28,318
+2、优先级别：ERROR
+3、线程ID：13
+4、耗时：12603
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-09-26 21:26:37,655
+2、优先级别：ERROR
+3、线程ID：14
+4、耗时：21940
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.InvalidOperationException: 不存在具有键“LinkType”的“IEnumerable<SelectListItem>”类型的 ViewData 项。
+   在 System.Web.Mvc.Html.SelectExtensions.GetSelectData(HtmlHelper htmlHelper, String name)
+   在 System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)
+   在 System.Web.Mvc.Html.SelectExtensions.DropDownList(HtmlHelper htmlHelper, String name, IEnumerable`1 selectList, IDictionary`2 htmlAttributes)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtDropDown(HtmlHelper htmlHelper, String name, IEnumerable`1 selectList, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 695
+   在 ASP._Page_Areas_MsBus_Views_LinkInfo_Index_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsBus\Views\LinkInfo\Index.cshtml:行号 18
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 21:26:44,450
+2、优先级别：ERROR
+3、线程ID：13
+4、耗时：28736
+5、行号：110
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：操作异常
+System.InvalidOperationException: 不存在具有键“BannerType”的“IEnumerable<SelectListItem>”类型的 ViewData 项。
+   在 System.Web.Mvc.Html.SelectExtensions.GetSelectData(HtmlHelper htmlHelper, String name)
+   在 System.Web.Mvc.Html.SelectExtensions.SelectInternal(HtmlHelper htmlHelper, ModelMetadata metadata, String optionLabel, String name, IEnumerable`1 selectList, Boolean allowMultiple, IDictionary`2 htmlAttributes)
+   在 System.Web.Mvc.Html.SelectExtensions.DropDownList(HtmlHelper htmlHelper, String name, IEnumerable`1 selectList, IDictionary`2 htmlAttributes)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtDropDown(HtmlHelper htmlHelper, String name, IEnumerable`1 selectList, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 695
+   在 ASP._Page_Areas_MsBus_Views_BannerInfo_Index_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsBus\Views\BannerInfo\Index.cshtml:行号 20
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-09-26 21:28:21,994
+2、优先级别：ERROR
+3、线程ID：14
+4、耗时：6133
+5、行号：74
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78

@@ -1,0 +1,31 @@
+/* 
+    Created on : 2015-8-11, 16:18:09
+    Author     : joe
+*/
+
+.close-tab {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    color: #94A6B0;
+    font-size: 10px;
+    z-index: 100;
+    display: none;
+}
+
+.topbar-collapse {
+    float: right;
+}
+
+.iframeClass {
+    z-index: 1;
+    visibility: inherit;
+    width: 100%;
+    frameborder: 'no';
+    border: 0;
+    marginwidth: 0;
+    marginheight: 0;
+    scrolling-x: 'no';
+    scrolling-y: auto;
+    allowtransparency: true;
+}

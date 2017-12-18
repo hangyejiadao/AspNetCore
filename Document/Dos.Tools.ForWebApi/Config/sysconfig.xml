@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <config key="namespace"><![CDATA[Dos.ORM.Model]]></config>
+  <config key="datanamespace"><![CDATA[Dos.ORM.Data]]></config>
+  <config key="idatanamespace"><![CDATA[Dos.ORM.IData]]></config>
+  <config key="batchdirectorypath"><![CDATA[D:\DosOrmClass]]></config>
+</configs>

@@ -1,0 +1,815 @@
+
+#############################################################################
+
+1、时间：2016-12-26 14:54:47,289
+2、优先级别：DEBUG
+3、线程ID：9
+4、耗时：957
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 14:56:20,638
+2、优先级别：DEBUG
+3、线程ID：20
+4、耗时：94306
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 14:58:35,624
+2、优先级别：DEBUG
+3、线程ID：58
+4、耗时：542
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:05:34,263
+2、优先级别：DEBUG
+3、线程ID：58
+4、耗时：799
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:06:40,668
+2、优先级别：DEBUG
+3、线程ID：58
+4、耗时：754
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:07:28,262
+2、优先级别：DEBUG
+3、线程ID：58
+4、耗时：706
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:08:11,769
+2、优先级别：DEBUG
+3、线程ID：55
+4、耗时：1037
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:13:15,838
+2、优先级别：DEBUG
+3、线程ID：49
+4、耗时：6233
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:19:04,001
+2、优先级别：DEBUG
+3、线程ID：42
+4、耗时：1177
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:24:47,381
+2、优先级别：DEBUG
+3、线程ID：42
+4、耗时：982
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:25:16,768
+2、优先级别：DEBUG
+3、线程ID：52
+4、耗时：30369
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:45:58,414
+2、优先级别：DEBUG
+3、线程ID：6
+4、耗时：1100
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:46:15,466
+2、优先级别：DEBUG
+3、线程ID：7
+4、耗时：547
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:47:06,185
+2、优先级别：DEBUG
+3、线程ID：13
+4、耗时：789
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 15:59:28,440
+2、优先级别：DEBUG
+3、线程ID：30
+4、耗时：1132
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:00:53,513
+2、优先级别：DEBUG
+3、线程ID：34
+4、耗时：1105
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:01:00,337
+2、优先级别：DEBUG
+3、线程ID：39
+4、耗时：7930
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:05:10,173
+2、优先级别：DEBUG
+3、线程ID：19
+4、耗时：1371
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:10:46,665
+2、优先级别：DEBUG
+3、线程ID：48
+4、耗时：817
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:00,715
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：14868
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 1 * FROM [SYS_Operator]  WHERE ([SYS_Operator].[Account] = @Account1) AND ([SYS_Operator].[Pwd] = @Pwd2) 	
+Parameters:
+@Account1[String] = quber
+@Pwd2[String] = C1851CFE23E736DE
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:01,299
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：15452
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 1 * FROM [SYS_Company]  WHERE [SYS_Company].[CompanyId] = @CompanyId3 	
+Parameters:
+@CompanyId3[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:01,359
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：15511
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	
+                SELECT * FROM dbo.SYS_Department a
+                LEFT JOIN dbo.SYS_OperatorDepartmentRelation b ON a.DepartmentId=b.DepartmentId
+                WHERE b.OperatorId='0ad06755-9fde-4ddd-9dcb-448462155a03';
+            	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:01,626
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：15778
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	
+                SELECT * FROM dbo.SYS_Role a
+                LEFT JOIN dbo.SYS_OperatorRoleRelation b ON a.RoleId=b.RoleId
+                WHERE b.OperatorId='0ad06755-9fde-4ddd-9dcb-448462155a03';
+            	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:01,666
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：15819
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [v_SYS_Module]  WHERE [v_SYS_Module].[IsEnable] = @IsEnable4 ORDER BY [v_SYS_Module].[SortNo] ASC 	
+Parameters:
+@IsEnable4[Int32] = 1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:01,964
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：16116
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [v_SYS_Button]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:02,309
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：16462
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	INSERT INTO [SYS_LogInfo] ([OptModuleName],[DataId],[Desc],[OptResultName],[OptResultId],[OptTypeName],[OptTypeId],[OptModulePath],[Status],[Mac],[IP],[Browser],[OptSystem],[OptTime],[OptUserName],[OptUserId],[CompanyId],[LogTypeName],[LogTypeId],[LogId]) VALUES (@OptModuleName5,@DataId6,@Desc7,@OptResultName8,@OptResultId9,@OptTypeName10,@OptTypeId11,@OptModulePath12,@Status13,@Mac14,@IP15,@Browser16,@OptSystem17,@OptTime18,@OptUserName19,@OptUserId20,@CompanyId21,@LogTypeName22,@LogTypeId23,@LogId24)	
+Parameters:
+@OptModuleName5[String] = 登录系统
+@DataId6[String] = 
+@Desc7[String] = 登录成功！
+@OptResultName8[String] = 登录成功
+@OptResultId9[Int32] = 300
+@OptTypeName10[String] = 登录
+@OptTypeId11[Int32] = 2001
+@OptModulePath12[String] = /MsSys/Login/CheckLogin
+@Status13[Int32] = 1
+@Mac14[String] = 40:8D:5C:30:F1:7D
+@IP15[String] = 127.0.0.1
+@Browser16[String] = Chrome 55.0
+@OptSystem17[String] = Windows 10
+@OptTime18[DateTime] = 2016/12/26 16:11:02
+@OptUserName19[String] = 秦波
+@OptUserId20[Guid] = 0ad06755-9fde-4ddd-9dcb-448462155a03
+@CompanyId21[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+@LogTypeName22[String] = 登录登出
+@LogTypeId23[Int32] = 100
+@LogId24[Guid] = fd7a046e-45a4-4b6d-8fc9-84c851cfad5a
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:06,546
+2、优先级别：DEBUG
+3、线程ID：51
+4、耗时：20698
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Module]  WHERE (([SYS_Module].[Status] = @Status25) AND ([SYS_Module].[IsEnable] = @IsEnable26)) AND ([SYS_Module].[OperatePageType] = @OperatePageType27) 	
+Parameters:
+@Status25[Int32] = 1
+@IsEnable26[Int32] = 1
+@OperatePageType27[Int32] = 1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:12,854
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：27007
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE ([SYS_LogInfo].[Status] = @Status28) AND ([SYS_LogInfo].[CompanyId] = @CompanyId29)	
+Parameters:
+@Status28[Int32] = 1
+@CompanyId29[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:12,937
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：27089
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE ([SYS_LogInfo].[Status] = @Status28) AND ([SYS_LogInfo].[CompanyId] = @CompanyId29) 	
+Parameters:
+@Status28[Int32] = 1
+@CompanyId29[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:25,941
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：40094
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE ([SYS_LogInfo].[Status] = @Status30) AND ([SYS_LogInfo].[CompanyId] = @CompanyId31)	
+Parameters:
+@Status30[Int32] = 1
+@CompanyId31[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:25,947
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：40100
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE ([SYS_LogInfo].[Status] = @Status30) AND ([SYS_LogInfo].[CompanyId] = @CompanyId31) 	
+Parameters:
+@Status30[Int32] = 1
+@CompanyId31[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:26,749
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：40902
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE ([SYS_LogInfo].[Status] = @Status32) AND ([SYS_LogInfo].[CompanyId] = @CompanyId33)	
+Parameters:
+@Status32[Int32] = 1
+@CompanyId33[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:26,801
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：40954
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE ([SYS_LogInfo].[Status] = @Status32) AND ([SYS_LogInfo].[CompanyId] = @CompanyId33) 	
+Parameters:
+@Status32[Int32] = 1
+@CompanyId33[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:32,724
+2、优先级别：DEBUG
+3、线程ID：48
+4、耗时：46876
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE (([SYS_LogInfo].[Status] = @Status34) AND ([SYS_LogInfo].[LogTypeId] = @LogTypeId35)) AND ([SYS_LogInfo].[CompanyId] = @CompanyId36)	
+Parameters:
+@Status34[Int32] = 1
+@LogTypeId35[Int32] = 100
+@CompanyId36[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:32,731
+2、优先级别：DEBUG
+3、线程ID：48
+4、耗时：46884
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE (([SYS_LogInfo].[Status] = @Status34) AND ([SYS_LogInfo].[LogTypeId] = @LogTypeId35)) AND ([SYS_LogInfo].[CompanyId] = @CompanyId36) 	
+Parameters:
+@Status34[Int32] = 1
+@LogTypeId35[Int32] = 100
+@CompanyId36[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:46,238
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：60390
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_Company] WHERE ([SYS_Company].[Status] = @Status37) AND ([SYS_Company].[CompanyId] = @CompanyId38)	
+Parameters:
+@Status37[Int32] = 1
+@CompanyId38[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:46,265
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：60418
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_Company]  WHERE ([SYS_Company].[Status] = @Status37) AND ([SYS_Company].[CompanyId] = @CompanyId38) ORDER BY [SYS_Company].[CrtTime] DESC 	
+Parameters:
+@Status37[Int32] = 1
+@CompanyId38[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:46,332
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：60485
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	INSERT INTO [SYS_LogInfo] ([Desc],[OptResultName],[OptResultId],[OptTypeName],[OptTypeId],[OptModulePath],[OptModuleName],[Status],[Mac],[IP],[Browser],[OptSystem],[OptTime],[OptUserName],[OptUserId],[DataId],[CompanyId],[LogTypeName],[LogTypeId],[LogId]) VALUES (@Desc39,@OptResultName40,@OptResultId41,@OptTypeName42,@OptTypeId43,@OptModulePath44,@OptModuleName45,@Status46,@Mac47,@IP48,@Browser49,@OptSystem50,@OptTime51,@OptUserName52,@OptUserId53,@DataId54,@CompanyId55,@LogTypeName56,@LogTypeId57,@LogId58)	
+Parameters:
+@Desc39[String] = 数据查询成功！
+@OptResultName40[String] = 操作成功
+@OptResultId41[Int32] = 100
+@OptTypeName42[String] = 查询
+@OptTypeId43[Int32] = 1003
+@OptModulePath44[String] = /MsSys/Company/GetList
+@OptModuleName45[String] = 公司管理
+@Status46[Int32] = 1
+@Mac47[String] = 40:8D:5C:30:F1:7D
+@IP48[String] = 127.0.0.1
+@Browser49[String] = Chrome 55.0
+@OptSystem50[String] = Windows 10
+@OptTime51[DateTime] = 2016/12/26 16:11:46
+@OptUserName52[String] = 秦波
+@OptUserId53[Guid] = 0ad06755-9fde-4ddd-9dcb-448462155a03
+@DataId54[String] = 
+@CompanyId55[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+@LogTypeName56[String] = 数据操作
+@LogTypeId57[Int32] = 101
+@LogId58[Guid] = 65424286-b1f9-45a7-8926-cf5b8dd9d78f
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:52,633
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：66786
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE ([SYS_LogInfo].[Status] = @Status59) AND ([SYS_LogInfo].[CompanyId] = @CompanyId60)	
+Parameters:
+@Status59[Int32] = 1
+@CompanyId60[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:52,636
+2、优先级别：DEBUG
+3、线程ID：61
+4、耗时：66788
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE ([SYS_LogInfo].[Status] = @Status59) AND ([SYS_LogInfo].[CompanyId] = @CompanyId60) 	
+Parameters:
+@Status59[Int32] = 1
+@CompanyId60[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:54,959
+2、优先级别：DEBUG
+3、线程ID：62
+4、耗时：69111
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE ([SYS_LogInfo].[Status] = @Status61) AND ([SYS_LogInfo].[CompanyId] = @CompanyId62)	
+Parameters:
+@Status61[Int32] = 1
+@CompanyId62[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:54,962
+2、优先级别：DEBUG
+3、线程ID：62
+4、耗时：69114
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE ([SYS_LogInfo].[Status] = @Status61) AND ([SYS_LogInfo].[CompanyId] = @CompanyId62) 	
+Parameters:
+@Status61[Int32] = 1
+@CompanyId62[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:55,774
+2、优先级别：DEBUG
+3、线程ID：60
+4、耗时：69926
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT count(*) as r_cnt FROM [SYS_LogInfo] WHERE ([SYS_LogInfo].[Status] = @Status63) AND ([SYS_LogInfo].[CompanyId] = @CompanyId64)	
+Parameters:
+@Status63[Int32] = 1
+@CompanyId64[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:11:55,784
+2、优先级别：DEBUG
+3、线程ID：60
+4、耗时：69937
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 15 * FROM [SYS_LogInfo]  WHERE ([SYS_LogInfo].[Status] = @Status63) AND ([SYS_LogInfo].[CompanyId] = @CompanyId64) 	
+Parameters:
+@Status63[Int32] = 1
+@CompanyId64[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:16:48,140
+2、优先级别：DEBUG
+3、线程ID：59
+4、耗时：362293
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:16:48,946
+2、优先级别：DEBUG
+3、线程ID：60
+4、耗时：363099
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:16:49,533
+2、优先级别：DEBUG
+3、线程ID：71
+4、耗时：363686
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:16:50,096
+2、优先级别：DEBUG
+3、线程ID：66
+4、耗时：364249
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 16:24:02,247
+2、优先级别：DEBUG
+3、线程ID：54
+4、耗时：796400
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 17:14:12,622
+2、优先级别：DEBUG
+3、线程ID：62
+4、耗时：34207
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 17:14:22,077
+2、优先级别：DEBUG
+3、线程ID：79
+4、耗时：43662
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 17:25:05,864
+2、优先级别：DEBUG
+3、线程ID：65
+4、耗时：23651
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 17:27:11,903
+2、优先级别：DEBUG
+3、线程ID：62
+4、耗时：929
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-26 17:28:24,202
+2、优先级别：DEBUG
+3、线程ID：79
+4、耗时：7016
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE [SYS_Department].[DepartmentName] = @DepartmentName1 	
+Parameters:
+@DepartmentName1[String] = 行政部
+
+

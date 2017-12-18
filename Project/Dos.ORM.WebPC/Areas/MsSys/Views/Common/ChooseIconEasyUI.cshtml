@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "选择图标";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSimple.cshtml";
+}
+<div data-options="region:'center',border:false" ng-app="IconView">
+    <script src="~/Content/Js/Base/base.init.data.js"></script>
+    <script src="~/Content/Components/AngularJS/angular.min.js"></script>
+    <table class="frm-tb" ng-controller="IconController">
+        <tbody>
+            <tr>
+                <td>图标关键字：</td>
+                <td>
+                    <input class="txt-main" data-options="buttonText:'输入关键字查询'" ng-model="iconName">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="white-space: inherit; text-align: left;">
+                    <a ng-repeat="item in iconList | filter:iconName | orderBy:iconOrder:false" href="javascript:;" class="easyui-linkbutton"
+                       data-options="iconCls:'icon-{{item.name}}',plain:true"
+                       title="icon-{{item.name}}"
+                       ng-click="iconClick(item.name,item.suf)"></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+
+    }
+
+    function initEvent() {
+    }
+
+    //初始化Angular
+    var iconApp = angular.module('IconView', []);
+    iconApp.controller('IconController', function ($scope) {
+        //图标域路径
+        $scope.iconDomain = initObj.euiIconObj.domain;
+        //图标按钮数据列表排序字段
+        //orderBy:iconOrder:false表达式中的false代表是否按降序排列
+        $scope.iconOrder = 'name';
+        //图标按钮数据列表
+        $scope.iconList = initObj.euiIconObj.list;
+        //图标按钮事件
+        $scope.iconClick = function (name, suf) {
+            var iconObj = { name: 'icon-' + name, path: $scope.iconDomain + name + suf };
+            QBO.frm.getWin('lay').setIcon(iconObj);
+            QBO.frm.closeWin();
+        };
+    });
+</script>

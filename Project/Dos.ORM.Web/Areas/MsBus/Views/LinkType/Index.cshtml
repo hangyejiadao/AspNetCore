@@ -1,0 +1,86 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "友情链接类型管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        @{
+            if (ViewBag.IsSuperAdmin)
+            {
+                <text>所属公司：</text>
+                @Html.ExtComboTree("CompanyId", new { width = 100, url = "/MsSys/Company/GetChooseCompanys", queryParams = "{type:1}", onClick = "companyChg" })
+            }
+        }
+        类型名称：@Html.ExtTextBox("txtKeyName", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'LinkTypeId';
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsBus/LinkType/GetList',
+            col: [
+                { field: gdKeyId, checkbox: true },
+                { field: 'LinkTypeName', title: '类型名称', width: 200, sortable: true },
+                { field: 'SortNo', title: '排序号', width: 200 },
+                { field: 'Desc', title: '类型描述', width: 200 },
+                { field: 'IsEnable', title: '是否启用', width: 80, align: 'center', formatter: QBO.plu.grid.formatIf },
+                { field: 'CrtTime', title: '添加时间', width: 200, sortable: true }
+            ],
+            toolbar: 'toolBarMain'
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加类型', url: '/MsBus/LinkType/Detail', width: 500, height: 320 });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改类型', url: '/MsBus/LinkType/Detail', width: 500, height: 320, dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看类型', url: '/MsBus/LinkType/Detail', width: 500, height: 320, dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                QBO.frm.doPage('delete', { url: '/MsBus/LinkType/DeleteData', dgObj: gridObj, keyId: gdKeyId });
+                break;
+        }
+    }
+
+    function companyChg(node) {
+        queryData(node.id);
+    }
+
+    //查询数据
+    function queryData(comId) {
+        QBO.plu.grid.query(gridObj, {
+            comId: comId,
+            keyName: $('#txtKeyName').textbox('getValue')
+        });
+    }
+</script>

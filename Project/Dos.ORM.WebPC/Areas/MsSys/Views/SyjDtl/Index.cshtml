@@ -1,0 +1,619 @@
+﻿@model Dos.ORM.Model.Business.TW_SYJZBDto
+@{
+
+    Layout = "";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <link href="~/Content/assets/global/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/Css/Areas/MsSys/BootStrap/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/Css/Areas/MsSys/BootStrap/css/dashboard.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="~/Content/Components/EasyUI/themes/default/easyui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+
+   
+
+
+        var IsChanged = false;
+        function beginLoading() {
+            $('#loadMsg').show();
+        }
+        function endLoading() {
+            $('#loadMsg').fadeOut();
+        }
+
+
+
+        //保存报表信息
+        var vpozition = 0;
+        var hpozition = 0;
+        var urlzhbg = 0;
+        var mainFramePage = "";//保存
+        function gotoSavePoint() {
+            try {
+                showSave.innerText = "数据保存成功！";
+                setTimeout('showSaveProGress(false)', 1000);
+                with (domframe.document.body) {
+                    setAttribute("scrollLeft", hpozition);
+                    setAttribute("scrollTop", vpozition);
+                }
+            }
+            catch (e) {
+            }
+        }
+
+        function showSaveProGress(bool) {
+            try {
+                if (bool) {
+                    showSave.innerText = "正在保存数据，请稍候...";
+                    document.getElementById("showSave").style.display = "block";
+                }
+                else {
+                    document.getElementById("showSave").style.display = "none";
+                }
+            }
+            catch (e) {
+            }
+        }
+
+        //保存数据
+        function saveit() {
+            var doc = document.getElementById('mainFrame').contentWindow.document;
+
+            if (doc.getElementById('hide_HistoryData') == null) {
+                alert("此处数据不能保存");
+                return;
+            }
+            try {
+
+
+                if (!(doc.opratedAbled == 0)) {
+                    showSaveProGress(true);
+                    if (doc.body.scrollTop != null)
+                        vpozition = doc.body.scrollTop;
+                    if (doc.body.scrollLeft != null)
+                        hpozition = doc.body.scrollLeft;
+
+                    doc.getElementById("btn_Save").click();
+                    IsChanged = false;
+
+                }
+                else {
+                    alert("您没有操作此功能的权限，要想获取权限请联系系统管理员");
+                }
+            }
+            catch (e) {
+                alert("保存出错，该处设置不允许进行保存操作。" + e.message);
+            }
+        }
+
+        //打印
+        function printit() {
+            var doc = document.getElementById("mainFrame").contentWindow.document;
+            var old_color = doc.body.bgColor;
+            var print_color = "#FFFFFF";
+
+            var all = new Array();
+            all = doc.getElementsByTagName("input");
+            for (i = 0; i < all.length; i++) {
+                if ((all[i].type == "text") || (all[i].type == "textarea")) {
+                    if (all[i].value == "/") {
+                        all[i].value = "";
+                    }
+                    all[i].style.backgroundColor = print_color;
+                    all[i].style.borderWidth = 0;
+                }
+            }
+
+            document.getElementById("mainFrame").contentWindow.focus();
+
+            document.getElementById("mainFrame").contentWindow.document.body.style.backgroundColor = print_color;
+
+            document.getElementById("mainFrame").contentWindow.print();
+            document.getElementById("mainFrame").contentWindow.document.body.style.backgroundColor = old_color;
+        }
+        function setblankjilu(obj)//输入控件id查找并显示。
+        {
+            try {
+                var jilutd = obj.getElementById("ReportFormHeadSYG1_td_jilu");
+                if (jilutd != undefined) {
+                    jilutd.innerText = "                 ";
+                }
+
+                var jilutd = obj.getElementById("reporthead_td_jilu");
+                if (jilutd != undefined) {
+                    jilutd.style.visibility = "hidden";
+                }
+
+            }
+            catch (e) { }
+            var hrss = obj.getElementsByTagName("INPUT")
+
+            var j = 0;
+            var returnvalue = false;
+            obj.bgColor = "White";
+            for (var i = 0; i < hrss.length; i++) {
+                if (hrss[i].type == "image" || hrss[i].id.indexOf("ReportFormHeadSYG1") != -1) {
+                    continue;
+                }
+
+                if (hrss[i].type != "hidden") {
+                    if (hrss[i].id == "ReportFormHeadSYG1_syyj") {
+                        continue;
+                    }
+                    hrss[i].title == "zone"
+                    // hrss[i].value = "";
+                    hrss[i].style.visibility = "hidden"
+                    hrss[i].className = "";
+                }
+            }
+            //if (obj.getElementById("ReportFormBottom1_memo") != -1)
+            //{
+            //    continue;
+            //}
+            var hrss = obj.getElementsByTagName("textarea")
+            //var j=0;
+            var returnvalue = false;
+
+            tdjl = obj.getElementById("reporthead_jlbh");
+            if (tdjl != null) {
+                tdjl.innerText = "";
+            }
+
+
+
+            for (var i = 0; i < hrss.length; i++) {
+
+                //jianli
+                if (hrss[i].id.indexOf("ReportFormBottom1") != -1 || hrss[i].id == "reportbot_JianLi") {
+
+                    continue;
+                }
+
+
+                hrss[i].style.visibility = "hidden"
+
+                hrss[i].className = "";
+            }
+        }
+
+
+        var allowprint = false;
+        function printok(obj) {
+            allowprint = obj
+            //alert(allowprint)
+        }
+        //打印
+
+        //关闭提醒
+        window.onbeforeunload = function (e) {
+            if (IsChanged == true) e.returnValue = "数据已经更改，要继续吗？\n◆点离开此页将丢失更改过的数据！\n◆点留在此也可保存数据后继续操作。"
+        }
+
+
+
+
+
+
+
+
+        function iFrameHeight() {
+            //获取opr用于判断编辑e和打印p的区别
+            var address = window.location.href;
+            var opr = address.split("&")[1];
+            var opr1 = opr.split("=")[1];
+            var ifmEle = document.getElementById("mainFrame");
+            if (opr1 == "e" || opr1 == "e#") {
+                $(".luoliang").css({
+                    background: "#cfebfb"
+                });
+                document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("body")[0].style.background = "#cfebfb";
+                document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("form")[0].style.background = "#cfebfb";
+            }
+            if (opr1 == "p" || opr1 == "p#") {
+                $(".luoliang").css({
+                    background: "white"
+                });
+                //console.log(document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("body")[0]);
+                document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("body")[0].style.background = "white";
+                document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("form")[0].style.background = "white";
+            }
+
+            //设置mainFrame的高度等于内部内容的高度
+            var heightIn = document.getElementById("mainFrame").contentWindow.$("body").height() + 30;
+        
+            var height1 = document.body.clientHeight;
+
+            //alert(heightIn);
+            $("#mainFrame").css({
+                height: heightIn,
+              
+            });
+
+
+
+            if (!!window.ActiveXObject || "ActiveXObject" in window) {
+
+                //alert("IE");
+                $("#Form1").css({
+                    height: height1 + 40,
+                    
+                })
+            } else {
+                //alert("非IE");
+                $("#Form1").css({
+                    height: height1,
+                  
+                })
+            }
+
+
+            var ifm = document.getElementById("mainFrame");
+            //var subWeb = document.frames ? document.frames["mainFrame"].document : ifm.contentDocument;
+            //if (ifm != null && subWeb != null) {
+            //    ifm.height =document.getElementById("mainFrame").contentWindow.document.body.scrollHeight+20 ;
+            //}
+            ifm.height = document.documentElement.clientHeight;
+            //endLoading();
+        }
+
+
+        function showyiju() {
+            window.Form1.btnguifan.style.display = "";
+        }
+        function showcloseBtn() {
+            window.Form1.btnClose.style.display = "none";
+        }
+
+
+        var old;
+        function getQueryString(queryStringName) {
+            var returnValue = "";
+            var URLString = new String(document.location);
+            var serachLocation = -1;
+            var queryStringLength = queryStringName.length;
+            do {
+                serachLocation = URLString.indexOf(queryStringName + "\=");
+                if (serachLocation != -1) {
+                    if ((URLString.charAt(serachLocation - 1) == '?') || (URLString.charAt(serachLocation - 1) == '&')) {
+                        URLString = URLString.substr(serachLocation);
+                        break;
+                    }
+                    URLString = URLString.substr(serachLocation + queryStringLength + 1);
+                }
+
+            }
+            while (serachLocation != -1)
+            if (serachLocation != -1) {
+                var seperatorLocation = URLString.indexOf("&");
+                if (seperatorLocation == -1) {
+                    returnValue = URLString.substr(queryStringLength + 1);
+                }
+                else {
+                    returnValue = URLString.substring(queryStringLength + 1, seperatorLocation);
+                }
+            }
+            return returnValue;
+        }
+        $(function () {
+
+            //获取DOM对象
+            domframe = document.getElementById("mainFrame").contentWindow;
+            window.setInterval("showLivelyMessage()", 300);
+            var flag = getQueryString("flag");
+            if (flag == "True") {
+
+            } else {
+                $("#myl").css("width", "740px");
+            }
+        });
+        //只读
+        function makeFrameReadOnly() {
+            var all = document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("input");
+            for (i = 0; i < all.length; i++) {
+                all[i].onfocus = all[i].blur();
+            }
+        }
+        //提示信息
+        function showLivelyMessage() {
+            var msg = document.getElementById("mainFrame").contentWindow.global_msg;
+            if (msg != null) {
+
+                window.status = msg;
+
+                if (msg == "") {
+                    document.getElementById("bannerInfo").innerHTML = "<FONT face=\"宋体\" color = \"#ff0000\"></FONT>";
+                }
+                else {
+                    document.getElementById("bannerInfo").innerHTML = "<FONT face=\"宋体\" color = \"#ff0000\">提示信息：" + msg + "</FONT>";
+                }
+
+            }
+
+
+        }
+        function switchSysBar() {
+            if (document.getElementById("righttd").style.display == "none") {
+                document.getElementById("mainf").style.width = "850";
+                document.getElementById("rightbar").style.display = "";
+                document.getElementById("leftbar").style.display = "none";
+                document.getElementById("righttd").style.display = "";
+
+            }
+            else {
+                document.getElementById("mainf").style.width = "100%";
+                document.getElementById("rightbar").style.display = "none";
+                document.getElementById("leftbar").style.display = "";
+                document.getElementById("righttd").style.display = "none";
+
+            }
+        }
+
+        function getkjid() {
+            var d1 = document.getElementById("mainFrame").contentWindow.document.getElementsByTagName("input");
+            var d2 = "";
+            for (var i = 0; i < d1.length; i++) {
+                d2 += d1[i].id + ",";
+            }
+            alert(d2);
+        }
+
+
+
+
+        function dotabclick(url, b) {
+            console.log(b);
+            $(b).addClass("active").siblings().removeClass("active");
+            if (IsChanged == true) {
+                var con = window.confirm("数据已经更改，要继续吗？\n◆点确定将丢失更改过的数据！\n◆点取消保存数据后继续操作。");
+                if (con) {
+                    IsChanged = false;
+                    var ifm = document.getElementById("mainFrame");
+                    beginLoading();
+                    ifm.height = 500;
+                    ifm.src = url;
+                    //$('#tabs').children("li").removeAttr("class").eq(0).addClass("active");//将所有选项置为未选中
+                }
+            }
+            else {
+
+                var ifm = document.getElementById("mainFrame");
+                beginLoading();
+                ifm.height = 500;
+                ifm.src = url;
+                //$('#tabs').children("li").removeAttr("class").eq(0).addClass("active");//将所有选项置为未选中
+            }
+
+        }
+
+
+        //-->
+
+    </script>
+
+    <style>
+        .nav-tabs > li {
+            margin: 0 1px;
+            border-radius: 4px 4px 0 0;
+        }
+
+            .nav-tabs > li > a {
+                margin-right: 0px;
+                line-height: 1.42857143;
+                border-radius: 4px 4px 0 0;
+                /*border-radius:0;*/
+                background: #e3e3e3;
+                color: #8b8b8b;
+                cursor: default;
+                /*border:none !important;*/
+                padding: 3px 15px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+                .nav-tabs > li > a:hover {
+                    /*background:white;
+            color:#39adbf;*/
+                    background: #31b0d5;
+                    color: white;
+                }
+
+        .navbar-fixed-top {
+            border-width: 0 0 1px;
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid #4f64a7;
+            padding-left: 10px;
+        }
+
+        .helpdiv {
+            width: 300px;
+            min-height: 180px;
+            background-color: #cccccc;
+            position: absolute;
+            right: 60px;
+            top: 60px;
+            display: none;
+            word-break: break-all;
+        }
+
+            .helpdiv img {
+                max-width: 280px;
+                max-height: 200px;
+                border: none;
+            }
+
+        #dvCompute {
+            position: absolute;
+            visibility: hidden;
+            font-size: 12px;
+        }
+
+        /*新布局*/
+        .nav-left {
+            overflow: hidden;
+        }
+
+        .nav-right {
+            background: #f7f7f9;
+            border-left: 1px solid #dedede;
+        }
+
+            .nav-right span {
+                margin-top: 3px;
+                cursor: pointer;
+            }
+
+            .nav-right a {
+                /*background:#00c1de;*/
+                background: #e3e3e5;
+                border: none;
+            }
+
+                .nav-right a:hover {
+                    background: #e3e3e5;
+                    border: none;
+                }
+
+        .nav-tabs {
+            height: 32px;
+            overflow: hidden;
+        }
+
+            .nav-tabs > li {
+                margin-top: 6px;
+                text-align: center;
+                cursor: pointer !important;
+            }
+
+        .active {
+            background: #31b0d5;
+        }
+
+            .active a {
+                background: #31b0d5 !important;
+                color: white !important;
+            }
+
+        form {
+            background: #C0C2CC;
+        }
+
+        .container-fluid {
+            margin-top: 35px;
+        }
+
+        .selectShow {
+            width: auto;
+            position: absolute;
+            top: 36px;
+            display: none;
+            padding: 0;
+            background: white;
+            border: 1px solid #dedede;
+        }
+
+            .selectShow li {
+                list-style: none;
+                padding: 5px 10px;
+            }
+
+                .selectShow li:hover {
+                    background: #31b0d5;
+                }
+
+                    .selectShow li:hover a {
+                        text-decoration: none;
+                    }
+
+        .nav-right ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+            .nav-right ul li {
+                list-style: none;
+                padding-top: 6px;
+            }
+
+                .nav-right ul li a {
+                    background: #06BBCB;
+                    color: white;
+                    padding: 5.5px 10px;
+                    border-radius: 4px 4px 0 0;
+                    text-decoration: none;
+                }
+
+                    .nav-right ul li a:hover {
+                        background: white;
+                        color: #39adbf;
+                    }
+
+        .btn-primary {
+            background: none !important;
+            border: 1px solid #31b0d5 !important;
+            padding: 6px 8px;
+        }
+
+            .btn-primary i {
+                color: #31b0d5;
+            }
+
+            .btn-primary:hover {
+                border: 1px solid #8b8b8b !important;
+            }
+
+                .btn-primary:hover i {
+                    color: #8b8b8b;
+                }
+    </style>
+</head>
+<body>
+    <nav class="navbar-fixed-top" style="width: 100%; height: 35px;padding-top: 0px ;position:fixed">
+
+        <div class="nav-left">
+            <ul id="tabs" class="nav nav-tabs" style="width:auto;background-color: #f7f7f9;height:35px; border-bottom: none; padding-top: 3px;"  ></ul>
+        </div>
+
+        <div class="nav-right" style="float: right;padding:0px 12px 0px 5px; line-height: 25px; width: auto; height: 25px;position:absolute;right:5px;top:0px;/*background:#EFEFF2;*/z-index:101">
+
+            <span id="msgerror"  ></span> 
+            <a id="btnPrint" onclick="printit()" value="打印" title="打印" class="btn btn-primary"  ><i class=" icon-print icon-large"></i></a>
+
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div style="padding-left:0px;">
+            <div id="loadMsg" style="position: absolute; background-color: white; z-index: 1002; overflow: auto; width: 100%; height: 100%; text-align: center; display: none; padding-top: 300px;">
+
+                <img src="../../Images/loading.gif" />
+            </div>
+
+            <div class="luoliang" style="width:950px;margin:20px auto 30px;padding:30px 10px;background:#FFFFFF;box-shadow:0 0 10px 3px #a0a0a0;" id="myl">
+                <iframe id="mainFrame" src="/MsSys/SyjDtl/@Model.Url.Split('.')[0]?syjid=@Model.SYJID&orgId=@ViewBag.orggId&syjapi=@ViewBag.syjapi" frameborder="0" scrolling="no" style="width:100%;border: none;" onload="iFrameHeight();"></iframe>
+            </div>
+
+            <div id="showSave" style="BORDER-BOTTOM: blue thin ridge; POSITION: absolute; TEXT-ALIGN: center; BORDER-LEFT: blue thin ridge;padding-top:70px; BACKGROUND-COLOR: dodgerblue; WIDTH: 20%; DISPLAY: none; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: auto; HEIGHT: 10%; COLOR: #ff0066; FONT-SIZE: 12pt; VERTICAL-ALIGN: sub; BORDER-TOP: blue thin ridge; FONT-WEIGHT: bold; BORDER-RIGHT: blue thin ridge; TOP: 30%; LEFT: 40%"></div>
+
+        </div>
+        <nav class="navbar-fixed-bottom" style="width: 100%; height: 25px; background-color: white;">
+            <div id="bannerInfo"   bgColor="gainsboro" height="100%" width="100%" style="font-weight:bold;font-size:18px;color:red;">
+
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>

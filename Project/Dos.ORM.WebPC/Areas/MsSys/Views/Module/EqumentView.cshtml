@@ -1,0 +1,198 @@
+﻿@{
+    ViewBag.Title = "EqumentView";
+    Layout = "~/Views/BasePage/_LayoutMsSysEmpty.cshtml";
+}
+
+<style>
+    .table {
+        width: 90%;
+        border: 0px solid #dedede;
+        font-size: 12px;
+        color: #1f3948;
+    }
+
+        .table tr td {
+            height: 30px;
+            line-height: 30px;
+        }
+
+    table tr td {
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .table tr td span {
+        color: #666;
+    }
+
+    .table .t_tit {
+        padding: 10px 0;
+        border-bottom: 3px solid #bbe2e9;
+    }
+</style>
+
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+
+<div data-options="region:'center',border:false" ng-app="pageApp">
+
+    <table class="table" ng-controller="pageCtrl">
+        <tbody>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">设备名称：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.EquipmentName}}</span>
+                </td>
+                <td rowspan="4"></td>
+                <td rowspan="4">
+                    <img ng-src="{{model.FilePath!=null?model.FilePath:'/Content/Css/Themes/Images/Design/Default/IconBig/main_nav_jcry.png'}}"
+                         style="display: block;width: 125px; height: 135px; padding: 5px; border:1px solid #ccc;vertical-align:middle">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">设备编号：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.EquipmentNO}}</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">规格型号：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Specs}}</span>
+                </td>
+            </tr>
+            <tr>
+
+                <td align="right" style="width: 20%;border-bottom:none;">生产厂家：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.FactoryName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">出厂日期：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.LeaveFactoryDate}}</span>
+                </td>
+
+                <td align="right" style="width: 20%;border-bottom:none;">出厂编号：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.LeaveFactoryCode}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">购置日期：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.BuyDate}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">测量范围：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.MeasureRange}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">准确度：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.MeasurePrecision}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">检定/校准周期(月)：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.ResolvingPower}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">管理人：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Manager}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">计量单位：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Unit}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">所属部门：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.BelongDepartment}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">存放地点：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Depositary}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">数量：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Amount}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">单价(元)：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.UnitPrice}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">所在功能室：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Type}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">供货商：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Dealer}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">使用状态：</td>
+                <td style="width: 80%;text-align:left" colspan="3">
+                    <span>{{model.State}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">备注：</td>
+                <td style="width: 80%;text-align:left" colspan="3">
+                    <span>{{model.Note}}</span>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+
+
+<script>
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $sce) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $sce);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+        $scope.model = QBO.frm.getWin().SuperData;
+
+        //console.log($scope.model);
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $sce) {
+
+
+
+    }
+
+</script>
+
+
+
+
+
+

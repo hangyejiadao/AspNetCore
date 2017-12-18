@@ -1,0 +1,373 @@
+
+#############################################################################
+
+1、时间：2016-08-19 11:51:36,384
+2、优先级别：ERROR
+3、线程ID：9
+4、耗时：36751
+5、行号：74
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-08-19 11:51:36,440
+2、优先级别：ERROR
+3、线程ID：9
+4、耗时：36807
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 11:51:53,235
+2、优先级别：ERROR
+3、线程ID：6
+4、耗时：53602
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 25
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 11:54:33,431
+2、优先级别：ERROR
+3、线程ID：7
+4、耗时：213798
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:39:06,937
+2、优先级别：ERROR
+3、线程ID：18
+4、耗时：505575
+5、行号：74
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-08-19 14:39:06,982
+2、优先级别：ERROR
+3、线程ID：18
+4、耗时：505619
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 25
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:44:25,282
+2、优先级别：ERROR
+3、线程ID：22
+4、耗时：823919
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 25
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:46:42,774
+2、优先级别：ERROR
+3、线程ID：22
+4、耗时：961411
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 25
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:49:58,884
+2、优先级别：ERROR
+3、线程ID：22
+4、耗时：1157521
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1114
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:55:09,711
+2、优先级别：ERROR
+3、线程ID：27
+4、耗时：30891
+5、行号：74
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：是否开启日志文件的配置错误
+System.IO.FileNotFoundException: 未能找到文件“c:\windows\system32\inetsrv\log4net.config”。
+文件名:“c:\windows\system32\inetsrv\log4net.config”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   在 System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   在 System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   在 System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   在 System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   在 System.Xml.XmlTextReaderImpl.OpenUrl()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 Dos.ORM.Common.Helpers.LogHelper.SetlogEnable() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs:行号 78
+
+#############################################################################
+
+1、时间：2016-08-19 14:55:09,758
+2、优先级别：ERROR
+3、线程ID：27
+4、耗时：30937
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1116
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 25
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:55:13,645
+2、优先级别：ERROR
+3、线程ID：38
+4、耗时：34824
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1116
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:56:33,368
+2、优先级别：ERROR
+3、线程ID：27
+4、耗时：114547
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1116
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 14:56:41,385
+2、优先级别：ERROR
+3、线程ID：27
+4、耗时：122564
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1116
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+
+#############################################################################
+
+1、时间：2016-08-19 15:02:43,905
+2、优先级别：ERROR
+3、线程ID：42
+4、耗时：485084
+5、行号：110
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：异常操作
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetCtrlAttrs(IDictionary`2 initAttr, Dictionary`2 dataOpts, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 1116
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.GetTextBoxOrFor(String name, Object value, Object htmlAttributes, Boolean isFor) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 192
+   在 Dos.ORM.Web.App_Common.Mvc.HtmlHelperExtension.ExtTextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes) 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\App_Common\Mvc\HtmlHelperExtension.cs:行号 129
+   在 ASP._Page_Areas_MsSys_Views_Button_Detail_cshtml.Execute() 位置 f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Web\Areas\MsSys\Views\Button\Detail.cshtml:行号 58
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)

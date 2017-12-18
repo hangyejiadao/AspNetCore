@@ -1,0 +1,193 @@
+body {/*width:740px;*/ background-image:none; background:#cfebfb;margin:0 auto; /*overflow:hidden;*//*background-image: url("./bg2.gif"); background-repeat: repeat-y;*/ background-attachment: fixed; background-position: center; /*background-color:#ccccff;*/ font-family: 宋体; font-size: 9pt; line-height: 120%; SCROLLBAR-BASE-COLOR: #5D7790; SCROLLBAR-ARROW-COLOR: #D1D9E2; }
+
+ /*form { 
+    width:740px;
+    margin:20px auto;
+    background:#CFEBFB;
+    padding:40px 10px 30px 40px;
+    box-shadow:0px -2px 5px 2px #a0a0a0,2px 00px 2px 2px #a0a0a0,0px 2px 2px 2px #a0a0a0,-2px 0px 2px 2px #a0a0a0;
+}*/
+/*table { 
+    background:white;
+}*/
+td { font-family: 宋体; font-size: 9pt; letter-spacing: 1; line-height: 120%; color: black; }
+INPUT1 { border-top: 2px ridge; border-bottom: 2px ridge; text-align: left; }
+INPUT { border: 0px none buttonface; font-size: 9pt; font-family: 宋体; height: 18px; text-align: center; vertical-align: middle; }
+.inputadd { width: 60px; margin-top: 4px; margin-right: 4px; height: 20px; border: 0px none; letter-spacing: 3px; cursor: hand; }
+input_alone_text { direction: ltr; border-bottom: #0099ff 1px solid; text-align: left; }
+input_AlignCenter { text-align: center; }
+.Input_AlignLeft { text-align: left; }
+.Button.All { border-color: PaleGoldenrod; border-style: outset; border-width: 2; background-color: Wheat; }
+TEXTAREA { border: 0px none buttonface; font-size: 9pt; overflow: hidden; font-family: 宋体; border-collapse: collapse; margin-top: 0px;resize:none; }
+
+A:active { cursor: hand; color: #ff0000; text-decoration: underline; }
+A:hover { cursor: hand; color: #000000; text-decoration: underline; }
+A:visited { cursor: hand; color: #0033ff; text-decoration: none; }
+A:link { cursor: hand; color: #0033ff; text-decoration: none; }
+
+.handbtn { border-right: buttonshadow 1px solid; border-top: buttonhighlight 1px solid; background: buttonface; border-left: buttonhighlight 1px solid; border-bottom: buttonshadow 1px solid; width: 3px; height: 21px; }
+.sepbtn { border-right: buttonhighlight 1px solid; border-left: buttonshadow 1px solid; width: 2px; height: 21px; }
+.TitleHeadStyle { background-image: url(main_bg.gif); vertical-align: baseline; color: black; direction: ltr; background-repeat: repeat-x; height: 23px; text-align: left; }
+.ListItemHeadStyle { color: Black; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr= '#A099CCFF', EndColorStr= '#0099CCFF' ); }
+
+.BottomStyle { color: White; filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr= '#FFFFFF', endColorStr= '#3F8CDA', gradientType= '1' ); }
+
+.TableHeadProjectName { font-weight: bold; font-size: 14pt; text-transform: capitalize; color: #000000; direction: ltr; line-height: normal; font-style: normal; font-family: 宋体; text-align: center;  }
+
+.TableHead { font-weight: bold; font-size: 24pt; text-transform: capitalize; color: #000000; direction: ltr; line-height: normal; font-style: normal; font-family: 宋体; text-align: center; }
+.TableHeadBar { font-weight: bold; text-transform: capitalize; color: #000000; direction: ltr; line-height: normal; font-style: normal; font-family: 宋体; letter-spacing: 2px; text-align: left; background-color: ffa500; }
+
+.TableBottom { font-weight: bolder; font-size: 10px; color: #000000; direction: ltr; line-height: normal; font-style: normal; font-family: 行书; }
+.TableBody { WIDTH: 640px; height: 440pt; font-family: 宋体; font-size: 9pt; }
+.PrintTable { border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black; width: 640px; border-bottom-style: none; border-collapse: collapse; }
+.PrintTable_zh { border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black; width: 640px; border-bottom-style: none; border-collapse: collapse; }
+.PrintTable5 { }
+
+.tdmouseover { height: 23; border-top: gray 1px solid; border-bottom: gray 1px solid; border-right: gray 3px double; border-left: gray 3px double; background-color: silver; cursor: hand; }
+.tdmouseout { height: 23px; background-color: transparent; border-right: gray 3px double; border-left: gray 3px double; }
+.tdmousedown { height: 23; border-top: gray 1px solid; border-bottom: gray 1px solid; border-right: gray 3px double; border-left: gray 3px double; background-color: #ffffff; cursor: hand; }
+.tdgeneral { height: 23; border-right: #f5f5f5 1px solid; border-top: #f5f5f5 1px solid; border-left: #f5f5f5 1px solid; border-bottom: #f5f5f5 1px solid; cursor: hand; }
+.tdgeneral1 { border-right: gray 3px double; border-left: gray 3px double; cursor: hand; height: 23px; }
+.yellowbotton { width: 60px; margin-top: 4px; margin-right: 4px; cursor: hand; background-image: url(./bmp/yellowbutton.gif); height: 20px; border: 0px none; letter-spacing: 3px; cursor: hand; }
+/*
+.closebotton
+{
+	border-right: 0px;
+	border-top: 0px;
+	margin-top: 4px;
+	BACKGROUND-POSITION-X: left;
+	background-image: url(./bmp/close.bmp);
+	border-left: 0px;
+	width: 60px;
+	cursor: hand;
+	margin-right: 4px;
+	border-bottom: 0px;
+	background-repeat: no-repeat;
+	letter-spacing: 3px;
+	height: 20px;
+}
+*/
+
+/*保存按钮的正常情况*/
+.savebotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/FileSave.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+/*保存按钮鼠标进入的情况*/
+.savebotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/FileSave.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+
+
+/*删除按钮的正常情况*/
+.deletebotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/Delete.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+/*删除按钮鼠标进入的情况*/
+.deletebotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/Delete.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.printbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/Print.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+.daoru { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/daoru.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+.daochu { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/daochu.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+.printPreviewbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/Print.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.printbotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/Print.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.daoru_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/daoru.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.daochu_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/daochu.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.newbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/new.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.newbotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/new.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+
+.closebotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/close.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.closebotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/close.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+
+.copybotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/Copy.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; width: 70px; margin-right: 2px; }
+
+.copybotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/Copy.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; width: 70px; margin-right: 2px; }
+.helpbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/Help.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.helpbotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/Help.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.taskbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/task.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.taskbotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/task.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.guifanbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/guifan.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.guifanbotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/guifan.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.calcbotton { border-right: #ccccff 1px ridge; background-position: left center; border-top: #ccccff 1px ridge; background-image: url(./BtnImage/calc.gif); border-left: #ccccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #ccccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #f1f1f1; text-align: left; margin-right: 2px; }
+
+.calcbotton_in { border-right: #99ccff 1px ridge; background-position: left center; border-top: #99ccff 1px ridge; background-image: url(./BtnImage/calc.gif); vertical-align: baseline; border-left: #99ccff 1px ridge; cursor: hand; text-indent: 14pt; border-bottom: #99ccff 1px ridge; background-repeat: no-repeat; letter-spacing: normal; height: 20px; background-color: #ffc47f; text-align: left; margin-right: 2px; }
+.bluebotton { width: 60px; margin-top: 4px; margin-right: 4px; cursor: hand; background-image: url(./bmp/bluebutton.gif); height: 20px; border: 0px none; letter-spacing: 3px; cursor: hand; }
+.bluebotton_in { width: 60px; margin-top: 4px; margin-right: 4px; cursor: hand; background-image: url(./bmp/bluebutton.gif); height: 20px; border: 0px none; letter-spacing: 3px; cursor: hand; }
+.TEXTAREA { font-size: 9pt; overflow: hidden; border-top-style: none; font-family: 宋体; border-right-style: none; border-left-style: none; text-align: left; border-bottom-style: none; resize:none;}
+.sublable { font-size: 7pt; vertical-align: sub; font-family: 宋体; }
+.suplable { font-size: 7pt; vertical-align: super; font-family: 宋体; }
+.head { font-size: 14; font-weight: bold; }
+.readonlycontrols { background-color: #e5e5e8; }
+.combox_style { background-position: right top; font-size: 9pt; background-image: url(combox.gif); cursor: hand; background-repeat: no-repeat; font-family: 宋体; background-color: #ffffff; }
+.combox_db_style { background-position: right top; font-size: 9pt; background-image: url(combox_db.gif); cursor: hand; background-repeat: no-repeat; font-family: 宋体; background-color: #ffffff; }
+.TxtBox_firstly { font-size: 9pt; font-family: 宋体; /*background-color: #cccccc;*/ }
+.toplable { DISPLAY: inline; POSITION: absolute; TEXT-DECORATION: overline; }
+.top { vertical-align: super; font-size: 9; position: absolute; }
+.dynamictable_noprint { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 630px; border-color: #000000; }
+.first_bot_style { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 690px; }
+.first_nobot_style { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 640px; }
+.last_bot_style { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 800px; }
+.second_bot_style { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 850px; }
+
+.dynamictable_noprint_zh { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 420pt; border-color: #000000; }
+.first_bot_style_zh { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 610px; }
+.first_nobot_style_zh { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 740px; }
+.last_bot_style_zh { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 780px; }
+.second_bot_style_zh { BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; FONT-SIZE: 9pt; BORDER-LEFT: 2px solid black; WIDTH: 640px; BORDER-BOTTOM: 2px solid black; FONT-FAMILY: 宋体; BORDER-COLLAPSE: collapse; HEIGHT: 850px; }
+
+.changeddata_style { border-right: black thin solid; border-top: black thin solid; font-size: 9pt; border-left: black thin solid; width: 99%; border-bottom: black thin solid; font-family: 宋体; border-collapse: collapse; }
+.headBar { /*background-image:url(bg02.gif);*/ }
+.hrstyle { BACKGROUND-ATTACHMENT: fixed; BACKGROUND-POSITION-Y: center; BACKGROUND-IMAGE: url(bar.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 15px; }
+.buttonStyle { behavior: url(hilite.htc); }
+.font_9pt { font-size: 9pt; font-family: 宋体; }
+/*数字控件的样式*/
+.numcontrols { background-color: #ffffff; }
+/*获取焦点控件的样式*/
+.funcscolor { background-color: Navy; }
+
+/*输入类型有问题控件的样式*/
+.differentData { font-weight: normal; text-transform: uppercase; color: red; }
+.topmessagestyle { BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none; WIDTH: 640px; }
+.topmessagestyle1 { BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none; WIDTH: 640px; page-break-after: always; }
+.ErrorStyle { font-size: 14pt; color: red; }
+
+
+.yellowsavesubmitbotton { width: 100px; margin-top: 4px; margin-right: 4px; cursor: hand; background-image: url(./bmp/yellowsavesubmitbotton.gif); height: 20px; border: 0px none; letter-spacing: 3px; cursor: hand; }
+.bluebigbutton { width: 100px; margin-top: 4px; margin-right: 4px; cursor: hand; background-image: url(./bmp/bluebigbutton.gif); height: 20px; border: 0px none; letter-spacing: 3px; cursor: hand; }
+
+
+#Table1 { border-collapse: collapse; border: 0px solid #000000; WIDTH: 100%; HEIGHT: 100%; text-align: center; border-color: #000000; margin: 0 auto; }
+#Table1 td { border-top: 0; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0; }
+#Table1 tr.lastro td { border-bottom: 0; }
+#Table1 tr td.lastco { border-right: 0; }
+
+#Table2 { border-collapse: collapse; border: 0px solid #000000; WIDTH: 100%; HEIGHT: 100%; text-align: center; border-color: #000000; margin: 0 auto; }
+#Table2 td { border-top: 0; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0; }
+#Table2 tr.lastro td { border-bottom: 0; }
+#Table2 tr td.lastco { border-right: 0; }
+
+#Table3 { border-collapse: collapse; border: 0px solid #000000; WIDTH: 100%; HEIGHT: 100%; text-align: center; border-color: #000000; margin: 0 auto; }
+#Table3 td { border-top: 0; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0; }
+#Table3 tr.lastro td { border-bottom: 0; }
+#Table3 tr td.lastco { border-right: 0; }
+
+#Table4 { border-collapse: collapse; border: 0px solid #000000; WIDTH: 100%; HEIGHT: 100%; text-align: center; border-color: #000000; margin: 0 auto; }
+#Table4 td { border-top: 0; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0; }
+#Table4 tr.lastro td { border-bottom: 0; }
+#Table4 tr td.lastco { border-right: 0; }
+
+#Table5 { border-collapse: collapse; border: 0px solid #000000; WIDTH: 100%; HEIGHT: 100%; text-align: center; border-color: #000000; margin: 0 auto; }
+#Table5 td { border-top: 0; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0; }
+#Table5 tr.lastro td { border-bottom: 0; }
+#Table5 tr td.lastco { border-right: 0; }
+
+
+
+#Table6 { border-collapse: collapse; border: 0px solid #000000; WIDTH: 100%; HEIGHT: 100%; text-align: center; border-color: #000000; margin: 0 auto; }
+#Table6 td { border-top: 0; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0; }
+#Table6 tr.lastro td { border-bottom: 0; }
+#Table6 tr td.lastco { border-right: 0; }
+.dropDownListColor { cursor: pointer; }
+.dropDownListColor:hover { background-color: #CFEBFB; }
+ 
+/*table { 
+    width:680px !important;
+}*/

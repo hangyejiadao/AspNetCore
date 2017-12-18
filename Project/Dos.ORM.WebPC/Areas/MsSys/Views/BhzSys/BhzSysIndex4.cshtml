@@ -1,0 +1,136 @@
+﻿
+
+@{
+    ViewBag.Title = "BhzSysIndex4";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+
+<div id="toolBarMain" class="list-toolbar">
+
+    <div class="row">
+
+        <a href="javascript:;" class="easyui-linkbutton" id="lbtnModify" data-options="iconCls:'fa fa-edit',plain:true">设置</a>
+
+        <a href="javascript:;" class="easyui-linkbutton" id="lbtnSearch" data-options="iconCls:'fa fa-search-plus',plain:true">刷新</a>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+    var gridObj, gdKeyId = 'ID';
+
+    var paramsData = {
+        "LoadApi": '@ViewBag.LoadApi',
+        "TargetId": "",
+        "BhzApi": ""
+    }
+
+    function ModuleQuery(data) {
+        //alert("查询数据" + JSON.stringify(data));
+        paramsData.LoadApi = 1;
+        paramsData.TargetId = data.TargetId;
+        paramsData.BhzApi = data.ExtraData;
+        queryData();
+    }
+
+    //查询数据
+    function queryData() {
+        QBO.plu.grid.query(gridObj, paramsData, 'tg');
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    $(function () {
+        paramsData.TargetId = parent.selData.TargetId;
+        paramsData.BhzApi = parent.selData.ExtraData;
+        if (paramsData.BhzApi == null || paramsData.BhzApi == "") {
+            return;
+        }
+
+        var idxData = parent.idxData;
+        if (idxData.idx_mod1 == 5 && idxData.idx_mod2 == 3) {
+            paramsData.LoadApi = 1;
+        } else {
+            paramsData.LoadApi = 0;
+        }
+
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            method: "GET",
+            url: '/MsSys/BhzSys/GetSmsSetExceptList',
+            idField: gdKeyId,
+            treeField: 'BlendName',
+            animate: true,
+            pagination: false,
+            col: [
+                { field: gdKeyId, checkbox: true },
+                {
+                    field: 'BlendName', title: '拌合站/机名称', width: 300,
+                    formatter: function (value, data, index) {
+                        return data.BlendName + '(' + data.BlendNO + ')';
+                    }
+                },
+                { field: 'UnUpDay', title: '异常天数', width: 80 },
+                { field: 'AdminName', title: '负责人', width: 120 },
+                { field: 'AdminPhone', title: '手机号', width: 100 },
+                { field: 'NoticePhone', title: '通知手机号', width: 200 },
+                { field: 'IsEnable', title: '是否启动', width: 120, formatter: QBO.plu.grid.formatIf },
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function () {
+
+            }
+        }, 'tg');
+    }
+
+    function initEvent() {
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });     
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+    }
+
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'search':
+                queryData();
+                break;       
+            case 'modify':
+                var selData = QBO.plu.grid.get(gridObj, gdKeyId);
+                if (selData.obj.length <= 0) {
+                    QBO.dia.msg('请勾选拌合机！', { shift: 6, icon: 'error', time: 2000 });
+                    return;
+                }
+                if (selData.obj[0].ParentID ==null) {
+                    QBO.dia.msg('请勾选拌合机！', { shift: 6, icon: 'error', time: 2000 });
+                    return;
+                }
+
+                var keyId = selData.str;
+                url = "/MsSys/BhzSys/BhzSysDetail4?keyId=" + keyId + "&BhzApi=" + paramsData.BhzApi;
+                QBO.frm.openWin(url, { title: '设置', icon: 'tasks', width: 500, height: 350 });
+                break;
+          
+        }
+    }
+
+
+ 
+</script>
+
+
+
+
+
+

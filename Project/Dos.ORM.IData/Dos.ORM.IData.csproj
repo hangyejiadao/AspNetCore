@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30293410-C390-40AA-8095-6DDDF364F85E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dos.ORM.IData</RootNamespace>
+    <AssemblyName>Dos.ORM.IData</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dos.Common">
+      <HintPath>..\Dos.ORM.Lib\Dos.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Dos.ORM">
+      <HintPath>..\Dos.ORM.Lib\Dos.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="Dos.ORM.MySql">
+      <HintPath>..\Dos.ORM.Lib\Dos.ORM.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="Dos.ORM.Sqlite">
+      <HintPath>..\Dos.ORM.Lib\Dos.ORM.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Dos.ORM.Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\Dos.ORM.Lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\IDBBase.cs" />
+    <Compile Include="Business\IAPI_SyncLogData.cs" />
+    <Compile Include="Business\IBUS_BannerInfoData.cs" />
+    <Compile Include="Business\IBUS_BannerTypeData.cs" />
+    <Compile Include="Business\IBUS_EquipmentTypeData.cs" />
+    <Compile Include="Business\IBUS_EqumentData.cs" />
+    <Compile Include="Business\IBUS_FileData.cs" />
+    <Compile Include="Business\IBUS_IntroductionData.cs" />
+    <Compile Include="Business\IBUS_LaboratoryData.cs" />
+    <Compile Include="Business\IBUS_LinkInfoData.cs" />
+    <Compile Include="Business\IBUS_LinkTypeData.cs" />
+    <Compile Include="Business\IBUS_MemberData.cs" />
+    <Compile Include="Business\IBUS_MixingPlanData.cs" />
+    <Compile Include="Business\IBUS_ModuleData.cs" />
+    <Compile Include="Business\IBUS_NewsCommentData.cs" />
+    <Compile Include="Business\IBUS_NewsInfoData.cs" />
+    <Compile Include="Business\IBUS_NewsTypeData.cs" />
+    <Compile Include="Business\IBUS_ProjectData.cs" />
+    <Compile Include="Business\IBUS_ProjectLaboratoryData.cs" />
+    <Compile Include="Business\IBUS_RecordData.cs" />
+    <Compile Include="Business\IBUS_ReportData.cs" />
+    <Compile Include="Business\IBUS_ReportViewData.cs" />
+    <Compile Include="Business\IBUS_RoleData.cs" />
+    <Compile Include="Business\IBUS_RoleModuleData.cs" />
+    <Compile Include="Business\IBUS_SampleData.cs" />
+    <Compile Include="Business\IBUS_SampleTypeData.cs" />
+    <Compile Include="Business\IBUS_StatisticsTypeData.cs" />
+    <Compile Include="Business\IBUS_SubContractorData.cs" />
+    <Compile Include="Business\IBUS_TesterData.cs" />
+    <Compile Include="Business\IBUS_UserData.cs" />
+    <Compile Include="Business\IBUS_UserLaboratoryData.cs" />
+    <Compile Include="Business\IBUS_UserRoleData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\ICON_AreaCodeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\ISYS_ButtonData.cs" />
+    <Compile Include="System\ISYS_CompanyData.cs" />
+    <Compile Include="System\ISYS_DepartmentData.cs" />
+    <Compile Include="System\ISYS_LogInfoData.cs" />
+    <Compile Include="System\ISYS_LogTypeData.cs" />
+    <Compile Include="System\ISYS_ModuleButtonRelationData.cs" />
+    <Compile Include="System\ISYS_ModuleData.cs" />
+    <Compile Include="System\ISYS_OperatorData.cs" />
+    <Compile Include="System\ISYS_OperatorDepartmentRelationData.cs" />
+    <Compile Include="System\ISYS_OperatorPostRelationData.cs" />
+    <Compile Include="System\ISYS_OperatorRoleRelationData.cs" />
+    <Compile Include="System\ISYS_PostData.cs" />
+    <Compile Include="System\ISYS_RoleData.cs" />
+    <Compile Include="System\ISYS_RoleModuleRelationData.cs" />
+    <Compile Include="System\Iv_SYS_ButtonData.cs" />
+    <Compile Include="System\Iv_SYS_LogInfoRptData.cs" />
+    <Compile Include="System\Iv_SYS_ModuleData.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dos.ORM.Common\Dos.ORM.Common.csproj">
+      <Project>{f1603087-08af-4934-aa0b-1f3c087f7776}</Project>
+      <Name>Dos.ORM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dos.ORM.Model\Dos.ORM.Model.csproj">
+      <Project>{a43dcf78-cf7e-42ba-a1dd-c8d18fbd7477}</Project>
+      <Name>Dos.ORM.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

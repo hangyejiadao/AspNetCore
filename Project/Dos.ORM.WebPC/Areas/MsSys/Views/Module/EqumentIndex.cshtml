@@ -1,0 +1,170 @@
+﻿
+@{
+    ViewBag.Title = "EqumentIndex";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+
+<div id="toolBarMain" class="list-toolbar">
+
+    <div class="row"> 
+        
+        <span class="titleFont">
+            <a href="javascript:;" onclick="viewChg()">
+                <i class="fa fa-th" title="切换为图标模式"></i>
+            </a>
+        </span> 
+          
+        功能室：
+        <input id="F_EquType" name="F_EquType" class="easyui-combobox" style="width: 150px;"> 
+        
+        @*<select id="F_EquType" class="easyui-combobox" data-options="editable:false,required:false" style="width:80px">
+            <option value="">--全部--</option>
+            @foreach (var item in ((ViewBag.EquType) as List<BUS_EquipmentType>))
+            {
+                <option value="@item.EquipmentTypeName">@item.EquipmentTypeName</option>
+            }
+        </select>*@
+     
+        关键字：<input id="F_FilterText" type="text" placeholder="名称/编号"
+                   style="width:120px;padding: 5px 2px;line-height: 1.3; background-color: #fff; border: 1px solid #ccc;" />
+
+        <a href="javascript:;" class="easyui-linkbutton" id="lbtnSearch" data-options="iconCls:'fa fa-search-plus',plain:false">查询</a>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    var gridObj, gdKeyId = 'ID'; paramsData = { LoadApi: '@ViewBag.LoadApi', TargetId: '@ViewBag.TargetId', EquType: '', FilterText: '' }
+
+    $(function () {
+        initData();
+        loadType();
+        initEvent();
+    });
+    
+    function ModuleQuery(data) {
+        //alert("查询数据" + JSON.stringify(data)); 
+        paramsData.LoadApi = 1;
+        paramsData.TargetId = data.TargetId;
+        queryData();
+        loadType();
+    }
+    
+    //查询数据
+    function queryData() {          
+        paramsData.EquType = $('#F_EquType').combobox('getValue');
+        paramsData.FilterText = $('#F_FilterText').val();
+        QBO.plu.grid.query(gridObj, paramsData);
+    }
+
+
+    function loadType()
+    {
+
+        $('#F_EquType').combobox({
+            url: '/MsSys/Module/GetEquTypeList',
+            queryParams: { TargetId: paramsData.TargetId },
+            method: 'get',           
+            editable: false,
+            required: false,
+            onSelect: function (rec) {               
+                $('#F_EquType').combobox('setValue', rec.value);
+                queryData();
+            }
+        });
+
+
+        //$('#F_EquType').combobox({           
+        //    url: '/MsSys/Module/GetEquTypeList',
+        //    queryParams: { TargetId: paramsData.TargetId },
+        //    method:'get',          
+        //    valueField: 'EquipmentTypeName',
+        //    textField: 'EquipmentTypeName',
+        //    editable:false,
+        //    required:false,         
+        //    icons: [{
+        //        iconCls:'icon-clear',
+        //        handler: function(e){
+        //            $(e.data.target).combobox('clear');
+        //        }
+        //    }]          
+        //});
+      
+    }
+
+    function initData() {
+        gridObj = $('#dg');
+       
+        paramsData.EquType = $('#F_EquType').combobox('getValue');       
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            //method:'GET',
+            pageSize: 30,           
+            singleSelect: true,
+            url: '/MsSys/Module/GetEqument',
+            colFro: [
+                {
+                    field: 'EquipmentName', title: '设备名称', width: 300
+                },
+                {
+                    field: 'EquipmentNO', title: '设备编号', width: 200, align: 'center',
+                    formatter: function (value, row, index) {
+                        return "<a href=\'#\' style=\'color:#31b0d5\' onclick=\'ViewWin(" + JSON.stringify(row) + ")\'>" + value + "</a>";
+                    }
+                },
+            ],
+            col: [
+                { field: 'Specs', title: '规格型号', width: 200, align: 'center' },
+                { field: 'FactoryName', title: '生产厂家', width: 300 },
+                {
+                    field: 'BuyDate', title: '购置日期', width: 120, align: 'center',
+                    formatter: function (value, row, index) {
+                        return QBO.com.filterDate(value,false);
+                    }
+                },
+                { field: 'MeasureRange', title: '测量范围', width: 250 },
+                { field: 'MeasurePrecision', title: '准确度', width: 250 },
+                
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $("span.eui-opt-acc").imgPreview();
+            }
+        });
+
+
+    }
+
+    function initEvent() {
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'search':
+                queryData();
+                break;
+        }
+    }
+
+
+    //查看
+    var SuperData = [];
+    function ViewWin(row) {       
+        SuperData = row;
+        QBO.frm.openWin('/MsSys/Module/EqumentView', { title: '查看仪器设备', width: 800, height: 520 });
+    }
+
+
+    function viewChg() {
+        location.href = 'EqumentIndex1?TargetId=' + paramsData.TargetId + '&LoadApi=1';
+    }
+
+
+
+</script>
+

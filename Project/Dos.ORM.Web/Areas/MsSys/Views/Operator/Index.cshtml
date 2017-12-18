@@ -1,0 +1,146 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "管理员管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        @{
+            if (ViewBag.IsSuperAdmin)
+            {
+                <text>所属公司：</text>
+                @Html.ExtComboTree("CompanyId", new { width = 100, url = "/MsSys/Company/GetChooseCompanys", queryParams = "{type:1}", onClick = "companyChg" })
+            }
+        }
+        账户类型：
+        @Html.ExtDropDown("AccountType", (SelectList)ViewBag.OperatorTypes, new { width = 100, onChange = "accountTypeChg" })
+        账户或名称关键字：@Html.ExtTextBox("txtKeyName", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'OperatorId';
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsSys/Operator/GetList',
+            colFro: [
+                { field: gdKeyId, checkbox: true },
+                { field: 'Account', title: '登录账户', width: 100, sortable: true, formatter: getAccImg },
+                { field: 'Nickname', title: '昵称', width: 100 },
+                { field: 'Realname', title: '姓名', width: 100 },
+                //{ field: 'DepName', title: '所属部门', width: 100 },
+                //{ field: 'RolName', title: '所属角色', width: 100 },
+                { field: 'IsEnable', title: '是否启用', width: 80, align: 'center', formatter: QBO.plu.grid.formatIf }
+            ],
+            col: [
+                { field: 'WeChat', title: '微信', width: 200 },
+                { field: 'Microblog', title: '微博', width: 200 },
+                { field: 'Mobile', title: '手机号码', width: 200 },
+                { field: 'Tel', title: '电话号码', width: 200 },
+                { field: 'Email', title: '邮箱地址', width: 200 },
+                { field: 'Address', title: '联系地址', width: 200 },
+                { field: 'CrtTime', title: '添加时间', width: 200, sortable: true }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $("span.eui-opt-acc").imgPreview();
+            }
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnExport').tooltip({ content: '导出人员', position: 'right' });
+
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+        $('#lbtnExport').linkbutton({ onClick: function () { doHanlder('export'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加管理员', url: '/MsSys/Operator/Detail', icon: 'user' });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改管理员', url: '/MsSys/Operator/Detail', icon: 'user', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看管理员', url: '/MsSys/Operator/Detail', icon: 'user', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                var selectedRow = QBO.plu.grid.get(gridObj, gdKeyId);
+                if (selectedRow.obj.length > 0 && selectedRow.obj[0].Acc == 'admin') {
+                    QBO.dia.msg('对不起，系统管理员不能删除！', 'error');
+                } else {
+                    QBO.frm.doPage('delete', { url: '/MsSys/Operator/DeleteData', dgObj: gridObj, keyId: gdKeyId });
+                }
+                break;
+            case 'export':
+                exportData();
+                break;
+        }
+    }
+
+    //导出人员
+    function exportData() {
+        QBO.plu.ajax({
+            url: '/MsSys/Operator/ExportList',
+            data: {
+                comId: $('#CompanyId').length ? $('#CompanyId').combotree('getValue') : '',
+                accountType: $('#AccountType').combobox('getValue'),
+                keyName: $('#txtKeyName').textbox('getValue')
+            }
+        }, function (data) {
+            QBO.dia.msg(data.Msg, {
+                icon: 'right',
+                endCallback: function () {
+                    QBO.frm.downFile(data.Data, '管理员信息.xlsx');
+                }
+            });
+        });
+    }
+
+    function getAccImg(value, row, index) {
+        var dataImg = '', userIcon = '';
+        if (row.PhotoPath != null && row.PhotoPath.length > 0) {
+            dataImg = ' data-img="' + row.PhotoPath + '"';
+            userIcon = ' eui-icon icon-user';
+        }
+        return value + '&nbsp;<span class="eui-opt-acc' + userIcon + '"' + dataImg + '>&nbsp;</span>';
+    }
+
+    function companyChg(node) {
+        queryData(node.id);
+    }
+
+    //下拉值改变事件
+    function accountTypeChg(newValue, oldValue) {
+        queryData();
+    }
+
+    //查询数据
+    function queryData(comId) {
+        QBO.plu.grid.query(gridObj, {
+            comId: comId,
+            accountType: $('#AccountType').combobox('getValue'),
+            keyName: $('#txtKeyName').textbox('getValue')
+        });
+    }
+</script>

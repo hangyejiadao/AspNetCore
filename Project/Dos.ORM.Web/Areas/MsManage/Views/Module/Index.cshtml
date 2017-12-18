@@ -1,0 +1,97 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "模块管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        模块名称：@Html.ExtTextBox("txtModuleName", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'ID';
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsManage/Module/GetList',
+            idField: gdKeyId,
+            treeField: 'ModuleName',
+            pageSize: 1000,
+            col: [
+                { field: gdKeyId, checkbox: true },
+                { field: 'ModuleName', title: '模块名称', width: 200, sortable: true },
+                { field: 'ModuleCode', title: '模块编号', width: 50, sortable: true },
+                { field: 'PathURL', title: '模块路径', width: 200 },
+                { field: 'OrderNum', title: '排序', width: 50, sortable: true },
+                { field: 'PicUrl', title: '模块图标', width: 300 },
+                { field: 'PicCss', title: '图标CSS', width: 80 },
+                { field: '是否显示', title: '是否显示', width: 80, sortable: true, align: 'center', formatter: QBO.plu.grid.formatIf },
+                { field: 'Note', title: '备注', width: 200 }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function () { gridObj.treegrid('collapseAll'); }
+        }, 'tg');
+    }
+
+    function initEvent() {
+        $('#lbtnSelect').tooltip({ content: '设置角色人员', position: 'right' });
+
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+        $('#lbtnSelect').linkbutton({ onClick: function () { doHanlder('select'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加模块', url: '/MsManage/Module/Detail', icon: 'tasks', width: 880 });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改模块', url: '/MsManage/Module/Detail', icon: 'tasks', dgObj: gridObj, keyId: gdKeyId, width: 880 });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看模块', url: '/MsManage/Module/Detail', icon: 'tasks', dgObj: gridObj, keyId: gdKeyId, width: 880 });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                QBO.frm.doPage('delete', { url: '/MsManage/Module/DeleteData', dgObj: gridObj, keyId: gdKeyId }, 'tg');
+                break;
+            case 'select':
+                selectData();
+                break;
+        }
+    }
+
+    //设置角色人员
+    function selectData() {
+        if (QBO.plu.grid.get(gridObj, gdKeyId).obj.length <= 0) {
+            QBO.dia.msg('请勾选需要设置角色的模块！', { shift: 6, icon: 'error', time: 2000 });
+            return;
+        }
+
+        QBO.frm.openWin('/MsManage/Module/SelectRoles', { title: '选择角色', icon: 'users', width: 700, height: 450 });
+    }
+
+    //查询数据
+    function queryData() {
+        QBO.plu.grid.query(gridObj, {
+            ModuleName: $('#txtModuleName').textbox('getValue')
+        }, 'tg');
+    }
+</script>

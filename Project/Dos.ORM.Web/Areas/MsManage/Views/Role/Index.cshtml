@@ -1,0 +1,79 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "角色管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        用户名：@Html.ExtTextBox("txtRoleName", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'ID';
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsManage/Role/GetList',
+            col: [
+                { field: gdKeyId, checkbox: true, title: '选择' },
+                { field: 'RoleName', title: '角色名', width: 200 },
+                { field: 'Note', title: '备注', width: 200 }
+            ],
+            toolbar: 'toolBarMain'
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+        $('#lbtnSelect').linkbutton({ onClick: function () { doHanlder('select'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加角色', url: '/MsManage/Role/Detail', width: 700 });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改角色', url: '/MsManage/Role/Detail', width: 700, dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看角色', url: '/MsManage/Role/Detail', width: 700, dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                QBO.frm.doPage('delete', { url: '/MsManage/Role/DeleteData', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'select':
+                selectData();
+                break;
+        }
+    }
+
+    function companyChg(node) {
+        queryData(node.id);
+    }
+
+    //查询数据
+    function queryData(comId) {
+        QBO.plu.grid.query(gridObj, {
+            RoleName: $('#txtRoleName').textbox('getValue')
+        });
+    }
+</script>

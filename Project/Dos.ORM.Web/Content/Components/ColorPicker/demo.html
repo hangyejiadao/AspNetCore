@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Quber,Qubernet,QUBER" />
+    <meta name="Description" content="Quber综合管理系统" />
+    <title></title>
+    <link href="css/colorpicker.css" rel="stylesheet" />
+    <script src="../jQuery/jquery1.11.3.min.js"></script>
+    <script src="js/colorpicker.js"></script>
+    <script>
+        $(function () {
+            $('a').ColorPicker({
+                //color: '#2fa12f',
+                onBeforeShow: function () {
+                    console.log(1)
+                },
+                onShow: function (colpkr) {
+                    console.log(2)
+                    $(colpkr).fadeIn(500);
+                    return false;
+                },
+                onHide: function (colpkr) {
+                    $(colpkr).fadeOut(500);
+                    return false;
+                },
+                onSubmit: function (hsb, hex, rgb, el) {
+                    $(el).ColorPickerHide();
+                },
+                onChange: function (hsb, hex, rgb) {
+                    $('#txtColor').val('#' + hex);
+                    $('#txtColor1').val('rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')');
+                }
+            });
+        });
+    </script>
+</head>
+<body style="color:#696969;font-family: 'Microsoft YaHei'">
+    官网地址：http://www.eyecon.ro/colorpicker/ <br><br>
+    我是16进制格式：<input type="text" id="txtColor" name="txtColor" value=" " /><br>
+    我是RGB格式：<input type="text" id="txtColor1" name="txtColor" value=" " /><br>
+    <a href="javascript:;">点击我</a>
+</body>
+</html>

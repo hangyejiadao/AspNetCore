@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "SelectTarget";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSimple.cshtml";
+}
+
+<style>
+    .l-btn {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    li {
+        float: left;
+        list-style: none;
+    }
+</style>
+
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+
+<div data-options="region:'center',border:false" ng-app="pageApp">
+
+    <table class="frm-tb" ng-controller="pageCtrl">
+        <tbody>
+            <tr>
+                <td>关键字：</td>
+                <td>
+                    <div style=" width: 80%;float: left;">
+                        <input class="txt-main" data-options="buttonText:'输入关键字查询'" ng-model="FilterText" ng-keyup="filterKeyUp()">
+                    </div>
+                    <div style=" width: 20%;float: right;">
+                        <a href="#" ng-click="selectCallback()" class="easyui-linkbutton" data-options="iconCls:'fa fa-save',plain:false">确定选择</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr ng-repeat="m_one in model | filter:{TheLevel: 0} | orderBy:'TargetName'">
+                <td colspan="2">
+
+                    <table class="frm-tb">
+                        <tr>
+                            <td ng-style="{border:'none','font-size':'14px','font-weight':'bolder','text-align':'left'}" ng-bind="($index+1)+'、'+m_one.TargetName"></td>
+                        </tr>
+                        <tr>
+                            <td ng-style="{border:'none'}">
+
+                                <div ng-if="IsMulti==0">
+                                    <ul ng-cloak>
+                                        <li ng-repeat="m_two in model | filter:{TheLevel: 1} | filter:{ParentID: m_one.TargetId} | filter:{TargetName: FilterText} | orderBy:'TargetName'">
+                                            <a href="javascript:;" class="easyui-linkbutton" data-options="plain:true,width:200" title="{{m_two.TargetName}}">
+                                                <label>
+                                                    <input type="radio" name="TargetList" value="{{m_two.TargetName}}" ng-click="selectItem(m_two,$event)" />
+                                                    {{($index+1)+'、'+m_two.TargetName}}
+                                                </label>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div ng-if="IsMulti==1">
+                                    <ul ng-cloak>
+                                        <li ng-repeat="m_two in model | filter:{TheLevel: 1}| filter:{ParentID: m_one.TargetId} | filter:{TargetName: FilterText} | orderBy:'TargetName'">
+                                            <a href="javascript:;" class="easyui-linkbutton" data-options="plain:true,width:200" title="{{m_two.TargetName}}">
+                                                <label>
+                                                    <input type="checkbox" name="TargetList" value="{{m_two.TargetName}}" ng-click="selectItem(m_two,$event)" />
+                                                    {{($index+1)+'、'+m_two.TargetName}}
+                                                </label>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                             
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script type="text/javascript">
+
+
+    var QBOWin=(@ViewBag.OperType==0?QBO.frm.getWin():QBO.frm.getWin('lay')),IsMulti=@ViewBag.IsMulti;
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $sce) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $sce);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+
+        $scope.IsMulti = IsMulti;
+        $scope.model = {};
+        $scope.selectList = [];
+
+        QBO.plu.ng.http({ http: $http, method: 'POST', isLoad: false, url: 'GetTargetList', params: {}, }, function (data) {
+
+            $scope.model = data;
+
+            //console.log(JSON.stringify($scope.model));
+
+        });
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $sce) {
+
+        //过滤
+        $scope.filterKeyUp = function () {
+            $scope.selectList = [];
+        }
+
+        //选择
+        $scope.selectItem = function (item, $event) {
+            var thisObj = $($event.target);
+
+            if($scope.IsMulti==1)
+            {
+                var index = $scope.selectList.indexOf(item)
+                if (thisObj.is(':checked')) {
+                    if (index == -1) {
+                        $scope.selectList.push(item)
+                    }
+                }
+                else {
+                    if (index > -1) {
+                        $scope.selectList.splice(index, 1)
+                    }
+                }
+            }
+            else if($scope.IsMulti==0)
+            {
+                $scope.selectList=[];
+                $scope.selectList.push(item);
+
+            }
+
+
+        }
+
+        //确定
+        $scope.selectCallback = function () {
+        
+            if ($scope.selectList == null || $scope.selectList.length <= 0) {
+                QBO.dia.msg('请选择！', 'info');
+                return;
+            }
+
+            var SelectTarget_MethodCallBack = QBOWin.SelectTarget_Callback;
+            if (jQuery.isFunction(SelectTarget_MethodCallBack)) {
+                var result = eval(SelectTarget_MethodCallBack($scope.selectList));
+                if (result) QBO.frm.closeWin();
+            }
+
+        }
+    }
+
+
+</script>
+
+
+
+
+

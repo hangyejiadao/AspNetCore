@@ -1,0 +1,34 @@
+﻿/*****************************************************************************************************
+ * 本代码版权归Quber所有，All Rights Reserved (C) 2015-2088
+ * 联系人邮箱：qubernet@163.com
+ *****************************************************************************************************
+ * 创建人：Quber
+ * 创建说明：/MsSys/Main/Index、ProIndex视图所需样式
+ *****************************************************************************************************
+ * 修改人：
+ * 修改时间：
+ * 修改说明：
+*****************************************************************************************************/
+
+.tt-inner { display: inline-block; line-height: 12px; padding: 10px 0px; }
+.tt-inner img { border: 0; width: 50px; }
+.tt-inner .tt-title { color: #3b3b3b; padding-top: 7px; display: inline-block; }
+
+.panel-body { border-color: #99C0CB;}
+.tabs-header { background-color: #f2f2f2; }
+.tabs li a.tabs-inner { /*border-top-color: #428AAE; background-color: #f6f6f6;*/}
+.tabs li a.tabs-inner,
+.tabs li.tabs-selected a.tabs-inner { border-left-color: transparent; border-right-color: transparent; }
+.tabs li a.tabs-inner:hover,
+.tabs li.tabs-selected a.tabs-inner { font-weight: normal; /*border-top-color: #5797B7; background-color: #5890be; background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#5890be), to(#296A84)); */}
+.layout-expand .panel-body,
+.layout-expand .panel-header { display: none; }
+.accordion,
+.accordion .accordion-header-selected,
+.accordion-noborder .accordion-body { background: transparent; }
+.accordion .accordion-header { /*background: #3e656f;*/ }
+.panel-title { color: #666666;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 14px 0 0;}
+.panel-header { /*border-color: #548db9;*/ padding:14px 7px;}
+.accordion .accordion-header-selected .panel-title { /*color: #666666;*/ color: #15add1;}
+.accordion-collapse { /*background: url(images/accordion_arrows.png) no-repeat 0 0;*/ }
+.accordion-expand { /*background: url(images/accordion_arrows.png) no-repeat -16px 0;*/ }

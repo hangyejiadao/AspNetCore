@@ -1,0 +1,40 @@
+
+#############################################################################
+
+1、时间：2016-12-08 13:10:08,951
+2、优先级别：INFO
+3、线程ID：10
+4、耗时：106633
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.0.245
+    浏览器：IE 7.0
+    操作系统：Windows 7
+    记录时间：2016 12 08 13:10:08:4675
+    详细数据：【{"LogId":"6b1a1d6b-2db0-4649-8dab-af1762e9a3bf","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-12-08 13:10:08","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 7","Browser":"IE 7.0","IP":"192.168.0.245","Mac":"40:8D:5C:30:F1:7D","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-12-08 13:10:09,126
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：106808
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.0.245
+    浏览器：IE 7.0
+    操作系统：Windows 7
+    记录时间：2016 12 08 13:10:09:1046
+    详细数据：【{"LogId":"6649e8a4-b59f-4d67-a056-0078ad7c0d87","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-12-08 13:10:09","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 7","Browser":"IE 7.0","IP":"192.168.0.245","Mac":"40:8D:5C:30:F1:7D","Desc":"登录成功！","Status":1}】

@@ -1,0 +1,79 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@model Dos.ORM.Model.Business.BUS_Introduction
+@{
+    ViewBag.Title = "信息管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSimple.cshtml";
+}
+<div data-options="region:'south',border:false" class="frm-toolbar">
+    @Html.ExtLinkButton("lbtnSave", new { text = "保存", iconCls = "icon-save", onClick = "saveData" })
+</div>
+<div data-options="region:'center',border:false">
+    <script src="~/Content/Components/UEditor/ueditor.config.js"></script>
+    <script src="~/Content/Components/UEditor/ueditor.all.min.js"></script>
+    <script src="~/Content/Components/UEditor/lang/zh-cn/zh-cn.js"></script>
+    <form class="easyui-form" id="frmMain" method="post">
+        <table class="frm-tb frm-tb-nb">
+            <tbody>
+                @{
+                    if (ViewBag.IsSuperAdmin)
+                    {
+                        <tr>
+                            <td>所属公司：</td>
+                            <td>
+                                @Html.ExtComboTreeFor(m => m.CompanyId, new { width = 600, url = "/MsSys/Company/GetChooseCompanys", queryParams = "{type:1}" })
+                            </td>
+                        </tr>
+                    }
+                }
+                <tr>
+                    <td>摘要：</td>
+                    <td>
+                        @Html.ExtTextBoxFor(m => m.Summary, new { validType = "maxLength[400]", width = 600, height = 80, multiline = true })
+                    </td>
+                </tr>
+                <tr>
+                    <td>详细信息：</td>
+                    <td>
+                        <script id="editor" type="text/plain" style="width: 100%; height: 400px;">
+                            @Html.Raw(Model.DtlInfo)
+                        </script>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<script>
+    var thisForm;
+    var ueObj;
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+    }
+
+    function initEvent() {
+        ueObj = QBO.plu.ue.init();
+    }
+
+    function saveData() {
+        QBO.frm.submit(thisForm, {
+            url: '/MsBus/Introduction/SaveData',
+            onSubmit: function (param) {
+                //增加额外参数
+                param.keyId = '@ViewBag.keyId';
+
+                param.DtlInfo = QBO.plu.ue.get(ueObj);
+            },
+            success: function (data) {
+                QBO.dia.msg(data.Msg, {
+                    icon: data.Result === 100 ? 'right' : 'error'
+                });
+            }
+        });
+    }
+</script>

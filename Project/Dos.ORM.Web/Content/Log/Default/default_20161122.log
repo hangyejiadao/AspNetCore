@@ -1,0 +1,461 @@
+
+#############################################################################
+
+1、时间：2016-11-22 13:08:13,249
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：22084
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.0.200
+    浏览器：Chrome 54.0
+    操作系统：Windows 10
+    记录时间：2016 11 22 13:08:12:6571
+    详细数据：【{"LogId":"f26c689a-dea0-410e-bfca-d354a8cb68e5","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 13:08:12","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 54.0","IP":"192.168.0.200","Mac":"40:8D:5C:30:F1:7D","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:15:20,684
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：13096
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:15:20:3861
+    详细数据：【{"LogId":"635fd12a-9089-4fde-a402-d03ea12b7952","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:15:20","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:15:36,076
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：28488
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:15:36:0140
+    详细数据：【{"LogId":"8db3ca12-368c-488e-9720-e8f21f1f8195","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:15:36","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:15:51,728
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：44140
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【角色管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Role/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:15:51:6910
+    详细数据：【{"LogId":"35f82ac7-a750-46e4-a25d-a6138d3d71d6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:15:51","OptModuleName":"角色管理","OptModulePath":"/MsSys/Role/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:15:59,884
+2、优先级别：INFO
+3、线程ID：15
+4、耗时：52296
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【部门管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Department/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:15:59:8655
+    详细数据：【{"LogId":"38246841-1093-4510-84e3-fe663f17b538","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:15:59","OptModuleName":"部门管理","OptModulePath":"/MsSys/Department/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:16:03,707
+2、优先级别：INFO
+3、线程ID：7
+4、耗时：56118
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【公司管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Company/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:16:03:6723
+    详细数据：【{"LogId":"7373c1ac-e7de-40f6-ad76-9ef529a72615","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:16:03","OptModuleName":"公司管理","OptModulePath":"/MsSys/Company/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:16:17,031
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：69443
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【管理员管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Operator/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:16:16:9800
+    详细数据：【{"LogId":"586b33c6-fbc1-4a52-86dc-6209d0f6e58f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:16:16","OptModuleName":"管理员管理","OptModulePath":"/MsSys/Operator/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:16:38,675
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：91087
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【角色管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Role/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:16:38:6534
+    详细数据：【{"LogId":"fc1a1cf9-8b9e-48cf-856e-e57ac76df296","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:16:38","OptModuleName":"角色管理","OptModulePath":"/MsSys/Role/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:19:21,540
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：253952
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:19:21:4940
+    详细数据：【{"LogId":"f22a56d4-604c-4477-9b69-46ca84d7d6bf","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:19:21","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:19:35,299
+2、优先级别：INFO
+3、线程ID：17
+4、耗时：267711
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“添加”操作
+    数据主键：3cb7a07e-dbbd-4a34-897f-4a794937cf7d
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/SaveData
+    操作结果：操作成功
+    操作描述：数据保存成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:19:35:2474
+    详细数据：【{"LogId":"2bd18888-e254-4c1d-a2db-91cee0900f01","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":"3cb7a07e-dbbd-4a34-897f-4a794937cf7d","OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:19:35","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/SaveData","OptTypeId":1001,"OptTypeName":"添加","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据保存成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:19:36,987
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：269399
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:19:36:9144
+    详细数据：【{"LogId":"62c2902e-1fe0-429a-a629-66d40e7542e2","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:19:36","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:19:41,889
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：274301
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“删除”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/DeleteData
+    操作结果：操作成功
+    操作描述：数据删除成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:19:41:8425
+    详细数据：【{"LogId":"50321d3a-a257-4c05-989d-8ba58a0f69b6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:19:41","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/DeleteData","OptTypeId":1005,"OptTypeName":"删除","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据删除成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:19:43,474
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：275885
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:19:43:4429
+    详细数据：【{"LogId":"cd95ca42-5e53-4a34-afac-c66e7260fd76","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:19:43","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:19:53,277
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：285688
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【管理员管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Operator/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:19:53:2615
+    详细数据：【{"LogId":"912f7df7-8708-4b4a-9650-82949ab3b654","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:19:53","OptModuleName":"管理员管理","OptModulePath":"/MsSys/Operator/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:20:10,369
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：302781
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【模块管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Module/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:20:10:3519
+    详细数据：【{"LogId":"e41bc43a-d9ca-4983-814a-f7c0229dd275","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:20:10","OptModuleName":"模块管理","OptModulePath":"/MsSys/Module/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:20:55,698
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：348110
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【部门管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Department/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:20:55:6816
+    详细数据：【{"LogId":"6486b942-1ce1-45d4-aad1-383d85101c56","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:20:55","OptModuleName":"部门管理","OptModulePath":"/MsSys/Department/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:20:56,699
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：349111
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【岗位管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Post/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:20:56:6460
+    详细数据：【{"LogId":"ee93be84-b656-4e35-8c04-3d9029017c3b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:20:56","OptModuleName":"岗位管理","OptModulePath":"/MsSys/Post/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:23:48,744
+2、优先级别：INFO
+3、线程ID：27
+4、耗时：521156
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【角色管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Role/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:23:48:6894
+    详细数据：【{"LogId":"1753ba91-861f-490e-a323-55a941652ecd","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:23:48","OptModuleName":"角色管理","OptModulePath":"/MsSys/Role/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:24:35,359
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：567770
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【管理员管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Operator/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:24:35:3436
+    详细数据：【{"LogId":"bc901550-e5ef-4a3e-ae70-49e86a6f0597","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:24:35","OptModuleName":"管理员管理","OptModulePath":"/MsSys/Operator/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:24:41,364
+2、优先级别：INFO
+3、线程ID：27
+4、耗时：573776
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【管理员管理】进行“删除”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Operator/DeleteData
+    操作结果：操作成功
+    操作描述：数据删除成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:24:41:3330
+    详细数据：【{"LogId":"c665080c-8729-4b3d-b52a-94a391458b90","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:24:41","OptModuleName":"管理员管理","OptModulePath":"/MsSys/Operator/DeleteData","OptTypeId":1005,"OptTypeName":"删除","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据删除成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:24:42,934
+2、优先级别：INFO
+3、线程ID：31
+4、耗时：575345
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【管理员管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Operator/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:24:42:9184
+    详细数据：【{"LogId":"c872475d-65c8-4eba-a18a-268b743d2182","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:24:42","OptModuleName":"管理员管理","OptModulePath":"/MsSys/Operator/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:25:09,746
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：602158
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接类型管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkType/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:25:09:7197
+    详细数据：【{"LogId":"2cfd8592-3be2-4ce4-9b9a-9ec36c48914a","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:25:09","OptModuleName":"友情链接类型管理","OptModulePath":"/MsBus/LinkType/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-11-22 19:25:10,568
+2、优先级别：INFO
+3、线程ID：36
+4、耗时：602980
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.0.160
+    浏览器：Chrome 38.0
+    操作系统：Windows 7
+    记录时间：2016 11 22 19:25:10:5543
+    详细数据：【{"LogId":"663f713e-4600-4c14-83b0-81ca76289dea","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-11-22 19:25:10","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 7","Browser":"Chrome 38.0","IP":"192.168.0.160","Mac":"40:8D:5C:30:F1:7D","Desc":"数据查询成功！","Status":1}】

@@ -1,0 +1,421 @@
+﻿@{
+    ViewBag.Title = "BhzView";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSingle.cshtml";
+}
+
+
+<link href="~/Content/Components/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Content/Components/Bootstrap/js/bootstrap.min.js"></script>
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+<script src="~/Content/Js/Base/jpager.js"></script>
+
+<style type="text/css">
+    body {
+        background-color: rgb(240, 245, 246);
+    }
+    th { 
+        background:#f1f5f7
+    }
+    .ibox-title {
+        /*position: absolute;*/
+        width: 100%;
+        height: 45px;
+        overflow: hidden;
+        margin: 5px 5px;
+        background-color: #fff;
+    }
+
+    .ibox-body {
+        /*position: absolute;
+        top: 60px;*/
+        width: 100%;
+        height: 95%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0px 0px;
+        margin: 0px 5px 5px 5px; /*上  右  下  左*/
+        background-color: #fff;
+    }
+    .ibox-title > ul { 
+        border-bottom:0;
+    }
+    .ibox-title .nav-tabs > li { 
+        margin-left:25px
+    }
+    .ibox-title .nav-tabs > li:nth-child(1) { 
+        margin-left:0
+    }
+    .ibox-title .nav-tabs > li > a { 
+        width:240px;
+        height:36px;
+        color: #555;
+        background-color: #f1f5f7;
+        border-radius:4px;
+        text-align:center;
+        padding-top: 1px;
+    }
+    .ibox-title .nav-tabs > li.active > a { 
+        background-color: #40bdf6;
+        color: #FFF;
+    }
+    caption { 
+        position:relative;
+    }
+    .title-left { 
+        width:4px;
+        height:16px;
+        background:#40bdf6;
+        display:inline-block;
+        position:absolute;
+        bottom:18px;
+    }
+    .ibox-body .nav-tabs > li.active > a { 
+        border-top: 4px solid #40bdf6;
+    }
+    .table > tbody > tr > td ,th{ 
+        border-top:0;
+        text-align:center;
+        vertical-align: middle;
+    }
+ 
+</style>
+
+
+<form id="thisForm" method="post" style="width: 100%;"
+      ng-app="pageApp" ng-controller="pageCtrl">
+
+    <div class="ibox-title">
+        
+        <ul class="nav nav-tabs">
+            <li ng-repeat="tab in tabs" ng-class="{true:'active',false:''}[$index==index]">
+                <a href="javascript;" data-toggle="tab"  ng-click="selectTab($index,tab.code)"><h5 style="font-weight:bolder">{{::tab.code}}</h5></a>
+            </li>          
+        </ul>
+
+        @*<a href="javascript:;" style="margin-left:20px" ng-repeat="tab in tabs"
+           ng-class="{true:'btn btn-info',false:'btn btn-default'}[$index==index]" ng-click="selectItem($index)">
+            {{::tab.name}}
+        </a>*@
+             
+    </div>
+
+   
+    <div class="ibox-body">
+
+        <table class="table table-bordered" style="height:80px; margin-bottom:5px">
+            @*<caption>                
+                <h5><img src="~/Content/Css/Themes/Images/Design/Default/Com/com_flg.png" />&nbsp;&nbsp;当前生产任务</h5>
+            </caption>*@
+            @*<thead>
+                    <tr>
+                        <th colspan="8"><img src="../image/2.png" />&nbsp;&nbsp;当前生产任务</th>
+                    </tr>
+                </thead>*@
+            <tbody>
+                <tr>
+                    <td style="width:10%; text-align:center;background:#f1f5f7">生产任务单：</td>
+                    <td style="width:40%">{{model.SCRWBH}}</td>
+                    <td style="width:10%;text-align:center;background:#f1f5f7">工程名称：</td>
+                    <td style="width:40%">{{model.GCMC}}</td>                    
+                </tr>
+                <tr>
+                    <td style="text-align:center;background:#f1f5f7">生产时间：</td>
+                    <td>{{model.SCSJ}}</td>
+                    <td style="text-align:center;background:#f1f5f7">水泥品种：</td>
+                    <td>{{model.SNPZ}}</td>                           
+                </tr>
+                <tr>
+                    <td style="text-align:center;background:#f1f5f7">工程部位：</td>
+                    <td>{{model.GCBW}}</td>
+                    <td style="text-align:center;background:#f1f5f7">强度等级：</td>
+                    <td>{{model.QDDJ_BAK}}</td>    
+                </tr>              
+            </tbody>
+        </table>
+
+        <table class="table table-condensed table-bordered" style="height:50px;margin-bottom:5px">
+            <caption>
+                <div class="title-left"></div><h5> @*<img src="~/Content/Css/Themes/Images/Design/Default/Com/com_flg.png" />*@&nbsp;&nbsp; 实时监控</h5>
+            </caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">序号</th>
+                    <th rowspan="2" ng-if="hideColItem('CLSJ')">出料时间</th>
+
+                    <th colspan="{{fullNum}}">标准重量值(kg)/实际称量值(kg)/重量偏差(%)</th>
+                  
+                    <th rowspan="2" ng-if="hideColItem('JBSC')">搅拌时长(秒)</th>
+                    <th rowspan="2" ng-if="hideColItem('SJFL')">实际方量</th>
+                </tr>
+                <tr>                  
+                    <th ng-if="hideColItem('SJZ_S')">水</th>
+                    <th ng-if="hideColItem('SJZ_SN1')">水泥1</th>
+                    <th ng-if="hideColItem('SJZ_SN2')">水泥2</th>
+
+                    <th ng-if="hideColItem('SJZ_GL1')">骨料1</th>
+                    <th ng-if="hideColItem('SJZ_GL2')">骨料2</th>
+                    <th ng-if="hideColItem('SJZ_GL3')">骨料3</th>                    
+                    <th ng-if="hideColItem('SJZ_GL4')">骨料4</th>
+                    <th ng-if="hideColItem('SJZ_GL5')">骨料5</th>
+                    <th ng-if="hideColItem('SJZ_GL6')">骨料6</th>
+
+                    <th ng-if="hideColItem('SJZ_KF')">矿粉</th>
+                    <th ng-if="hideColItem('SJZ_FMH')">粉煤灰</th>
+                    <th ng-if="hideColItem('SJZ_WJJ1')">外加剂1</th>
+                    <th ng-if="hideColItem('SJZ_WJJ2')">外加剂2</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in model_mx">
+                    <td>{{$index + 1 }}</td>
+                    <td ng-if="hideColItem('CLSJ')">{{item.CLSJ}}</td>
+                    <td ng-if="hideColItem('SJZ_S')" ng-bind-html="calWarp(item.SJZ_S) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_SN1')" ng-bind-html="calWarp(item.SJZ_SN1) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_SN2')" ng-bind-html="calWarp(item.SJZ_SN2) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_GL1')" ng-bind-html="calWarp(item.SJZ_GL1) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_GL2')" ng-bind-html="calWarp(item.SJZ_GL2) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_GL3')" ng-bind-html="calWarp(item.SJZ_GL3) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_GL4')" ng-bind-html="calWarp(item.SJZ_GL4) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_GL5')" ng-bind-html="calWarp(item.SJZ_GL5) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_GL6')" ng-bind-html="calWarp(item.SJZ_GL6) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_KF')" ng-bind-html="calWarp(item.SJZ_KF) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_FMH')" ng-bind-html="calWarp(item.SJZ_FMH) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_WJJ1')" ng-bind-html="calWarp(item.SJZ_WJJ1) | toHtml"></td>
+                    <td ng-if="hideColItem('SJZ_WJJ2')" ng-bind-html="calWarp(item.SJZ_WJJ2) | toHtml"></td>
+
+                    <td ng-if="hideColItem('JBSC')">{{item.JBSC}}</td>
+                    <td ng-if="hideColItem('SJZ_FL')">{{ item.SJZ_FL | number:2}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="16" style="text-align:center">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination"></ul>
+                        </nav>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</form>
+
+<script>
+
+    var thisForm, keyId = '@ViewBag.KeyId', bhzApi = '@ViewBag.BhzApi';
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $sce) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $sce);
+        initNgQuery($scope, $http, $sce);
+
+    });
+
+    pageApp.filter('toHtml', function ($sce) {
+        return function (input) {
+            return $sce.trustAsHtml(input);
+        }
+    });
+
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+
+        $scope.index = 0;
+        $scope.code =null;
+        $scope.model = QBO.frm.getWin().selRowData;
+        $scope.tabs = [];
+
+        $scope.model_mx = {};      
+       
+        var BHJBH = $scope.model.BHJBH;
+        var BHJMC = $scope.model.BHJMC;
+
+        if (BHJBH != null && BHJMC != null)
+        {
+            var codes = BHJBH.split(',');
+            var names = BHJMC.split(',');
+
+            for (var key in codes) {
+                var tab = {
+                    code: codes[key],
+                    name: names[key],
+                }
+                $scope.tabs.push(tab);
+            }
+
+            $scope.code = $scope.tabs[0].code;
+        }
+        
+        //console.log(JSON.stringify($scope.tabs))
+
+        $scope.pageParam= { page: 1, rows: 30, total: 0, id: keyId, code: $scope.code, bhzApi: bhzApi };
+
+        $scope.tabCol = {};
+        $scope.hideCols = [];
+        $scope.initHideCols = ["SJZ_SN", "SJZ_GL6","SJZ_SN2", "SJZ_KF"];
+
+        $scope.fullNum = 13;
+        $scope.fullCols = ["SJZ_S", "SJZ_SN1", "SJZ_SN2", "SJZ_GL1", "SJZ_GL2", "SJZ_GL3", "SJZ_GL4", "SJZ_GL5", "SJZ_GL6", "SJZ_KF", "SJZ_FMH", "SJZ_WJJ1", "SJZ_WJJ2"];
+
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $sce) {
+
+        //选择拌合机
+        $scope.selectTab = function (index,code) {
+            $scope.index = index;
+            $scope.code = code;
+            $scope.pageParam.code = code;
+            $scope.loadModel_MX();
+        };
+
+               
+        //查询实际用量
+        $scope.loadModel_MX= function () {
+
+            if ($scope.code == null) return;
+        
+            QBO.plu.ng.http({ http: $http, method: 'POST', isLoad: true, chkLogin: true, url: '/MsSys/BhzOper/GetBhzMxData', params: $scope.pageParam }, function (data) {
+                
+                if (data.rows.length > 0) {
+                    $scope.model_mx = data.rows;
+                    $scope.pageParam.total = data.total;
+                }
+                else {
+                    $scope.model_mx = [];
+                    $scope.pageParam.total = 0;
+                }
+
+                //console.log(JSON.stringify($scope.model_mx));
+
+                $(".pagination").jpager({
+                    showFirstLast: true,
+                    currentPage: $scope.pageParam.page,
+                    totalItems: $scope.pageParam.total,
+                    links: 5,
+                    limit: $scope.pageParam.rows,
+                    pageGo: function (page, offset, limit) {
+                        $scope.pageParam.page = page;
+                        $scope.pageParam.rows = limit;
+
+                        var totapage = $scope.pageParam.total % $scope.pageParam.rows != 0 ? ($scope.pageParam.total / $scope.pageParam.rows + 1) : $scope.pageParam.total / $scope.pageParam.rows;
+
+                        if (page <= totapage) {
+                            $scope.loadModel_MX();
+                        }
+
+                        if (!$scope.$$phase) {
+                            $scope.$apply();
+                        }
+                    }
+                });
+
+
+            });
+        };
+
+
+        //加载列设置
+        $scope.loadTabColSet = function () {
+
+            var params = { BhzApi: bhzApi, TableCode: 'BhzIndex1_1' };
+
+            QBO.plu.ng.http({ http: $http, isLoad: false, chkLogin: false, url: '/MsSys/BhzOper/GetTabColSet', params: params }, function (result) {
+
+                $scope.tabCol = result;
+
+                if ($scope.tabCol.ColumnCode == null) {
+                    $scope.hideCols = $scope.initHideCols;
+                }
+                else {
+                    $scope.hideCols = JSON.parse($scope.tabCol.ColumnCode);
+                }
+
+                $scope.calFullCols();
+                //console.log(JSON.stringify($scope.hideCols))
+
+            });
+
+        }
+
+
+        //计算合并列
+        $scope.calFullCols = function () {
+            var hideCols = $scope.hideCols;
+            for (var key in hideCols)
+            {
+                if ($scope.fullCols.indexOf(hideCols[key]) != -1) {
+                    $scope.fullNum -= 1;
+                }                                 
+            }
+        }
+
+
+        //是否隐藏列
+        $scope.hideColItem = function (field) {
+
+            if ($scope.hideCols == null) return true;
+            
+            if ($scope.hideCols.indexOf(field) == -1) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        
+        //计算偏差
+        $scope.calWarp = function (value) {
+
+            if (value == null) return;
+
+            var array = value.split(',');
+
+            var planQty = array[0];
+            var factQty = array[1];
+            var ratio = array[2];
+            var type = parseInt(array[3]);
+
+            var rt_val = null;
+            if (type == 0) {
+                rt_val = planQty + '<br>' + factQty + '<br>' + ratio;
+            }
+            else if (type == 1) {
+                rt_val = planQty + '<br>' + factQty + '<br><span style="color:blue;">' + ratio + '</span>';
+            }
+            else if (type == 2) {
+                rt_val = planQty + '<br>' + factQty + '<br><span style="color:blueviolet;">' + ratio + '</span>';
+            }
+            else if (type == 3) {
+                rt_val = planQty + '<br>' + factQty + '<br><span style="color:orange;">' + ratio + '</span>';
+            }
+            else if (type == 4) {
+                rt_val = planQty + '<br>' + factQty + '<br><span style="color:red;">' + ratio + '</span>';
+            }
+            else {
+                rt_val = planQty + '<br>' + factQty + '<br>' + ratio;
+            }
+
+            var title = (type >= 1 ? "第" + type + "级报警" : "");
+
+            return '<div title="' + title + '" style="line-height:25px">' + rt_val + '</div>';
+        }
+
+    }
+
+    //初始化ng查询数据
+    function initNgQuery($scope, $http, $sce) {
+        $scope.loadTabColSet();  
+        $scope.loadModel_MX();
+    }
+
+</script>
+
+

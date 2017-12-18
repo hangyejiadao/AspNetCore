@@ -1,0 +1,330 @@
+﻿
+
+@{
+    ViewBag.Title = "BhzSysIndex5";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+
+<link href="~/Content/assets/global/daterangepicker/boot/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/assets/global/daterangepicker/boot/font-awesome.min.css" rel="stylesheet" />
+<link href="~/Content/assets/global/daterangepicker/boot/daterangepicker.css" rel="stylesheet" />
+<link href="~/Content/assets/global/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<script src="~/Content/assets/global/daterangepicker/boot/bootstrap.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/daterangepicker.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/moment.min.js"></script>
+<style>
+    .panel-body {
+        padding: 2px 0px;
+    }
+
+    .btn-default {
+        color: #02a9f3;
+        background-color: #fff;
+        border: 1px solid #02a9f3;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #02a9f3;
+        border: 1px solid #02a9f3;
+    }
+
+        .btn-primary.focus, .btn-primary:focus {
+            color: #fff;
+            background-color: #02a9f3;
+            border: 1px solid #02a9f3;
+        }
+
+    .kx-search {
+        background-color: #0581b9;
+        border: 1px solid #0581b9;
+    }
+
+        .kx-search:focus {
+            background-color: #0581b9;
+            border: 1px solid #0581b9;
+        }
+</style>
+<div id="toolBarMain" class="list-toolbar">
+
+    <div class="row">
+
+        <div class="form-inline" style="padding-left:20px;">
+
+            <div class="input-group input-group-sm">
+                <input type="text" id="F_StartEnd" class="form-control" placeholder="请选择时间" style="width:180px;" />
+                <span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span>
+            </div>
+
+            <div class="form-group input-group-sm">
+                <label class="sr-only" for="F_SmsType"></label>
+                <select id="F_SmsType" class="form-control">
+                    <option selected="selected" value="">短信类型</option>
+                    <option value="1">每盘超标短信</option>
+                    <option value="2">时间段内超标</option>
+                    <option value="3">昨日超标短信</option>
+                    <option value="4">上传异常短信</option>
+                </select>
+            </div>
+         
+            <div class="input-group input-group-sm">
+                <label class="sr-only" for="F_Phone"></label>
+                <input type="text" id="F_Phone" class="form-control" placeholder="请输入手机号">
+            </div>
+
+            <div class="form-group input-group-sm">
+                <a href="javascript:;" class="btn btn-sm btn-primary kx-search" onclick="queryData()">查询</a>     
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var gridObj, gdKeyId = 'ID';
+
+    var paramsData = {
+        "LoadApi": '@ViewBag.LoadApi',
+        "OrganID": "",
+        "BhzApi": "",
+        "StartEnd": "",
+        "StartDate": "",
+        "EndDate": "",
+        "SmsType": "",
+        "Phone": ""
+    }
+    
+    $(function () {
+        paramsData.TargetId = parent.selData.TargetId;
+        paramsData.BhzApi = parent.selData.ExtraData;
+        if (paramsData.BhzApi == null || paramsData.BhzApi == "") {
+            return;
+        }
+
+        var idxData = parent.idxData;
+        if (idxData.idx_mod1 == 5 && idxData.idx_mod2 == 4) {
+            paramsData.LoadApi = 1;
+        } else {
+            paramsData.LoadApi = 0;
+        }
+
+        getCookieData();
+        initData();
+        setDateRange();
+    });
+    
+    //选择时间设置
+    function setDateRange() {
+
+        var startDate = paramsData.StartDate;
+        var endDate = paramsData.EndDate;
+
+        $('#F_StartEnd').daterangepicker(
+               {
+                   startDate: startDate,//moment().startOf('day'),
+                   endDate: endDate,//moment(),
+                   //minDate: '01/01/2012',    //最小时间  
+                   maxDate: moment(), //最大时间   
+                   //dateLimit: {
+                   //    days: 30
+                   //}, //起止时间的最大间隔  
+                   singleDatePicker: false,
+                   showDropdowns: true,
+                   showWeekNumbers: false, //是否显示第几周  
+                   timePicker: false, //是否显示小时和分钟  
+                   timePickerIncrement: 60, //时间的增量，单位为分钟  
+                   timePicker12Hour: false, //是否使用12小时制来显示时间                    
+                   ranges: {
+
+                       '今日': [moment().startOf('day'), moment()],
+                       '昨日': [moment().subtract('days', 1).startOf('day'), moment().subtract('days', 1).endOf('day')],
+                       '最近7日': [moment().subtract('days', 6), moment()],
+                       //'最近15日': [moment().subtract('days', 15), moment()],
+                       '最近30日': [moment().subtract('days', 29), moment()],
+                       '最近3月': [moment().subtract(3, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                       '本周': [moment().startOf("week"), moment().endOf("week")],
+                       //'上周': [moment().subtract(1, "week").startOf("week"), moment().subtract(1, "week").endOf("week")],
+                       '本月': [moment().startOf("month"), moment().endOf("month")],
+                       '上月': [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                       //'本季': [moment().startOf("QUARTER"), moment().endOf("QUARTER")],
+                       '本年': [moment().startOf("year"), moment().endOf("year")],
+                       //'上年': [moment().subtract(1, "year").startOf("year"), moment().subtract(1, "year").endOf("year")]
+                   },
+                   opens: 'right', //日期选择框的弹出位置  
+                   buttonClasses: ['btn btn-default'],
+                   applyClass: 'btn-small btn-primary blue',
+                   cancelClass: 'btn-small',
+                   format: 'YYYY-MM-DD', //控件中from和to 显示的日期格式  
+                   separator: ' 至 ',
+                   autoUpdateInput: false,
+                   locale: {
+                       applyLabel: '确定',
+                       cancelLabel: '取消',
+                       fromLabel: '起始时间',
+                       toLabel: '结束时间',
+                       customRangeLabel: '自定义',
+                       daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                       monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+                               '七月', '八月', '九月', '十月', '十一月', '十二月'],
+                       firstDay: 1
+                   }
+               }, function (start, end, label) {//格式化日期显示框                               
+                   var startDate = start.format('YYYY-MM-DD');
+                   var endDate = end.format('YYYY-MM-DD');
+                   queryDate(startDate, endDate);
+                   QBO.plu.cookie.set("StartEnd", (startDate + ' 至 ' + endDate), { expires: 7, path: '/' });
+               });
+
+
+    }
+
+    //获取拌合机cookie
+    function getCookieData() {
+        var startEnd = QBO.plu.cookie.get("StartEnd");
+        if (startEnd != '') {
+            var seDate = startEnd.split(' 至 ');
+            paramsData.StartEnd = startEnd;
+            paramsData.StartDate = seDate[0];;
+            paramsData.EndDate = seDate[1];
+        } else {
+            var startDate = moment().subtract('days', 6).format('YYYY-MM-DD');
+            var endDate = moment().format('YYYY-MM-DD');
+            startEnd = (startDate + ' 至 ' + endDate);
+            paramsData.StartEnd = startEnd;
+            paramsData.StartDate = startDate;
+            paramsData.EndDate = endDate;
+        }
+
+        $('#F_StartEnd').val(startEnd);
+    }
+
+    //查询数据
+    function ModuleQuery(data) {
+        paramsData.LoadApi = 1;
+        paramsData.OrganID = data.TargetId;     
+        paramsData.BhzApi = data.ExtraData;
+        getCookieData();
+        queryData();
+    }
+
+    //查询数据
+    function queryData() {
+        var StartEnd = $('#F_StartEnd').val();
+        var seDate = StartEnd.split(' 至 ');
+        paramsData.StartDate = seDate[0];
+        paramsData.EndDate = seDate[1];
+        paramsData.SmsType = $('#F_SmsType').val();
+        paramsData.Phone = $('#F_Phone').val();
+        QBO.plu.grid.query(gridObj, paramsData);
+    }
+    
+    //选择时间查询
+    function queryDate(startDate, endDate) {
+
+        paramsData.StartEnd = startDate + ' 至 ' + endDate;
+        paramsData.StartDate = startDate;
+        paramsData.EndDate = endDate;
+
+        QBO.plu.grid.query(gridObj, paramsData);
+    }
+
+    //初始化列表
+    function initData() {
+        gridObj = $('#dg');
+
+        var StartEnd = $('#F_StartEnd').val();
+        var seDate = StartEnd.split(' 至 ');
+        paramsData.StartDate = seDate[0];
+        paramsData.CLSJEnd = seDate[1];
+
+        QBO.plu.grid.init(gridObj, {     
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            //method:'GET',
+            pageSize: 30,
+            singleSelect: true,
+            nowrap: false,
+            url: '/MsSys/BhzSys/GetSmsRecordList',        
+            col: [
+                {
+                    field: 'SmsType', title: '短信类型', width: 80,
+                    formatter: function (value, data, index) {
+                        if (value == 1)
+                            return '每盘超标短信';
+                        else if (value == 2)
+                            return '时间段内超标';
+                        else if (value == 3)
+                            return '昨日超标短信';
+                        else if (value == 4)
+                            return '上传异常短信';
+                        else
+                            return '';
+                    }
+                },
+                {
+                    field: 'OverType', title: '超标类型', width: 80,
+                    formatter: function (value, data, index) {
+                        if (value == 0)
+                            return '正常';
+                        else if (value == 1)
+                            return '第1级';
+                        else if (value == 2)
+                            return '第2级';
+                        else if (value == 3)
+                            return '第3级';
+                        else if (value == 4)
+                            return '第4级';
+                        else
+                            return '';
+                    }
+                },
+                { field: 'CrtTime', title: '生成时间', width: 100 },
+                { field: 'MobilePhone', title: '手机号', width: 100 },
+                {
+                    field: 'SendMsg', title: '短信内容', width: 400,
+                    formatter: function (value, data, index) {
+                        if (value == null || value == '')
+                            return '';
+                        else
+                            return '<span title="' + value + '"  class="easyui-tooltip">' + value + '</span>';
+                    }
+                },
+                { field: 'SendTime', title: '发送时间', width: 100 },               
+                {
+                    field: 'Status', title: '发送状态', width: 80,
+                    formatter: function (value, data, index) {
+                        if (value == 0)
+                            return '未发送';
+                        else if (value == 1)
+                            return '已发送';
+                        else if (value == 2)
+                            return '发送失败';
+                        else if (value == 3)
+                            return '发送超时';
+                        else
+                            return '未知';
+                    }
+                }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $(".easyui-tooltip").tooltip({
+                    onShow: function () {
+                        $(this).tooltip('tip').css({
+                            borderColor: '#000'
+                        });
+                    }
+                });
+                $("span.eui-opt-acc").imgPreview();
+            },
+            onClickRow: function (index, row) {
+              
+            }          
+        });
+    }
+
+  
+</script>
+

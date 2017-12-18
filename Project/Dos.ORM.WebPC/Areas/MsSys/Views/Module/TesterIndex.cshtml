@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "TesterIndex";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+
+<div id="toolBarMain" class="list-toolbar">
+   
+    <div class="row"> 
+        <span class="titleFont">
+            <a href="javascript:;" onclick="viewChg()">
+                <i class="fa fa-th" title="切换为图标模式"></i>
+            </a>      
+        </span>
+        @*姓名/职位：<input id="F_FilterText" name="FilterText" class="easyui-textbox" data-options="type:'text',required:false,isShowFill:true,width:120,height:28,tipPosition:'right',readonly:false,buttonAlign:'right',multiline:false,iconAlign:'right',disabled:false" />*@
+        
+        关键字：<input id="F_FilterText" type="text" placeholder="姓名/职位"
+                   style="width:120px;padding: 5px 2px;line-height: 1.3; background-color: #fff; border: 1px solid #ccc;" />
+
+        <a href="javascript:;" class="easyui-linkbutton" id="lbtnSearch" data-options="iconCls:'fa fa-search-plus',plain:false">查询</a>
+      
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    
+    var gridObj, gdKeyId = 'ID'; paramsData = { LoadApi: '@ViewBag.LoadApi',  TargetId: '@ViewBag.TargetId', FilterText: '' }
+
+    $(function () {       
+        initData();
+        initEvent();
+    });
+
+
+    function ModuleQuery(data) {
+        //alert("查询数据" + JSON.stringify(data));     
+        paramsData.LoadApi = 1;
+        paramsData.TargetId = data.TargetId;
+        queryData();
+    }
+    
+
+    //查询数据
+    function queryData() {        
+        paramsData.FilterText = $('#F_FilterText').val(); //$('#F_FilterText').textbox('getValue');
+        QBO.plu.grid.query(gridObj, paramsData);
+    }
+    
+    function initData() {
+        gridObj = $('#dg');  
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            //method:'GET', 
+            pageSize: 30,
+            singleSelect: true,
+            url: '/MsSys/Module/GetTester',
+            colFro: [                              
+                {
+                    field: 'Name', title: '姓名', width: 120, align: 'center',
+                    formatter: function (value, row, index) {
+                        var r_value = "<a href=\'#\' style=\'color:#31b0d5\' onclick=\'ViewWin(" + JSON.stringify(row) + ")\'>" + value + "</a>";
+                        return r_value
+                    }
+                },
+                {
+                    field: 'Sex', title: '性别', width: 100, align: 'center',
+                    formatter: function (value, row, index) {
+                        return value ? '男' : '女';
+                    }
+                },
+            ],
+            col: [
+                { field: 'DateBirth', title: '出生日期', width: 120, align: 'center' },
+                { field: 'Job', title: '工作岗位', width: 300 },
+                { field: 'Education', title: '学历', width: 200 },
+                { field: 'Title', title: '职称', width: 200 },
+                { field: 'WorkYears', title: '从事试验检测年限', width: 200, align: 'center' },
+                { field: 'CertificatNO', title: '试验检测证书编号', width: 300 }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $("span.eui-opt-acc").imgPreview();
+            }
+        });      
+    }
+
+    function initEvent() {
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'search':
+                queryData();
+                break;
+        }
+    }
+
+    //查看
+    var SuperData = [];
+    function ViewWin(row) {      
+        SuperData = row;
+        QBO.frm.openWin('/MsSys/Module/TesterView', { title: '查看检测人员', width: 800, height: 400 });
+    }
+
+
+    function viewChg()
+    {
+        location.href = 'TesterIndex1?TargetId=' + paramsData.TargetId + '&LoadApi=1';
+    }
+
+   
+</script>

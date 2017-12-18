@@ -1,0 +1,153 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>四川成都明华精品装修公司-联系我们！</title>
+    <script src="~/Content/Components/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="~/Content/Components/Flexslider/jquery.flexslider.min.js"></script>
+    <link href="~/Content/Components/Flexslider/flexslider.css" rel="stylesheet" />
+    <link href="~/Content/Css/Areas/MsDec/dec.core.css" rel="stylesheet" />
+</head>
+<body>
+    <!--顶部信息 begin-->
+    <div class="dec-panel dec-top">
+        <div class="dec-main">
+            <div class="dec-top-left">明华装修</div>
+            <div class="dec-top-right">
+                <a href="javascript:;">咨询热线：13551369057</a>
+                <span></span>
+                <a href="javascript:;" class="dec-color">我要装修</a>
+                <span></span>
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;">登录</a>
+            </div>
+        </div>
+    </div>
+    <!--顶部信息 end-->
+    <!--导航信息 begin-->
+    <div class="dec-panel dec-nav">
+        <div class="dec-main">
+            @Html.ActionLink("首页", "Index", new { area = "MsDec", controller = "Home" })
+            @Html.ActionLink("效果图", "Index", new { area = "MsDec", controller = "EffPic" })
+            @Html.ActionLink("装修攻略", "Index", new { area = "MsDec", controller = "Strategy" })
+            @Html.ActionLink("装修报价", "Index", new { area = "MsDec", controller = "Offer" })
+            @Html.ActionLink("预约登记", "Index", new { area = "MsDec", controller = "Sub" })
+            @Html.ActionLink("关于我们", "Index", new { area = "MsDec", controller = "About" })
+            @Html.ActionLink("联系我们", "Index", new { area = "MsDec", controller = "Contact" }, new { @class = "active" })
+
+            <a href="javascript:;">手机装修</a>
+        </div>
+    </div>
+    <!--导航信息 end-->
+    <!--子导航信息 begin-->
+    <div class="dec-panel dec-subnav">
+        <div class="dec-main">
+            @Html.ActionLink("首页", "Index", new { area = "MsDec", controller = "Home" })>
+            @Html.ActionLink("联系我们", "Index", new { area = "MsDec", controller = "Contact" })
+        </div>
+    </div>
+    <!--子导航信息 end-->
+    <!--联系我们 begin-->
+    <div class="dec-panel dec-con">
+        <div class="dec-main">
+            <!--以下内容为后台编辑器的内容-->
+            <div class="con-info">
+                <ul class=" list-paddingleft-2" style="width: 919.594px; white-space: normal;">
+                    <li>
+                        <p>
+                            <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">联系人：秦先生；</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">联系电话：13551369057；</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">联系地址：成都市中和镇新下街104号；</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">邮箱地址：qubernet@163.com；</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">QQ号码：757200834；</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">博客地址：http://qubernet.blog.163.com/blog</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <style>
+                #baiduMapPanel { width: 100%; height: 400px; overflow: hidden; margin: 0 auto; }
+                .anchorBL { display: none; }
+                #curCoor { padding: 10px; font-size: 14px; }
+                #curCoor span { font-weight: bold; }
+                .map-tip { }
+                .map-tip .title { padding: 5px 0; }
+                .map-tip .info { font-size: 12px; padding: 5px 0; color: #666; }
+            </style>
+            <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=B8d6a467349a48113847f2c68c58a59e"></script>
+            <div id="baiduMapPanel"></div>
+        </div>
+    </div>
+    <!--联系我们 end-->
+    <!--底部 begin-->
+    <div class="dec-panel dec-bottom">
+        <div class="dec-main">
+            <div class="bottom-nav">
+                @Html.ActionLink("关于我们", "Index", new { area = "MsDec", controller = "About" })|
+                @Html.ActionLink("联系我们", "Index", new { area = "MsDec", controller = "Contact" })|
+                <a href="javascript:;">友情链接</a>|
+                <a href="javascript:;">帮助中心</a>|
+                <a href="javascript:;">意见反馈</a>|
+                <a href="javascript:;">法律声明</a>
+            </div>
+            <div>
+                技术支持：Quber，邮箱：qubernet@163.com
+            </div>
+            <div>
+                © 2016 qubernet.com 保留所有权利
+            </div>
+        </div>
+    </div>
+    <!--底部 end-->
+</body>
+</html>
+<script>
+    // 百度地图API功能
+    var map = new BMap.Map("baiduMapPanel");
+    var point = new BMap.Point(104.095345, 30.56009);
+    map.centerAndZoom(point, 12); //初始化地图，设置城市和地图级别
+    map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    var marker = new BMap.Marker(point); //创建标注
+    map.addOverlay(marker); //将标注添加到地图中
+    var top_left_navigation = new BMap.NavigationControl(); //左上角，添加默认缩放平移控件
+    var top_right_navigation = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL }); //右上角，仅包含平移和缩放按钮
+    map.addControl(top_left_navigation);
+    map.addControl(top_right_navigation);
+
+    var sContent = '<div class="map-tip">' +
+        '<div class="title">明华装修</div>' +
+        '<div class="info">电话：13551369057</div>' +
+        '<div class="info">邮编：610000</div>' +
+        '<div class="info">邮箱：qubernet@163.com</div>' +
+        '<div class="info">地址：成都市中和镇新下街104号</div>' +
+        '</div>';
+    var infoWindow = new BMap.InfoWindow(sContent); // 创建信息窗口对象
+    marker.addEventListener("mouseover", function (e) {
+        this.openInfoWindow(infoWindow);
+    });
+</script>

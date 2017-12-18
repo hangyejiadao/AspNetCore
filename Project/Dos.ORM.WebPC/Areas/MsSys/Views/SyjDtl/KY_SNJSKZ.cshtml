@@ -1,0 +1,208 @@
+﻿@model Dos.ORM.Model.Business.TW_SYJZBDto
+@{
+    string[] pic = ViewBag.pic;
+    string[] labels = ViewBag.txtLabel;
+    string[] txtDatas = ViewBag.txtData1;
+    Layout = null;
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title></title>
+    <meta name="keywords" content="GetDataOddIncreaseEvenDecrease">
+    <meta content="True" name="vs_snapToGrid">
+    <meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+    <meta content="C#" name="CODE_LANGUAGE">
+    <meta content="JavaScript" name="vs_defaultClientScript">
+    <meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema"> 
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/Components/EasyUI/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/dismrclick.js"></script>
+    <script src="~/Scripts/input.js"></script>
+    <script src="~/Content/Js/Module/Business/functions.js"></script>
+    <script src="~/Scripts/Chart.js"></script>
+    <link href="~/Content/Css/Areas/MsSys/ReportFormStyle.css" rel="stylesheet" />
+ 
+    <style media="print" type="text/css">
+        .noprint {
+            display: none;
+        }
+    </style>
+ 
+    <script>
+    
+        Chart.defaults.global.tooltips.enabled = false;
+        Chart.defaults.global.animation.duration = 0;
+        Chart.defaults.global.defaultFontColor = 'rgba(0,0,0,1)';
+        var options = {
+            legend: { display: false },
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        maxTicksLimit: 20
+                    }
+                }]
+            }
+        }
+        var chartData = {
+            labels: '',
+            datasets: [
+                {
+                    data: '',
+                    fill: false,
+                    lineTension: 0,
+                    borderWidth: 1,
+                    borderColor: 'rgba(0,0,0,1)',
+                    pointRadius: 0,
+                    spanGaps: true
+                }
+            ]
+        }
+
+        $(document).ready(function () {
+            
+          
+        });
+        window.onload = function () {
+            for (var i = 1; i <= 3; i++) {
+                if ($('#txtkzLabel' + i).val() != '' && $('#txtkzData' + i).val() != '') {
+                    $('#kzlink' + i).css('display', 'none');
+                    $('#kzcanvas' + i).css('display', 'block');
+
+                    chartData.labels = $('#txtkzLabel' + i).val().split(',');
+                    chartData.datasets[0].data = $('#txtkzData' + i).val().split(',');
+                    try {
+                        var ctx = document.getElementById('kzcanvas' + i).getContext('2d');
+                        var myNewChart = new Chart(ctx, { type: 'line', data: chartData, options: options });
+                    } catch (e) {
+
+                    }
+                }
+            }
+            $('canvas').each(function() {
+                $(this).css('height', '220px');
+            })
+       
+           
+        }
+    </script>
+    <style type="text/css">
+        .auto-style1 {
+            height: 28px;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFFFF" style="background-color: #FFFFFF">
+    <form id="form1"  >
+        <table style="WIDTH: 640px; height: 50px; text-align: center;" align="center">
+            <tr>
+                <td><span style="font-size: 16pt; margin: 0 auto;">水泥胶砂抗折强度试验</span></td>
+            </tr>
+        </table>
+        <table id="Table1" cellpadding="1" cellspacing="0" bordercolor="#000000" style="BORDER-RIGHT: 2px solid black; BORDER-TOP: 2px solid black; BORDER-LEFT: 2px solid black; BORDER-BOTTOM: 2px solid black; BORDER-COLLAPSE: collapse; WIDTH: 640px; height: 963px; text-align: center;" align="center" border="1">
+            <tr>
+                <td style="width: 16%; height: 25px;">样品编号</td>
+                <td style="width: 34%;">
+                    <input type="text" id="typbh" style="width: 100%" value="@Model.SJBH"   readonly="readonly" />
+                </td>
+                <td style="width: 16%;">试验日期</td>
+                <td>
+                    <input type="text" id="tsyrq" style="width: 100%" value="@Model.SYRQ"  readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 25px;">强度等级</td>
+                <td>
+                    <input type="text" id="tqddj" style="width: 100%"  value="@Model.SJQD"  readonly="readonly" />
+                </td>
+                <td>龄期(d)</td>
+                <td>
+                    <input type="text" id="txlq" style="width: 100%"  value="@Model.LQ"  readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 25px;">试验尺寸</td>
+                <td>
+                    <input type="text" id="tsycc" style="width: 100%" value="@Model.SJCC"   readonly="readonly" />
+                </td>
+                <td ></td><td></td>
+            </tr>
+            <tr>
+                <td style="height: 25px;">工程部位及用途</td>
+                <td colspan="3">
+                    <input type="text" id="tgcbw" style="width: 100%" value="@Model.CJMC"   readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="padding: 0px; height: 130px;">
+                    <table id="Table4" style="WIDTH: 100%; border: none; HEIGHT: 100%; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none"
+                           bordercolor="black" cellspacing="0" cellpadding="1" align="center" border="1" frame="void">
+                        <tr>
+                            <td colspan="4" class="lastco">抗折强度</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; height: 22px;">试件编号</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td class="lastco" style="height: 22px">3</td>
+                        </tr> 
+                        <tr>
+                            <td class="auto-style1">抗折强度测值(MPa)</td>
+                            <td class="auto-style1">
+                                <input type="text" id="tkzqd1" style="width: 100%" value="@(Model.Yljs.Count > 0 ? (Model.Yljs[0] != null ? Model.Yljs[0].KYLZ: "") : "")"   readonly="readonly" />
+                            </td>
+                            <td class="auto-style1">
+                                <input type="text" id="tkzqd2" style="width: 100%" value="@(Model.Yljs.Count > 1 ? (Model.Yljs[1] != null ? Model.Yljs[1].KYLZ: "") : "")" readonly="readonly" />
+                            </td>
+                            <td class="lastco" style="height: 28px">
+                                <input type="text" id="tkzqd3" style="width: 100%" value="@(Model.Yljs.Count > 2 ? (Model.Yljs[2] != null ? Model.Yljs[2].KYLZ: "") : "")" readonly="readonly" />
+                            </td>
+                        </tr>
+                        <tr class="lastro">
+                            <td>抗折强度测定值(MPa)</td>
+                            <td colspan="3" class="lastco">
+                                <input type="text" id="tkzyxqd" style="width: 100%" value="@Model.QDDBZ"  readonly="readonly" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" style="padding: 0px; height: 660px;">
+                    <table id="Table5" style="WIDTH: 100%; border: none; HEIGHT:729px ; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none"
+                           bordercolor="black" cellspacing="0" cellpadding="1" align="center" border="1" frame="void">
+                        @for (int i = 0; i < 3; i++)
+                        {
+                            <tr>
+                                <td style="width:15%">
+                                    试<br />
+                                    件<br />
+                                    @(i+1)<br />
+                                    的<br />
+                                    数<br />
+                                    据<br />
+                                    图<br />
+                                    形
+                                </td>
+                                <td colspan="3" class="lastco">
+                                    <a id="kzlink@(i+1)" title="查看原图" target="_blank">
+                                        <img id="kzpic@(i+1)" src="@pic[i] " alt="" style="width: 90%; max-height: 210px;" />
+                                    </a>
+                                    <input id="txtkzLabel@(i+1)" style="display: none;" value="@labels[i]" />
+                                    <input id="txtkzData@(i+1)" style="display: none;" value="@txtDatas[i]" />
+                                    <canvas id="kzcanvas@(i+1)" style="width: 95%; height: 140px; display: none; margin: 0 auto;"></canvas>
+                                </td>
+                            </tr>
+                        }   
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+</html>
+

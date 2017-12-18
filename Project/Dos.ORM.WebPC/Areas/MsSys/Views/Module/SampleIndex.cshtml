@@ -1,0 +1,243 @@
+﻿
+@{
+    ViewBag.Title = "SampleIndex";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+
+<div id="toolBarMain" class="list-toolbar">
+
+    <div class="row">         
+
+        取样日期: <input id="F_StartDate" type="text" class="easyui-datebox" data-options="required:false,width:100,height:28,readonly:false,disabled:false,editable:false" />
+
+        至<input id="F_EndDate" type="text" class="easyui-datebox" data-options="required:false,width:100,height:28,readonly:false,disabled:false,editable:false" />
+       
+        试验类型：
+        <select id="F_SampleType" name="SampleType" class="easyui-combobox" style="width: 150px;"
+                data-options="
+                                    url:'\\MsSys\\Module\\GetSampleType',
+                                    method:'get',
+                                    valuefield:'value',
+                                    textfield:'text',
+                                    groupField:'type',
+                                    editable:false,
+                                    required:false,
+                                    panelHeight:500,
+                                    onSelect:function (rec)
+                                    {
+                                        $('#F_SampleType').combobox('setValue', rec.value);
+                                        queryData();
+                                    }
+                                    "></select>
+
+        关键字：<input id="F_FilterText" type="text" placeholder="样品编号/样品名称"
+                   style="width:180px;padding: 5px 2px;line-height: 1.3; background-color: #fff; border: 1px solid #ccc;" />
+        <a href="javascript:;" class="easyui-linkbutton" id="lbtnSearch" data-options="iconCls:'fa fa-search-plus',plain:false">查询</a>
+             
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    var gridObj, gdKeyId = 'ID'; paramsData = { LoadApi: '@ViewBag.LoadApi', TargetId: '@ViewBag.TargetId', TypeId: '', FilterText: '', StartDate: '', EndDate: '' }
+
+    $(function () {
+        SetTime();
+        initData();
+        initEvent();
+    });
+
+    function SetTime() {
+        var curr_time = new Date();
+        $('#F_StartDate').datebox('setValue', dateformatter(curr_time));
+        var next_time = DateAdd("m ", 1, curr_time);
+        $('#F_EndDate').datebox('setValue', dateformatter(next_time));
+    };
+
+    function ModuleQuery(data) {
+        //alert("查询数据" + JSON.stringify(data));
+        paramsData.LoadApi = 1;
+        paramsData.TargetId = data.TargetId;
+        queryData();
+    }
+
+
+    //查询数据
+    function queryData() {        
+        paramsData.TypeId = $('#F_SampleType').combobox('getValue');
+        paramsData.FilterText = $('#F_FilterText').val();
+        paramsData.StartDate = $('#F_StartDate').datebox('getValue');
+        paramsData.EndDate = $('#F_EndDate').datebox('getValue');
+        QBO.plu.grid.query(gridObj, paramsData);
+    }
+
+    function initData() {
+        gridObj = $('#dg');
+       
+        paramsData.StartDate = $('#F_StartDate').datebox('getValue');
+        paramsData.EndDate = $('#F_EndDate').datebox('getValue');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            //method:'GET',
+            pageSize: 30,
+            singleSelect: true,
+            url: '/MsSys/Module/GetSample',
+            colFro: [
+                { field: 'SampleName', title: '样品名称', width: 200 },
+                {
+                    field: 'SampleNumber', title: '样品编号', width: 250, align: 'center',
+                    formatter: function (value, row, index) {
+                        return "<a href=\'#\' style=\'color:#31b0d5\' onclick=\'ViewWin(" + JSON.stringify(row) + ")\'>" + value + "</a>";
+                    }
+                }
+            ],
+            col: [
+                { field: 'SampleDescribe', title: '样品描述', width: 300 },
+                //{ field: '', title: '取样位置', width: 200, align: 'center' },
+                //{ field: '', title: '代表数量', width: 120, align: 'center' },
+                {
+                    field: 'EngineeringPurposes', title: '工程部位/用途', width: 400,
+                    formatter: function (value, data, index) {
+                        if (value == null || value == '')
+                            return '';
+                        else
+                            return '<span title="' + value + '"  class="easyui-tooltip">' + value + '</span>';
+                    }
+                },
+                { field: 'SamplingDate', title: '取样日期', width: 100, align: 'center' },
+                { field: 'SamplingUser', title: '取样人', width: 100, align: 'center' },
+                { field: 'Note', title: '备注', width: 300 }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $(".easyui-tooltip").tooltip({
+                    onShow: function () {
+                        $(this).tooltip('tip').css({
+                            borderColor: '#000'
+                        });
+                    }
+                });
+                $("span.eui-opt-acc").imgPreview();
+            }
+        });
+
+
+    }
+
+    function initEvent() {
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'search':
+                queryData();
+                break;
+        }
+    }
+
+    //弹窗修改跨域iframe中的内容
+    //function mainFn() {
+    //    if (typeof (exec_obj) == 'undefined') {
+    //        console.log(2);
+    //        exec_obj = document.createElement('iframe');
+    //        exec_obj.name = 'tmp_frame';
+    //        exec_obj.src = 'http://cdsr.kxlims.com/Module/hwe/ReportForm/childfn.html';
+    //        exec_obj.style.display = 'none';
+    //        parent.document.body.appendChild(exec_obj);
+    //    } else {
+    //        exec_obj.src = 'http://cdsr.kxlims.com/Module/hwe/ReportForm/childfn.html';
+    //    }
+    //}
+
+    //查看
+    var SuperData = [];
+    function ViewWin(row) {
+        SuperData = row;
+        QBO.frm.openWin('/MsSys/Module/SampleView', { title: '查看样品信息', width: 700, height: 500 });
+
+        //var test = parent.document.getElementsByClassName("layui-layer-content")[0].childNodes[0];
+        //test.addEventListener("load", function () {
+        //    mainFn();
+        //})
+        //console.log(test);
+    }
+
+</script>
+
+
+@*扩展定义*@
+<script type="text/javascript">
+
+    function dateformatter(date) {
+        var y = date.getFullYear();
+        var m = date.getMonth();
+        var d = date.getDate();
+        return y + '-' + (m < 10 ? ('0' + m) : m) + '-' + (d < 10 ? ('0' + d) : d);
+    }
+
+    function DateAdd(interval, number, date) {
+        /*
+          *   功能:实现VBScript的DateAdd功能.
+          *   参数:interval,字符串表达式，表示要添加的时间间隔.
+          *   参数:number,数值表达式，表示要添加的时间间隔的个数.
+          *   参数:date,时间对象.
+          *   返回:新的时间对象.
+          *   var   now   =   new   Date();
+          *   var   newDate   =   DateAdd( "d ",5,now);
+          *---------------   DateAdd(interval,number,date)   -----------------
+          */
+        switch (interval) {
+            case "y ": {
+                date.setFullYear(date.getFullYear() + number);
+                return date;
+                break;
+            }
+            case "q ": {
+                date.setMonth(date.getMonth() + number * 3);
+                return date;
+                break;
+            }
+            case "m ": {
+                date.setMonth(date.getMonth() + number);
+                return date;
+                break;
+            }
+            case "w ": {
+                date.setDate(date.getDate() + number * 7);
+                return date;
+                break;
+            }
+            case "d ": {
+                date.setDate(date.getDate() + number);
+                return date;
+                break;
+            }
+            case "h ": {
+                date.setHours(date.getHours() + number);
+                return date;
+                break;
+            }
+            case "m ": {
+                date.setMinutes(date.getMinutes() + number);
+                return date;
+                break;
+            }
+            case "s ": {
+                date.setSeconds(date.getSeconds() + number);
+                return date;
+                break;
+            }
+            default: {
+                date.setDate(d.getDate() + number);
+                return date;
+                break;
+            }
+        }
+    }
+
+
+</script>

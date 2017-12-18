@@ -1,0 +1,377 @@
+﻿@using System.Web.Optimization
+@using Dos.ORM.WebPC.App_Common.Mvc
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>公路建设项目质量动态管理信息平台</title>
+    <link href="~/Content/Components/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/Components/jQuery/jquery-1.12.4.min.js"></script>
+    <link href="~/Content/Components/EasyUI/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <script src="~/Content/Components/EasyUI/jquery.easyui.min.js"></script>
+    <script src="~/Content/Components/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+    <script src="~/Content/Components/Layer/layer.min.js"></script>
+    @Styles.Render("~/MsSys/CssTheme")
+    <script src="~/Content/Js/Base/base.core.js"></script>
+    <script src="~/Content/Js/Base/base.loading.js"></script>
+    <style>
+        #lbtnLogin {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .login-north {
+            padding: 5px 0;
+        }
+
+        .northIn {
+            /*width:1024px;*/
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0 30px;
+        }
+
+        .north-left {
+            float: left;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+            .north-left li {
+                list-style: none;
+                float: left;
+                padding: 0 5px;
+            }
+
+        .north-right {
+            float: right;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+            .north-right li {
+                list-style: none;
+                float: right;
+            }
+
+        .homePage {
+            width: 120px;
+            height: 24px;
+            color: white;
+            background: #f1b255;
+            border-radius: 24px;
+            margin: 12px 0 0 0;
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .center-center {
+            width: 1366px;
+            margin: 150px auto 0;
+            overflow: hidden;
+        }
+
+        .center-left {
+            float: left;
+        }
+
+        .center-right {
+            float: right;
+            /*margin: 50px 0 0 0;*/
+        }
+
+        .userIterm {
+            width: 300px;
+            margin: 20px auto 0;
+            font-size: 16px;
+            overflow: hidden;
+            line-height: 30px;
+        }
+
+            .userIterm span {
+                color: #d5d5d5;
+            }
+
+            .userIterm input {
+                border: 1px solid #d5d5d5;
+                float: right;
+                font-size: 14px;
+                width: 220px;
+                height: 30px;
+                border-radius: 4px;
+                padding-left: 10px;
+            }
+
+            .userIterm:focus input {
+                border: 1px solid #3884b5;
+            }
+
+        @@media screen and (max-width: 1366px) and (min-width: 1023px) {
+            .center-center {
+                width: 1024px;
+                margin: 0 auto;
+            }
+
+            .center-left img {
+                width: 600px;
+                margin: 100px 0 0 0;
+            }
+
+            .center-right {
+                margin: 20px 0 0 0;
+            }
+        }
+
+        .addClass:before { 
+            content:"√";
+            color:#fff;
+            position:absolute;
+            top:-8px;
+        }
+    </style>
+</head>
+<body class="easyui-layout login-body" style="background:url('../../../../Content/Css/Themes/Images/Design/Default/Com/loginBg2.png')">
+
+    <div data-options="region:'north',border:false" class="login-north">
+        <div class="northIn">
+            <ul class="north-left">
+                <li style="/*border-right:2px solid #93c1df;*/">
+                    <img src="../../../../Content/Css/Themes/Images/Design/Default/Com/northLogo1.png" alt="Alternate Text" style="height:44px;"/>
+                </li>
+                @*<li style="height:50px;line-height:50px;color:#165C9B;font-size:22px;">
+                    公路建设项目质量动态管理信息平台
+                </li>*@
+            </ul>
+            <ul class="north-right">
+                <li class="homePage">
+                    <span style="position:absolute;top:4px;left:20px;">进入官网</span>
+                    <img src="../../../../Content/Css/Themes/Images/Design/Default/Com/gotoHome.png" alt="Alternate Text" style="position:absolute;right:20px;top:6px;"/>
+                </li>
+                <li style="font-size:24px;color:#3884b5;margin:6px 10px 0 0;">
+                    
+                </li>
+            </ul>
+
+        </div>
+    </div>
+   
+    <div data-options="region:'center',border:false" class="login-center">
+        <div class="center-center">
+            <div class="center-left">
+                <img src="../../../../Content/Css/Themes/Images/Design/Default/Com/loginImg.png" alt="Alternate Text" />
+            </div>
+
+            <div class="center-right" style="width:370px;padding:0 0 8px 0;background:#ffffff;box-shadow:none;border-radius:10px;">
+                <form class="easyui-form" id="frmMain" method="post">
+                    <p style="height:45px;line-height:45px;font-size:18px;color:#3884b5;text-align:center;margin:0px 0 0 0;border-bottom:1px solid #e3e3e3;">登录窗口</p>
+                    <div class="userIterm">
+                        <span>用户名</span>      
+                        <input type="text" class="input" autocomplete="off" id="txtAcc" name="txtAcc" placeholder="请输入用户名"/>
+                    </div>  
+
+                    <div class="userIterm">
+                        <span>密 &nbsp;&nbsp;码</span>
+                        <input class="input" type="password" id="txtPwd" name="txtPwd" placeholder="请输入密码"/>
+                    </div>  
+
+                    <div class="userIterm">
+                        <span>验证码</span>
+                        <img id="valiCode" class="login-img" src="@Url.Action("ValidateCode", "Login")?valiId=@DateTime.Now.Ticks" alt="ValiCode" title="点击刷新验证码，不区分大小写" style="float:right;height:30px;"/>
+                        <input type="text" class="input" id="txtCode" name="txtCode" placeholder="验证码" style="width:130px;margin:0 18px 0 0;"/>
+                    </div> 
+
+                    <div class="userIterm" style="margin:10px auto 0;">
+                        <span style="float:right;color:#666666;font-size:12px;">记住账号</span>
+                        <label onclick="add(this)" class="addClass" style="display:inline-block;background:#3884b5;width:14px;height:14px;border-radius:4px;border:1px solid #666666;float:right;margin:7px 6px 0 0;position:relative;"></label>
+                        <input id="rmbUser" type="checkbox" name="name" checked="checked" value="" style="display:none;"/>
+                    </div>                    
+
+                    <div style="width:270px;height:40px;margin:20px auto 0;background:#3884b5;border-radius:8px;">
+                        <a href="javascript:;" id="lbtnLogin">
+                            登 录
+                        </a>
+                    </div>
+                </form>
+
+                <div>
+                    <img src="../../../../content/Images/Common/code.png" alt="Alternate Text" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-options="region:'south',border:false" class="login-south" style="height:60px;">
+        <div style="width:520px;margin:6px auto 0;">
+            @*<div class="login-footer" style="float:left;">
+                <img src="../../../../Content/Css/Themes/Images/Design/Default/Com/footLogo.png" alt="Alternate Text" />
+            </div>*@
+            <div style="float:right;">
+                <span>版权所有 &copy; 成都科信交通科技开发有限公司&nbsp;&nbsp;&nbsp;联系电话：028-85196649</span>
+                <br />
+                <span>地址：成都市高新区天府四街长虹科技大厦B座1104号&nbsp;&nbsp;&nbsp;网址：www.cdkxc.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!--下面的div勿删-->
+    <div id="topTag" hidden="hidden"></div>
+
+</body>
+</html>
+<script>
+    var thisForm;
+
+    $(function () {
+        //$('#txtAcc').textbox('setValue', 'admin');
+        //$('#txtPwd').textbox('setValue', '1');
+
+        //获取cookie并遍历出我们所需要的userName;
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var str = cookies[i].split("=");
+            //console.log(str[0]);
+            if (str[0] == "userName") {
+                //console.log(str[1]);
+                $("#txtAcc").val(str[1]);
+            }
+        }
+        //console.log(userName);
+
+        initData();
+        initEvent();
+
+        $(".input").focus(function () {
+            $(this).css({
+                borderColor: "#3884b5"
+            })
+            $(this).siblings().css({
+                color: "#3884b5"
+            })
+        })
+        $(".input").blur(function () {
+            $(this).css({
+                borderColor: "#d5d5d5"
+            })
+            $(this).siblings().css({
+                color: "#d5d5d5"
+            })
+        })
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+    }
+
+    function initEvent() {
+        QBO.com.setCenter('.login-panel', 500, 385);
+
+        $('#valiCode').on('click', function () {
+            refreshValiCode();
+        });
+
+        $('#lbtnLogin').on('click', function () {
+            chkLogin();
+        });
+
+        document.onkeydown = function (e) {
+            var ev = document.all ? window.event : e;
+            if (ev.keyCode === 13) {
+                $('#lbtnLogin').click();
+            }
+        }
+    }
+
+    //刷新验证码
+    function refreshValiCode() {
+        var codeSrc = $("#valiCode").attr("src"),
+            codeSrcShort = codeSrc.substring(0, codeSrc.indexOf('?')) + '?valiId=';
+        $("#valiCode").attr("src", codeSrcShort + Math.random());
+    }
+
+    function chkLogin() {
+
+        var Account = $('#txtAcc').val();
+        if (Account == '') {
+            QBO.dia.msg("请输入用户名！", { time: 1000, icon: "error" });
+            return;
+        }
+
+        var Password = $('#txtPwd').val();
+        if (Password == '') {
+            QBO.dia.msg("请输入密码！", { time: 1000, icon: "error" });
+            return;
+        }
+
+        var ValidateCode = $('#txtCode').val();
+        if (ValidateCode == '') {
+            QBO.dia.msg("请输入验证码！", { time: 1000, icon: "error" });
+            return;
+        }
+
+        QBO.frm.submit(thisForm, {
+            isLoad: true,
+            chkLogin: false,
+            doType: '验证',
+            loadType: 1,
+            url: '/MsSys/Login/CheckLogin',
+            onSubmit: function (param) {
+                param.Account = Account;
+                param.Password = Password;
+                param.ValidateCode = ValidateCode;
+            },
+            success: function (data) {
+                if (data.Result === 300) {
+                    saveUserInfo();
+                    location.href = '/MsSys/Main/Index';
+                }
+                else {
+                    QBO.dia.msg(data.Msg, { icon: 'error', shift: 6 });
+                }
+            }
+        });
+    }
+
+    //记住用户名和密码
+    function saveUserInfo() {
+        if ($("#rmbUser").attr("checked") == "checked") {
+            //console.log(1);
+            var userName = $("#txtAcc").val();
+            document.cookie = "userName" + "=" + userName;
+        }
+        else {
+
+        }
+    }
+
+	//进入首页
+    $(".homePage").on("click", function () {
+        window.open("http://www.cdkxc.com/");
+    })
+
+    var type = 0;
+    function add(a) {
+        if (type == 0) {
+            $("#rmbUser").attr("checked", "checked");
+            type = 1;
+        } else {
+            $("#rmbUser").removeAttr("checked");
+            type = 0;
+        }
+        $(a).toggleClass("addClass");
+        
+    }
+</script>

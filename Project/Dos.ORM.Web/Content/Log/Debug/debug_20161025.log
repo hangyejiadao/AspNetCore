@@ -1,0 +1,141 @@
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:12,903
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：18537
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 1 * FROM [SYS_Operator]  WHERE ([SYS_Operator].[Account] = @Account_2) AND ([SYS_Operator].[Pwd] = @Pwd_3) 	
+Parameters:
+@Account_2[String] = quber
+@Pwd_3[String] = C1851CFE23E736DE
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:13,032
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：18666
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   TOP 1 * FROM [SYS_Company]  WHERE [SYS_Company].[CompanyId] = @CompanyId_4 	
+Parameters:
+@CompanyId_4[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:13,045
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：18679
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	
+                SELECT * FROM dbo.SYS_Department a
+                LEFT JOIN dbo.SYS_OperatorDepartmentRelation b ON a.DepartmentId=b.DepartmentId
+                WHERE b.OperatorId='0ad06755-9fde-4ddd-9dcb-448462155a03';
+            	
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:13,057
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：18691
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	
+                SELECT * FROM dbo.SYS_Role a
+                LEFT JOIN dbo.SYS_OperatorRoleRelation b ON a.RoleId=b.RoleId
+                WHERE b.OperatorId='0ad06755-9fde-4ddd-9dcb-448462155a03';
+            	
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:13,100
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：18734
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [v_SYS_Module]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:13,113
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：18747
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [v_SYS_Button]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:13,412
+2、优先级别：DEBUG
+3、线程ID：11
+4、耗时：19046
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	INSERT INTO [SYS_LogInfo] ([OptModuleName],[DataId],[Desc],[OptResultName],[OptResultId],[OptTypeName],[OptTypeId],[OptModulePath],[Status],[Mac],[IP],[Browser],[OptSystem],[OptTime],[OptUserName],[OptUserId],[CompanyId],[LogTypeName],[LogTypeId],[LogId]) VALUES (@OptModuleName0,@DataId1,@Desc2,@OptResultName3,@OptResultId4,@OptTypeName5,@OptTypeId6,@OptModulePath7,@Status8,@Mac9,@IP10,@Browser11,@OptSystem12,@OptTime13,@OptUserName14,@OptUserId15,@CompanyId16,@LogTypeName17,@LogTypeId18,@LogId19)	
+Parameters:
+@OptModuleName0[String] = 登录系统
+@DataId1[String] = 
+@Desc2[String] = 登录成功！
+@OptResultName3[String] = 登录成功
+@OptResultId4[Int32] = 300
+@OptTypeName5[String] = 登录
+@OptTypeId6[Int32] = 2001
+@OptModulePath7[String] = /MsSys/Login/CheckLogin
+@Status8[Int32] = 1
+@Mac9[String] = 40:8D:5C:30:F1:7D
+@IP10[String] = 127.0.0.1
+@Browser11[String] = Chrome 54.0
+@OptSystem12[String] = Windows 10
+@OptTime13[DateTime] = 2016/10/25 11:03:13
+@OptUserName14[String] = 秦波
+@OptUserId15[Guid] = 0ad06755-9fde-4ddd-9dcb-448462155a03
+@CompanyId16[Guid] = 078736e6-0cc2-48dc-80f1-6330419b4af1
+@LogTypeName17[String] = 登录登出
+@LogTypeId18[Int32] = 100
+@LogId19[Guid] = 99bafe56-c0aa-4a6f-bdf1-b1568222d1a8
+
+
+
+#############################################################################
+
+1、时间：2016-10-25 11:03:16,157
+2、优先级别：DEBUG
+3、线程ID：13
+4、耗时：21791
+5、行号：140
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Module]  WHERE ([SYS_Module].[Status] = @Status_5) AND ([SYS_Module].[OperatePageType] = @OperatePageType_6) 	
+Parameters:
+@Status_5[Int32] = 1
+@OperatePageType_6[Int32] = 1
+
+

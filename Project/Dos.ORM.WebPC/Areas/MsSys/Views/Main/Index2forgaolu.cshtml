@@ -1,0 +1,634 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<head>
+    <title>试验机联网与动态监控系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="科信拌和站数据实时远程监控系统" name="description" />
+    <meta content="科信交通" name="author" />
+
+    <link href="~/Content/assets/global/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="~/content/assets/global/bootstrip-tabs/bootstrap-addtabs.css" rel="stylesheet" />
+
+    <link href="~/Content/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/admin/layout/css/themes/blue/ui.css" rel="stylesheet" />
+
+    <script src="~/Content/assets/global/jquery.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="~/Content/assets/global/metronic.js" type="text/javascript"></script>
+    <script src="~/Content/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+    @*<script src="~/Content/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>*@
+    <script src="~/Content/assets/admin/layout/scripts/loader.js"></script>
+
+    <script src="~/Content/Components/AngularJS/angular.min.js"></script>
+    <script src="~/Content/Components/Layer/layer.min.js"></script>
+    <script src="~/Content/Js/Base/base.core.js"></script>
+    <script src="~/Content/Js/Base/base.loading.js"></script>
+
+
+    <style type="text/css">
+        .tt-inner {
+            display: inline-block;
+            line-height: 12px;
+        }
+
+            .tt-inner img {
+                border: 0;
+                width: 35px;
+            }
+
+            .tt-inner .tt-title {
+                display: inline-block;
+                position: relative;
+                top: 4px;
+                left: 4px;
+            }
+
+        .page-content {
+            border-left: 1px solid #ddd;
+        }
+
+        .nav {
+            position: relative;
+            left: 50px;
+            height: 100%;
+        }
+
+        ul {
+            display: block;
+            list-style: none;
+        }
+
+        .nav li {
+            float: left;
+            width: 87px;
+            text-align: center;
+            height: 90%;
+        }
+
+        li {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav li a {
+            display: block;
+            height: 70px;
+        }
+
+            .nav li a.selected {
+                background-color: #064e68;
+                border-bottom: 2px solid #ffd162;
+            }
+
+            .nav li a:hover {
+                background-color: #064e68;
+                border-bottom: 2px solid #ffd162;
+            }
+
+        .page-nav.nav-container > ul > li a:hover {
+            background-color: #fff;
+        }
+
+        .page-nav.nav-container > ul > li img {
+            margin-top: 7px;
+            margin-left: -4px;
+        }
+
+        .nav li img {
+            margin-top: 10px;
+            width: 26px;
+        }
+
+        .north-center .nav > li > a {
+            padding: 3px 15px;
+        }
+
+        .north-center .nav > li:nth-of-type(1) > a > img {
+            margin-top: 8px;
+        }
+
+        .north-center .nav > li:nth-of-type(5) > a > img {
+            width: 19px;
+            margin-top: 7px;
+        }
+
+        .north-center .nav > li:nth-of-type(6) > a > img {
+            width: 24px;
+            margin-top: 7px;
+        }
+
+        .nav li span {
+            display: block;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .north-center .nav > li > a > span {
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .north-center .nav > li:nth-of-type(1) > a > span {
+            margin-top: 6px;
+        }
+
+        .page-header-fixed .page-container {
+            margin-top: 65px;
+        }
+
+        .page-header.navbar {
+            height: 70px;
+        }
+
+
+        .page-nav {
+            height: 40px;
+            background-color: #f2f2f2;
+        }
+
+        .nav-tabs > li {
+            text-align: center;
+        }
+
+        .page-nav .nav-tabs a {
+            height: 40px;
+            line-height: 1.8;
+        }
+
+        .page-nav.nav-container span {
+            color: #747474;
+        }
+
+        .page-nav.nav-container > ul {
+            padding-left: 0;
+            left: 0;
+            padding-top: 0;
+        }
+
+            .page-nav.nav-container > ul > li a {
+                padding: 0;
+            }
+
+            .page-nav.nav-container > ul > li img {
+                width: 26px;
+            }
+
+            .page-nav.nav-container > ul > li {
+                width: 110px;
+            }
+
+        .page-nav .nav-tabs > li.active > a {
+            width: 110px;
+        }
+    </style>
+
+    <style type="text/css">
+        /*theme*/
+
+        .page-header.navbar .page-logo {
+            width: inherit;
+            padding-left: 12px;
+            padding-right: 20px;
+        }
+
+        .logo-txt {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            padding-left: 12px;
+            position: relative;
+            top: 11px;
+        }
+
+        .page-header.navbar .top-menu .navbar-nav {
+            margin-right: 50px;
+        }
+
+            .page-header.navbar .top-menu .navbar-nav i {
+                font-size: 24px;
+                color: #fff;
+            }
+
+            .page-header.navbar .top-menu .navbar-nav li a > span {
+                margin-top: 4px;
+            }
+
+        .page-sidebar-menu .menubar-scrolling {
+            max-height: 100%;
+        }
+
+        .page-header.navbar .top-menu .navbar-nav li > a:focus {
+            background: #40bdf5;
+        }
+
+        .top-menu .nav li a {
+            padding-top: 10px;
+        }
+
+        .page-sidebar .sidebar-toggler {
+            font-size: 24px;
+            position: absolute;
+            z-index: 1;
+            top: 33vh;
+            left: 178px;
+            color: #fff;
+        }
+
+        .page-sidebar .page-sidebar-menu .sub-menu > li > a:hover {
+            color: #fff;
+        }
+
+        .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li.sidebar-toggler-wrapper .sidebar-toggler {
+            left: 3px;
+        }
+
+            .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li.sidebar-toggler-wrapper .sidebar-toggler:before {
+                content: "\e258";
+            }
+
+        body .layer-ext-moon .layui-layer-btn a {
+            height: 32px;
+        }
+
+        .page-sidebar .page-sidebar-menu .sub-menu li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > a {
+            padding: 10px 15px 10px 43px;
+        }
+
+        .page-sidebar .page-sidebar-menu .sub-menu {
+            margin-top: 0;
+            border-top: 1px solid #fff;
+        }
+
+        .page-sidebar .page-sidebar-menu > li {
+            border-top: 1px inset #fffbfb;
+        }
+
+            .page-sidebar .page-sidebar-menu > li:nth-child(1) {
+                border: 0;
+            }
+
+        @@media (min-width: 992px) {
+            .page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo {
+                width: inherit;
+                padding-left: 12px;
+                padding-right: 20px;
+            }
+
+                .page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo .logo-default {
+                    display: inline-block;
+                }
+        }
+
+        .page-sidebar {
+            width: 200px;
+        }
+
+        .page-content-wrapper .page-content {
+            margin-left: 200px;
+        }
+
+        .btn {
+            padding: 3px 12px;
+        }
+
+        .iframeClass {
+            height: calc(100vh - 138px);
+        }
+        /*@@media screen and (max-width:1024px) {
+            .iframeClass {
+                height: 66vh;
+            }
+        }
+
+        @@media screen and (min-width: 1024px) {
+            .iframeClass {
+                height: 56vh;
+            }
+        }
+
+        @@media screen and (min-width: 1100px) {
+            .iframeClass {
+                height: 77vh;
+            }
+        }
+
+        @@media screen and (min-width: 1280px) {
+            .iframeClass {
+                height: 78vh;
+            }
+        }
+
+        @@media screen and (min-width: 1366px) {
+
+            .iframeClass {
+                height: 78vh;
+            }
+        }
+
+        @@media screen and (min-width: 1440px) {
+            .iframeClass {
+                height: 85vh;
+            }
+        }
+
+        @@media screen and (min-width: 1680px) {
+            .iframeClass {
+                height: 85.5vh;
+            }
+        }*/
+    </style>
+
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo page-container-bg-solid page-footer-fixed"
+      ng-app="ngApp" ng-controller="mainCtrl" style="overflow:hidden;">
+
+    <div class="page-header navbar navbar-fixed-top" id="page-header">
+        <div class="page-header-inner">
+            <div class="page-logo">
+                <img src="~/Content/assets/admin/layout/img/jshclogo2.png" alt="logo" class="logo-default" />
+                <span class="logo-txt">
+                    {{"试验机联网与动态监控系统"}}
+                </span>
+            </div>
+
+            <div class="north-center" style="display:inline-block">
+
+            </div>
+
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+
+                    <li>
+                        <a href="javascript:;" title="全屏显示" ng-show="!isFull" ng-click="selectFullScreen('full')">
+                            <i class="fa fa-expand"></i><span>全屏显示</span>
+                        </a>
+                        <a href="javascript:;" title="退出全屏" ng-show="isFull" ng-click="selectFullScreen('unfull')">
+                            <i class="fa fa-compress"></i><span>退出全屏</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse">
+                <ul id="sys-sidebar-menu" class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <li class="sidebar-toggler-wrapper" style="background:#fff">
+                        <div class="sidebar-toggler glyphicon glyphicon-menu-left"></div>
+                    </li>
+                    <li ng-repeat="super in trees" ng-class="{true:'start active open',false:''}[$index==index_mu]">
+                        <a href="javascript:;">
+                            <i ng-class="{true:'icon-home',false:'icon-folder'}[$index==0]"></i>@*<i class="icon-home"></i><i class="icon-folder"></i>*@
+                            <span class="title">{{::super.name}}</span>
+                            <span ng-class="{true:'selected',false:'unselected'}[$index==index_mu]"></span>
+                            <span ng-class="{true:'arrow open',false:'arrow'}[$index==index_mu]"></span>
+                        </a>
+                 
+                            <ul class="sub-menu">
+                                <li ng-repeat="sub in super.children" rep-end ng-class="{'active':sub.id==selData.TargetId}" ng-click="selTreeItem(sub.id,sub.name,sub.extraData)">
+                                    <a href="javascript:;">{{::sub.name}}</a>
+                                </li>
+                            </ul>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content-wrapper">
+            <div class="theme-panel hidden-xs hidden-sm">
+                <div class="toggler-close"></div>
+            </div>
+            <div class="page-content">
+                <div id="tabs" class="page-nav nav-container">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" ng-repeat="item in modules" id="tab_tab_{{::item.id}}" ng-class="{true:'active',false:''}[$index==index_md]">
+                            <a id="tab_href_tab_{{::item.id}}" href="#tab_{{::item.id}}" aria-controls="tab_{{::item.id}}"
+                               ng-click="selectModuleItem($index,item.id,item.name)" toggled="false" role="tab" data-toggle="tab" aria-expanded="true">
+                                <span class="tt-inner" data-id="{{::item.id}}">
+                                    <img src="/Content/Css/Themes/Images/Design/Default/IconBig/{{::item.iconCls}}.png">
+                                    <span class="tt-title">{{::item.name}}</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" style="overflow:auto">
+                        <div role="tabpanel" ng-repeat="item in modules" id="tab_{{::item.id}}"
+                             ng-class="{true:'tab-pane active',false:'tab-pane'}[$index==index_md]">
+                            <iframe class="iframeClass" frameborder="no" border="0"
+                                    ng-src="{{item.src+'?TargetId='+targetId+'&amp;LoadApi='+($index==0?1:0)+'&amp;theme=blue'}}"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="page-footer" id="page-footer">
+        <div class="page-footer-inner page-footer-version">
+            成都科信交通科技开发有限公司  &copy; 2017
+        </div>
+    </div>
+
+    <div tabindex="0" class="modal fade" id="modal_Password" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-unpas">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <!--下面的div勿删-->
+    <div id="topTag" hidden="hidden"></div>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            Loader.init(); // init demo features
+
+            //Metronic.init(); // init metronic core componets
+            //Layout.init(); // init layout
+            //QuickSidebar.init(); // init quick sidebar
+            //Loader.init(); // init demo features
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+		
+        var modulePid = '@ViewBag.ModulePid';
+        var selData = { TargetId: '', TargetName: '', ModuleId: '', ModuleName: '', ExtraData: {} };
+        var idxData = { idx_tree1: 0, idx_tree2: 0, idx_mod: 0 };
+
+        var ngApp = angular.module('ngApp', []);
+		
+		ngApp.directive('repEnd', function () {
+			return {
+				link: function (scope, element, attr) {
+					//console.log(scope.$index)
+					//$last为true时，ng-repeat渲染完毕
+					if (scope.$last == true) {
+						$('.sub-menu').css({'overflow':'auto','height':document.body.clientHeight-70-43});
+					}
+				}
+			}
+		});
+		
+        ngApp.controller('mainCtrl', function ($scope, $http, $timeout) {
+			initNgData($scope, $http);
+            initNgEvent($scope, $http, $timeout);
+            initNgQuery($scope, $http, $timeout);
+        });
+
+        //初始化ng数据
+        function initNgData($scope, $http) {
+
+            $scope.isFull = false;//是否全屏
+            $scope.modulePid = modulePid;
+            $scope.selData = selData;
+            $scope.idxData = idxData;
+
+            //选择树
+            $scope.targetId = '';//防止url改变
+            $scope.index_mu = 0;
+            $scope.trees = [];
+
+            //选择模块
+            $scope.index_md = 0;
+            $scope.modules = [];
+
+            QBO.plu.ng.http({ http: $http, isLoad: false, chkLogin: true, url: '/MsSys/Main/GetLabModule', params: { ModulePid: $scope.modulePid } }, function (result) {
+
+                if (result.Result === 100) {
+                    $scope.code = result.Data.ModuleCode;
+                    $scope.trees = result.Data.Trees;
+                    $scope.modules = result.Data.Modules;
+
+                    //console.log(JSON.stringify($scope.trees));
+
+                    if ($scope.trees.length > 0) {
+                        var item = $scope.trees[0].children[0];
+                        $scope.targetId = item.id;
+                        $scope.selData.TargetId = item.id;
+                        $scope.selData.TargetName = item.name;
+                        $scope.selData.ExtraData = item.extraData;
+                    }
+
+                }
+            });
+        }
+
+        //初始化ng事件
+        function initNgEvent($scope, $http, $timeout) {
+
+
+            //选择一级树
+            $scope.selTreeSuper = function (index) {
+                $scope.index_mu = index;
+            }
+
+            //选择树
+            $scope.selTreeItem = function (id, name, extraData) {
+                $scope.selData.TargetId = id;
+                $scope.selData.TargetName = name;
+                $scope.selData.ExtraData = extraData;
+                $scope.moduleQuery();
+            };
+
+            //选择模块
+            $scope.selectModuleItem = function (index, id, name) {
+                if ($scope.index_md != index) {
+                    $scope.index_md = index;
+                    $scope.selData.ModuleId = id;
+                    $scope.selData.ModuleName = name;
+                    $scope.moduleQuery();
+                }
+            }
+
+            //查询数据
+            $scope.moduleQuery = function () {
+                var frame = $(window.document).contents().find(".iframeClass")[$scope.index_md];
+                if (frame != undefined && frame.contentWindow != undefined) {
+                    var Module_Method = frame.contentWindow.ModuleQuery;
+                    if (jQuery.isFunction(Module_Method)) {
+                        eval(Module_Method($scope.selData));
+                    }
+                }
+            };
+
+            //是否全屏
+            $scope.selectFullScreen = function (type) {
+
+                if (type === 'full') {
+                    //全屏显示
+                    $scope.isFull = true;
+                    var elem = document.documentElement;
+                    if (elem.requestFullscreen) {
+                        elem.requestFullscreen();
+                    } else if (elem.mozRequestFullScreen) {
+                        elem.mozRequestFullScreen();
+                    } else if (elem.webkitRequestFullScreen) {
+                        elem.webkitRequestFullScreen();
+                    } else if (elem.msRequestFullscreen) {
+                        elem.msRequestFullscreen();
+                    }
+                } else if (type === 'unfull') {
+                    //退出全屏
+                    $scope.isFull = false;
+                    var elem = document;
+                    if (elem.exitFullscreen) {
+                        elem.exitFullscreen();
+                    }
+                    else if (elem.mozCancelFullScreen) {
+                        elem.mozCancelFullScreen();
+                    }
+                    else if (elem.webkitCancelFullScreen) {
+                        elem.webkitCancelFullScreen();
+                    }
+                    else if (elem.msExitFullscreen) {
+                        elem.msExitFullscreen();
+                    }
+                }
+
+            };
+
+        }
+
+        //初始化ng查询
+        function initNgQuery($scope, $http, $timeout) {
+            //$timeout(function () {
+
+            //}, 2000);
+        }
+
+
+    </script>
+
+</body>
+</html>

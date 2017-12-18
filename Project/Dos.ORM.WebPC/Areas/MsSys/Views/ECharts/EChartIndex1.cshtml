@@ -1,0 +1,436 @@
+﻿
+@{
+    ViewBag.Title = "EChartIndex1";
+    Layout = "~/Views/BasePage/_LayoutMsSysEmpty.cshtml";
+}
+
+<link href="~/Content/assets/global/daterangepicker/boot/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/assets/global/daterangepicker/boot/daterangepicker.css" rel="stylesheet" />
+<link href="~/Content/Components/echars/css/style.min.css" rel="stylesheet" />
+<link href="~/Content/assets/global/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<script src="~/Content/assets/global/daterangepicker/boot/bootstrap.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/daterangepicker.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/moment.min.js"></script>
+
+<script src="~/Content/Components/echars/echarts.js"></script>
+<script src="~/Content/Components/echars/theme/walden.js"></script>
+
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+
+<style type="text/css">
+    body {
+        background-color: rgb(240, 245, 246);
+    }
+
+    .ibox-title {
+        padding: 5px 5px;
+        min-height: 40px;
+    }
+
+    .ibox-content {
+        padding: 5px 5px;
+        height: auto;
+    }
+
+    .ibox_echart {
+        min-height: 500px;
+    }
+
+
+    .ibox-body {
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        height: 99%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .btn-default {
+        color: #02a9f3;
+        background-color: #fff;
+        border: 1px solid #02a9f3;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #02a9f3;
+        border: 1px solid #02a9f3;
+    }
+    .btn-primary.focus, .btn-primary:focus {
+        color: #fff;
+        background-color: #02a9f3;
+        border: 1px solid #02a9f3;
+    }
+    .kx-search { 
+        background-color:#eee;
+        border: 1px solid #ccc;
+        color:#313131
+    }
+    .kx-search:focus { 
+        background-color:#eee;
+        border: 1px solid #ccc;
+        color:#313131
+    }
+    .form-inline .btn:hover {
+        background:#0da6ea;
+        border-color:#0da6ea;
+        color:#fff;
+    }
+</style>
+
+<div ng-app="pageApp" ng-controller="pageCtrl">
+
+    <div class="container-fluid ibox-body">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+                <div class="ibox-title form-inline " style="text-align: left;">
+
+                    <div class="input-group input-group-sm">
+                        <input type="text" ng-model="paramsData.StartEnd" id="F_StartEnd" class="form-control" placeholder="请选择时间" style="width:180px;" />
+                        <span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span>
+                    </div>
+
+                    <div class="form-group input-group-sm">
+                        <a href="javascript:;" class="btn btn-sm btn-primary kx-search" ng-click="queryEchartData()">查询</a>
+                    </div>
+
+                    <div class="form-group input-group-sm">
+                        <a href="javascript:;" style="margin-left:5px" ng-repeat="item in items"
+                           ng-class="{true:'btn btn-sm btn-primary',false:'btn btn-sm btn-default'}[item.BlendNO==paramsData.BHJBH]" ng-click="selectBhzItem(item.BlendNO)">
+                            {{::item.BlendName}}
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <div class="ibox-content">
+                    <div id="div_one" class="ibox_echart" ng-if="eChart_Data.Result">
+                    </div>
+                    <div class="ibox_echart" ng-if="!eChart_Data.Result">
+                        <p class="text-center" style="font-size: 18px; padding-top: 150px; text-align: center">无数据！</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+    var paramsData = {
+        "LoadApi": '@ViewBag.LoadApi',
+        "OrganID": "",
+        "BhzApi": "",
+        "StartEnd": "",
+        "StartDate": '',
+        "EndDate": '',
+        "BHJBH": '',
+    }
+
+    $(function () {
+        
+    });
+     
+
+    //查询数据
+    function ModuleQuery(data) {
+        var appElement = document.querySelector('[ng-controller=pageCtrl]');
+        var $scope = angular.element(appElement).scope();
+
+        var TargetId = angular.copy($scope.paramsData.OrganID);//以前标段ID
+        
+        $scope.paramsData.LoadApi = 1;
+        $scope.paramsData.OrganID = data.TargetId;
+        $scope.paramsData.BhzApi = data.ExtraData;
+        $scope.getCookieData();
+        $scope.$apply();
+
+        if (TargetId != data.TargetId) {
+            $scope.loadBhzData();// 获取拌合机并查询    
+        } else {
+            $scope.queryEchartData();//查询
+        }
+              
+    }
+
+    //选择时间查询
+    function queryDate(startDate, endDate) {
+        var appElement = document.querySelector('[ng-controller=pageCtrl]');
+        var $scope = angular.element(appElement).scope();
+        $scope.paramsData.StartEnd = startDate + ' 至 ' + endDate;
+        $scope.paramsData.StartDate = startDate;
+        $scope.paramsData.EndDate = endDate;
+        $scope.$apply()
+
+        $scope.queryEchartData();
+    }
+
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $timeout) {       
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $timeout);
+        initNgQuery($scope, $http, $timeout);     
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+      
+        $scope.paramsData = paramsData;
+        $scope.paramsData.OrganID = parent.selData.TargetId;
+        $scope.paramsData.BhzApi = parent.selData.ExtraData;
+
+        var idxData = parent.idxData;
+        if (idxData.idx_mod1 == 2 && idxData.idx_mod2 == 0) {
+            $scope.paramsData.LoadApi = 1;
+        } else {
+            $scope.paramsData.LoadApi = 0;
+        }
+
+        $scope.items = [];
+        $scope.eChart_Data = { Result: true };
+             
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $timeout) {
+        
+        //选择时间设置
+        $scope.setDateRange = function () {
+
+            var startDate = $scope.paramsData.StartDate;
+            var endDate = $scope.paramsData.EndDate;
+
+            $('#F_StartEnd').daterangepicker(
+                   {
+                       startDate: startDate,//moment().startOf('day'),
+                       endDate: endDate,//moment(),
+                       //minDate: '01/01/2012',    //最小时间  
+                       maxDate: moment(), //最大时间   
+                       //dateLimit: {
+                       //    days: 30
+                       //}, //起止时间的最大间隔  
+                       singleDatePicker: false,
+                       showDropdowns: true,
+                       showWeekNumbers: false, //是否显示第几周  
+                       timePicker: false, //是否显示小时和分钟  
+                       timePickerIncrement: 60, //时间的增量，单位为分钟  
+                       timePicker12Hour: false, //是否使用12小时制来显示时间                    
+                       ranges: {
+
+                           '今日': [moment().startOf('day'), moment()],
+                           '昨日': [moment().subtract('days', 1).startOf('day'), moment().subtract('days', 1).endOf('day')],
+                           '最近7日': [moment().subtract('days', 6), moment()],
+                           //'最近15日': [moment().subtract('days', 15), moment()],
+                           '最近30日': [moment().subtract('days', 29), moment()],
+                           '最近3月': [moment().subtract(3, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                           '本周': [moment().startOf("week"), moment().endOf("week")],
+                           //'上周': [moment().subtract(1, "week").startOf("week"), moment().subtract(1, "week").endOf("week")],
+                           '本月': [moment().startOf("month"), moment().endOf("month")],
+                           '上月': [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                           //'本季': [moment().startOf("QUARTER"), moment().endOf("QUARTER")],
+                           '本年': [moment().startOf("year"), moment().endOf("year")],
+                           //'上年': [moment().subtract(1, "year").startOf("year"), moment().subtract(1, "year").endOf("year")]
+                       },
+                       opens: 'right', //日期选择框的弹出位置  
+                       buttonClasses: ['btn btn-default'],
+                       applyClass: 'btn-small btn-primary blue',
+                       cancelClass: 'btn-small',
+                       format: 'YYYY-MM-DD', //控件中from和to 显示的日期格式  
+                       separator: ' 至 ',
+                       autoUpdateInput: false,
+                       locale: {
+                           applyLabel: '确定',
+                           cancelLabel: '取消',
+                           fromLabel: '起始时间',
+                           toLabel: '结束时间',
+                           customRangeLabel: '自定义',
+                           daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                           monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+                                   '七月', '八月', '九月', '十月', '十一月', '十二月'],
+                           firstDay: 1
+                       }
+                   }, function (start, end, label) {//格式化日期显示框   
+                       var startDate = start.format('YYYY-MM-DD');
+                       var endDate = end.format('YYYY-MM-DD');
+                       queryDate(startDate, endDate);
+                       QBO.plu.cookie.set("StartEnd", (startDate + ' 至 ' + endDate), { expires: 7, path: '/' });
+                   });
+
+
+        }
+
+        //获取拌合机
+        $scope.loadBhzData = function () {
+            $scope.items = [];
+
+            var params = { BhzApi: $scope.paramsData.BhzApi, TargetId: $scope.paramsData.OrganID };
+
+            QBO.plu.ng.http({ http: $http, isLoad: false, chkLogin: true, url: '/MsSys/BhzOper/GetBhzBhjList', params: params }, function (result) {
+         
+                $scope.items = result;           
+                var bhzNo = QBO.plu.cookie.get($scope.paramsData.OrganID);        
+                if (bhzNo != '') {
+                    $scope.paramsData.BHJBH = bhzNo;
+                }
+                else {
+                    if ($scope.items != null && $scope.items.length > 0) {
+                        $scope.paramsData.BHJBH = $scope.items[0].BlendNO;
+                    }
+                }
+
+                if ($scope.items != null && $scope.items.length > 0) {                
+                    $scope.queryEchartData();
+                } else {
+                    $scope.eChart_Data.Result = false;
+                }
+
+            });
+
+        }
+
+        //产能分析统计
+        $scope.queryEchartData = function () {
+
+            if ($scope.paramsData.LoadApi == 0) return;
+
+            QBO.plu.ng.http({ http: $http, isLoad: true, chkLogin: false, url: '/MsSys/ECharts/GetEChartsAnalyze1', params: $scope.paramsData }, function (data) {
+
+                if (data != "") {
+                    $scope.eChart_Data = JSON.parse(data);
+                    if ($scope.eChart_Data.Result) {
+                        $timeout(function () {
+                            setOption_OneData($scope);
+                        });
+                    }
+                }
+                else {
+                    $scope.eChart_Data.Result = false;
+                }
+
+            });
+
+        };
+        
+        //选择拌合机
+        $scope.selectBhzItem = function (bhzNo) {      
+            $scope.paramsData.BHJBH = bhzNo;
+            $scope.queryEchartData();
+            QBO.plu.cookie.set($scope.paramsData.OrganID, bhzNo, { expires: 7, path: '/' });
+        };
+
+        //获取拌合机cookie
+        $scope.getCookieData = function () {
+            var startEnd = QBO.plu.cookie.get("StartEnd");     
+            if (startEnd != '') {
+                var seDate = startEnd.split(' 至 ');
+                $scope.paramsData.StartEnd = startEnd;
+                $scope.paramsData.StartDate = seDate[0];;
+                $scope.paramsData.EndDate = seDate[1];
+            } else {
+                var startDate = moment().subtract('days', 6).format('YYYY-MM-DD');
+                var endDate = moment().format('YYYY-MM-DD');
+                $scope.paramsData.StartEnd = (startDate + ' 至 ' + endDate);
+                $scope.paramsData.StartDate = startDate;
+                $scope.paramsData.EndDate = endDate;
+            }
+            var bhzNo = QBO.plu.cookie.get($scope.paramsData.OrganID);
+            if (bhzNo != '') {
+                $scope.paramsData.BHJBH = bhzNo;
+            }
+        }
+
+
+    }
+
+    //初始化ng查询数据
+    function initNgQuery($scope, $http, $timeout) {
+
+        var BhzApi = $scope.paramsData.BhzApi;
+        if (BhzApi == null || BhzApi == "") {
+            return;
+        }
+
+        $scope.getCookieData();
+
+        $scope.loadBhzData();
+
+        $scope.setDateRange();
+
+    }
+ 
+
+    function setOption_OneData($scope) {
+        $scope.eChart_Data.ECharts.toolbox = {
+            show: true,
+            feature: {
+                dataView: {
+                    show: true,
+                    readOnly: true,
+                    lang: [$scope.eChart_Data.ECharts.title.text, '关闭', '刷新'],
+                    optionToContent: function (opt) {
+                        var series = opt.series;
+                        var table = '<div style="height: 100%;overflow-y:auto"><table class="table table-striped table-condensed" >'
+                                    + '<thead><tr><th>材料名称</th>'
+                                    + '<th>' + series[0].name + '</th>'
+                                    + '</tr></thead>';
+
+                        table += '<tbody>';
+                        for (var i in series[0].data) {
+                            table += '<tr>'
+                                  + '<td>' + series[0].data[i].name + '</td>'
+                                  + '<td>' + series[0].data[i].value + 'kg</td>'
+                                  + '</tr>';
+                        }
+
+                        table += '</tbody></table></div>';
+                        return table;
+
+
+                    }
+                },
+                magicType: { show: true, type: ['line', 'bar'] },
+                restore: { show: true },
+                saveAsImage: {
+                    show: true,
+                    backgroundColor: 'white'
+                }
+            }
+        };
+        var myChart_One = echarts.init(document.getElementById('div_one'), "walden");
+
+        
+        var series = $scope.eChart_Data.ECharts.series;
+        for (var key in series)
+        {
+            series[key].label.normal.formatter = function (params) {
+                return (params.value || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+            };
+        }
+
+
+        myChart_One.setOption($scope.eChart_Data.ECharts);
+
+        //console.log(JSON.stringify($scope.eChart_Data.ECharts))
+    }
+
+
+</script>
+

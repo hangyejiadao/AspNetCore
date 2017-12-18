@@ -1,0 +1,94 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "用户管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+@*<script src="~/Content/Components/jQuery/jquery-1.12.4.js"></script>*@
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        账户：@Html.ExtTextBox("txtAccount", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'ID';
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsManage/User/GetList',
+            col: [
+                { field: gdKeyId, checkbox: true, title: '选择' },
+                { field: 'Account', title: '账户', width: 200, sortable: true },
+                //{ field: '密码', title: '密码', width: 200 },
+                { field: 'Mobile', title: '手机号码', width: 200 },
+                { field: 'FullName', title: '姓名', width: 200 },
+                { field: 'Job', title: '职位', width: 200 },
+                { field: 'OrganName', title: '机构名称', width: 200 },
+                { field: 'IsEnable', title: '是否启用', width: 80, sortable: true, align: 'center', formatter: QBO.plu.grid.formatIf },
+                { field: 'CreateDate', title: '创建时间', width: 200, sortable: true }
+            ],
+            toolbar: 'toolBarMain'
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnSelect').tooltip({ content: '设置账户的项目或试验室', position: 'right' });
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+        $('#lbtnSelect').linkbutton({ onClick: function () { doHanlder('select'); } });
+        $('#lbtnSelect').children('.l-btn-left').children('.l-btn-text').html('关联');
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加用户', url: '/MsManage/User/Detail', width: 720, height: 320 });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改用户', url: '/MsManage/User/Detail', width: 720, height: 320, dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看用户', url: '/MsManage/User/Detail', width: 720, height: 320, dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                QBO.frm.doPage('delete', { url: '/MsManage/User/DeleteData', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'select':
+                selectProjLab();
+                break;
+        }
+    }
+
+    //设置项目或试验室
+    function selectProjLab() {
+        if (QBO.plu.grid.get(gridObj, gdKeyId).obj.length <= 0) {
+            QBO.dia.msg('请勾选需要设置项目或试验室的账户！', { shift: 6, icon: 'error', time: 2000 });
+            return;
+        }
+
+        QBO.frm.doPage('modify', { title: '选择项目或试验室', url: '/MsManage/User/Select', icon: 'users', width: 700, height: 450, dgObj: gridObj, keyId: gdKeyId });
+    }
+
+    //查询数据
+    function queryData(comId) {
+        QBO.plu.grid.query(gridObj, {
+            Account: $('#txtAccount').textbox('getValue')
+        });
+    }
+</script>

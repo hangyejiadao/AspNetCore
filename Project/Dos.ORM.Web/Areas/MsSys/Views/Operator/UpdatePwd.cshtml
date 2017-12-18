@@ -1,0 +1,67 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "修改密码";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSimple.cshtml";
+}
+<div data-options="region:'south',border:false" class="frm-toolbar">
+    <a href="javascript:;" class="easyui-linkbutton" id="lbtnSave" data-options="iconCls:'fa fa-save',onClick:saveData,plain:true">保存</a>
+    <a href="javascript:QBO.frm.closeWin();" class="easyui-linkbutton" id="lbtnCancel" data-options="iconCls:'fa fa-times-circle',plain:true">取消</a>
+</div>
+<div data-options="region:'center',border:false">
+    <form class="easyui-form" id="frmMain" method="post">
+        <table class="frm-tb">
+            <tbody>
+                <tr>
+                    <td>原始密码：</td>
+                    <td>
+                        <input class="easyui-passwordbox" id="txtOldPwd" data-options="required:true,lastDelay:0,checkInterval:0" style="width:300px;height:28px;padding:5px">@Html.ExtFrmFill()
+                    </td>
+                </tr>
+                <tr>
+                    <td>新密码：</td>
+                    <td>
+                        <input class="easyui-passwordbox" id="txtPwd" data-options="required:true,lastDelay:0,checkInterval:0" style=" width:300px;height:28px;padding:5px">@Html.ExtFrmFill()
+                    </td>
+                </tr>
+                <tr>
+                    <td>确认密码：</td>
+                    <td>
+                        <input class="easyui-passwordbox" id="txtPwdAgain" data-options="required:true,lastDelay:0,checkInterval:0,validType:'confirmPass[\'#txtPwd\']'" style="width:300px;height:28px;padding:5px">@Html.ExtFrmFill()
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<script>
+    var thisForm;
+
+    $(function () {
+        initData();
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+    }
+
+    function saveData() {
+        if (!thisForm.form('enableValidation').form('validate')) return;
+
+        QBO.plu.ajax({
+            url: '/MsSys/Operator/UpdateOperatorPwd',
+            data: {
+                oldPwd: $('#txtOldPwd').passwordbox('getValue'),
+                newPwd: $('#txtPwd').passwordbox('getValue')
+            }
+        }, function (data) {
+            QBO.dia.msg(data.Msg, {
+                icon: data.Result === 100 ? 'right' : 'error',
+                endCallback: function () {
+                    if (data.Result === 100) {
+                        QBO.frm.closeWin();
+                    }
+                }
+            });
+        });
+    }
+</script>

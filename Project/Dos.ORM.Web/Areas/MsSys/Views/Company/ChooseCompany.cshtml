@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "选择公司";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSimple.cshtml";
+}
+<script src="~/Content/Components/zTree/js/jquery.ztree.core.min.js"></script>
+<script src="~/Content/Components/zTree/js/jquery.ztree.excheck.min.js"></script>
+<div data-options="region:'south',border:false" class="frm-toolbar">
+    <a href="javascript:;" class="easyui-linkbutton" id="lbtnSave" data-options="iconCls:'fa fa-save',onClick:saveData,plain:true">保存</a>
+    <a href="javascript:QBO.frm.closeWin();" class="easyui-linkbutton" id="lbtnCancel" data-options="iconCls:'fa fa-times-circle',plain:true">取消</a>
+</div>
+<div data-options="region:'center',border:false">
+    <ul id="zTreePanel" class="ztree"></ul>
+</div>
+<script>
+    var thisForm, thisComId = QBO.com.getUrlVal('comId');
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+
+        QBO.plu.ajax({
+            url: '/MsSys/Company/GetChooseCompanys',
+            data: {}
+        }, function (data) {
+            QBO.plu.zt.init('zTreePanel', data, { check: true, isCheckbox: false, keyName: 'CompanyName', keyId: 'CompanyId', keyPid: 'ParentId' });
+
+            var treeObj = $.fn.zTree.getZTreeObj("zTreePanel");
+            var node = treeObj.getNodeByParam("CompanyId", thisComId, null);
+            treeObj.checkNode(node, true, true);
+        });
+    }
+
+    function initEvent() {
+
+    }
+
+    function saveData() {
+        var chooseData = QBO.plu.zt.get('zTreePanel');
+
+        if (chooseData.str.length <= 0) {
+            QBO.dia.tip('请选择所属公司！', 'error');
+            return;
+        }
+
+        QBO.frm.closeWin(function () {
+            QBO.frm.getWin('lay').$('#ParentName').textbox('setValue', chooseData.obj[0].CompanyName);
+            QBO.frm.getWin('lay').$('#ParentId').val(chooseData.obj[0].CompanyId);
+        });
+    }
+</script>

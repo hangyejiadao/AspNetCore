@@ -1,0 +1,150 @@
+﻿参考文章：
+    http://www.cnblogs.com/freespider/p/4065821.html
+    http://www.cnblogs.com/yangy608/p/3915349.html
+    MVC  http://www.cnblogs.com/libingql/archive/2012/09/11/2681007.html
+
+
+        fileUploadify: function (uploadObj, formData, settingObj) {
+            /*******************************************
+            说明：文件上传
+                    uploadObj：上传控件file的jQuery对象
+                    formData：提交到服务器参数
+                    settingObj：配置参数
+                        {uploadLimit:200,queueSizeLimit:200,auto:false,multi:false,fileSizeLimit:'100MB',fileTypeExts:'*.gif; *.jpg; *.png',method:'POST'}
+            ********************************************/
+            settingObj = QBO.com.getObj(settingObj);
+
+            uploadObj.uploadify({
+                width: QBC.uploadify.width, height: QBC.uploadify.height, fileObjName: QBC.uploadify.fileObjName, fileTypeDesc: QBC.uploadify.fileTypeDesc, progressData: QBC.uploadify.progressData, removeCompleted: QBC.uploadify.removeCompleted, removeTimeout: QBC.uploadify.removeTimeout, requeueErrors: QBC.uploadify.requeueErrors, successTimeout: QBC.uploadify.successTimeout, swf: QBC.uploadify.swf, uploader: QBC.uploadify.uploader, queueID: QBC.uploadify.queueID, buttonText: QBC.uploadify.buttonText,
+                uploadLimit: settingObj.uploadLimit == undefined ? QBC.uploadify.uploadLimit : settingObj.uploadLimit,
+                queueSizeLimit: settingObj.queueSizeLimit == undefined ? QBC.uploadify.queueSizeLimit : settingObj.queueSizeLimit,
+                auto: settingObj.auto == undefined ? QBC.uploadify.auto : settingObj.auto,
+                multi: settingObj.multi == undefined ? QBC.uploadify.multi : settingObj.multi,
+                fileSizeLimit: settingObj.fileSizeLimit == undefined ? QBC.uploadify.fileSizeLimit : settingObj.fileSizeLimit,
+                fileTypeExts: settingObj.fileTypeExts == undefined ? QBC.uploadify.fileTypeExts : settingObj.fileTypeExts,
+                method: settingObj.method == undefined ? QBC.uploadify.method : settingObj.method,
+                formData: formData,
+
+                //加上此句会重写onSelectError方法（需要重写的事件名称）
+                overrideEvents: ['onSelectError', 'onUploadSuccess', 'onFallback', 'onDialogClose'],
+                //事件
+                onQueueComplete: function (queueData) {
+                    //当队列中的所有文件全部完成上传时触发
+                    //alert("成功上传的文件数：" + queueData.uploadsSuccessful + " -上传出错的文件数："+     queueData.uploadsErrored + " -上传的文件总大小：" + queueData.uploadSize);
+                    return;
+                },
+                onUploadComplete: function (file) {
+                    //每个文件上传完成时触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus);
+                },
+                onUploadSuccess: function (file, data, response) {
+                    //每个文件上传成功后触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus + " –服务器端消息:" + data + " –是否上传成功:" + response);
+                    data = JSON.parse(data);
+                    var imgPanel = $('#upload-img-panel');
+
+                    //单个文件上传成功后触发事件
+                    if (data.state) {
+                        //设置图片是否上传状态（0：否、1：是）
+                        imgPanel.data('chk', 1);
+                        if (!QBC.uploadify.multi || (QBC.uploadify.multi && QBC.uploadify.uploadLimit == 1)) {
+                            //单个文件
+                            $('#showImgDefault').attr('src', data.info);
+                            imgPanel.data('path', data.info);
+                            //console.log(imgPanel.data('path'));
+                        } else {
+                            //多个文件
+                            var imgPath = imgPanel.data('path');
+                            imgPath += imgPath.length <= 0 ? data.info : '|' + data.info;
+                            //将默认图片隐藏
+                            $('#showImgDefault').hide();
+                            //将图片展示到图片显示区域
+                            var thisImg = '<img src="' + data.info + '" alt="Quber" />';
+                            imgPanel.append(thisImg);
+
+                            console.log('--------------------------------');
+                            console.log(imgPanel.data('path'));
+                            imgPanel.data('path', imgPath);
+                            console.log(imgPanel.data('path'));
+                        }
+                    } else {
+                        QBO.dia.tip(data.info, 'error');
+                    }
+                },
+                onUploadError: function (file, errorCode, errorMsg, errorString) {
+                    //每个文件上传出错时触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus + " –错误代码:" + errorCode + " –错误描述:" + errorMsg + " –简要错误描述:" + errorString);
+                },
+                onUploadProgress: function (file, bytesUploaded, bytesTotal, totalBytesUploaded, totalBytesTotal) {
+                    //上传进度发生变更时触发
+                    //alert("当前文件已上传：" + bytesUploaded + "当前文件大小：" + bytesTotal +  "队列已上传：" + totalBytesUploaded + "队列大小：" + totalBytesTotal);
+                },
+                onCancel: function (file) {
+                    //在文件被移出上传队列时触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus);
+                },
+                onClearQueue: function (queueItemCount) {
+                    //在调用cancel方法且传入参数*时触发→<a href="javascript:$('#uploadify').uploadify('cancel','*')">取消上传</a>
+                    //alert("取消上传文件数量" + queueItemCount);
+                    return;
+                },
+                onDestroy: function () {
+                    //当destory方法被调用时触发
+                },
+                onDisable: function () {
+                    //当disable方法禁用Uploadify上传按钮时被调用时触发
+                },
+                onEnable: function () {
+                    //当disable方法启用Uploadify上传按钮时被调用时触发
+                },
+                onSWFReady: function () {
+                    //Flash文件载入成功后触发
+                },
+                onDialogClose: function (queue) {
+                    //打开文件对话框关闭时触发
+                    //alert("选定的文件数：" + queue.filesSelected + "成功添加至队列的文件数：" + queue.filesQueued + "添加至队列发生错误的文件数：" + queue.filesErrored + "现有队列被替换文件数：" + queue.filesReplaced + "现有队列被取消文件数：" + queue.filesCancelled + "队列中的总文件数量：" + queue.Length);
+                },
+                onUploadStart: function (file) {
+                    //每个文件上传开始时触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus);
+                },
+                onDialogOpen: function () {
+                    //选择文件对话框打开时触发
+                    //alert("打开");
+                },
+                onFallback: function () {
+                    //没有兼容的flash时触发
+                    QBO.dia.tip('您未安装Flash控件，无法上传图片！请安装Flash控件后再试。', 'error');
+                    return;
+                },
+                onInit: function (instance) {
+                    //每次初始化一个队列时触发
+                    //alert(instance.settings.queueID);
+                },
+                onSelect: function (file) {
+                    //选择文件后触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus);
+                },
+                onSelectError: function (file, errorCode, errorMsg) {
+                    //选择文件后出错时触发
+                    //alert("id:" + file.id + " -索引:" + file.index + " -文件名称:" + file.name + " -文件大小:" + file.size + " -文件类型:" + file.type + " -创建日期:" + file.creationdate + " -修改日期:" + file.modificationdate + " -文件状态:" + file.filestatus + " –错误代码:" + errorCode + " –错误描述:" + errorMsg);
+                    switch (errorCode) {
+                        case -100:
+                            if (uploadObj.uploadify('settings', 'queueSizeLimit') > errorMsg)
+                                QBO.dia.tip('上传的文件数量已经超出系统限制的' + errorMsg + '个文件！', 'error');
+                            else
+                                QBO.dia.tip('上传的文件队列数量已经超出系统限制的' + uploadObj.uploadify('settings', 'queueSizeLimit') + '个文件！', 'error');
+                            break;
+                        case -110:
+                            QBO.dia.tip('文件 [' + file.name + '] 大小超出系统限制的' + uploadObj.uploadify('settings', 'fileSizeLimit') + '大小！', 'error');
+                            break;
+                        case -120:
+                            QBO.dia.tip('文件 [' + file.name + '] 大小异常！', 'error');
+                            break;
+                        case -130:
+                            QBO.dia.tip('文件 [' + file.name + '] 格式不正确！', 'error');
+                            break;
+                    }
+                }
+            });
+        }

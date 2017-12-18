@@ -1,0 +1,73 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@model Dos.ORM.Model.Business.BUS_BannerType
+@{
+    ViewBag.Title = "橫幅类型管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSingle.cshtml";
+}
+<form class="easyui-form" id="frmMain" method="post">
+    <table class="frm-tb">
+        <tbody>
+            <tr>
+                <td>类型名称：</td>
+                <td>
+                    @Html.ExtTextBoxFor(m => m.BannerTypeName, new { required = true, width = 300, validType = "maxLength[100]" })
+                </td>
+            </tr>
+            @{
+                if (ViewBag.IsSuperAdmin)
+                {
+                    <tr>
+                        <td>所属公司：</td>
+                        <td>
+                            @Html.ExtComboTreeFor(m => m.CompanyId, new { required = true, width = 300, url = "/MsSys/Company/GetChooseCompanys", queryParams = "{type:2}" })
+                        </td>
+                    </tr>
+                }
+            }
+            <tr>
+                <td>排序号：</td>
+                <td>
+                    @Html.ExtNumberSpinnerFor(m => m.SortNo, new { width = 300 })
+                </td>
+            </tr>
+            <tr>
+                <td>是否启用：</td>
+                <td>
+                    @Html.ExtRadioBoxList(m => m.IsEnable, (SelectList)ViewBag.StatusType, new { id = "thisIsEnable" })
+                </td>
+            </tr>
+            <tr>
+                <td>类型描述：</td>
+                <td>@Html.ExtTextBoxFor(m => m.Desc, new { validType = "maxLength[200]", width = 300, multiline = true })</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+<script>
+    var thisForm;
+
+    $(function () {
+        initData();
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+    }
+
+    function saveData() {
+        QBO.frm.submit(thisForm, {
+            url: '/MsBus/BannerType/SaveData',
+            onSubmit: function (param) {
+                param.IsEnable = $('#thisIsEnable').checkbox('getValue').IsEnable;
+            },
+            success: function (data) {
+                QBO.dia.msg(data.Msg, {
+                    icon: data.Result === 100 ? 'right' : 'error',
+                    endCallback: function () {
+                        if (data.Result === 100) { QBO.frm.closeWin(function () { QBO.frm.getWin().reloadGridData(); }); }
+                    }
+                });
+            }
+        });
+    }
+</script>

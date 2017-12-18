@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<servers>
+  <server id="FAA19C40-381B-4D9E-8943-65A5C1962B80" name="KX-SERVER(SqlServer)[all]" database="all" dbtype="SqlServer9">
+    <connectionstring><![CDATA[server=cdkxc\sql2008;database=HPES2016;uid=quber;pwd=quber;]]></connectionstring>
+  </server>
+  <!--<server id="82fab2f8-efd5-4b3c-bea0-376630214c92" name="127.0.0.1(MySql)[all]" database="all" dbtype="MySql">
+    <connectionstring><![CDATA[server=127.0.0.1;user id=root; password=root; Port=3306;database=; pooling=false]]></connectionstring>
+  </server>-->
+</servers>

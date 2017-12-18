@@ -1,0 +1,224 @@
+﻿@{
+    ViewBag.Title = "BhzIndex5_3";
+    Layout = "~/Views/BasePage/_LayoutMsSysEmpty.cshtml";
+}
+
+<link href="~/Content/Components/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+
+<style type="text/css">
+    body {
+        background-color: #fff;
+        font-size: 12px;
+    }
+
+    .ibox-title {
+        position: absolute;
+        height: 10px;
+        padding: 10px 10px;
+    }
+
+    .ibox-body {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 98%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 5px 5px;
+        margin: 0px 0px;
+        background-color: rgb(240, 245, 246);
+        display: inline;
+    }
+
+
+    .ibox-bottom {
+        position: absolute;
+        height: 30px;
+        bottom: 50px;
+        padding: 5px 5px;
+        border-bottom: 0px solid transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        text-align: left;
+    }
+
+
+    .datagrid-cell-c1-DateBirth {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+</style>
+
+
+
+<div ng-app="pageApp" ng-controller="pageCtrl">
+    <div class="ibox-title">
+
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid ibox-body">
+        <div class="row" ng-repeat="list in items">
+            <div ng-repeat="item in list"
+                 class="col-sm-2 col-xs-2 col-md-2 col-lg-2" style="text-align:center">
+
+                <div style="margin:5px 5px;padding:5px 5px;background-color:#fff;">
+                    <img ng-src="/Content/Css/Themes/Images/Design/Default/IconBig/{{(item.LastDay!=null && item.UnUpDay!=null && item.LastDay<=item.UnUpDay)?'main_nav_error1':'main_nav_error2'}}.png" s style="height:100px;width:100px">
+                    <br><br>
+                    <p style="font-weight:bold">{{::item.BlendName+'('+item.BlendNO+')'}}</p>
+                    <p><span class="c-label">最近上传日期:</span>{{::item.SCTIME}}</p> 
+                    <p><span class="c-label">未传天数:</span>{{::item.LastDay}}&nbsp;&nbsp;<span class="c-label">设置天数:</span>{{::item.UnUpDay}}</p>               
+
+                    <p><span class="c-label">处理人员:</span>{{::item.AdminName}}</p>
+                    <p><span class="c-label">手机号:</span>{{::item.AdminPhone}}</p>    
+                    <p><span class="c-label">短信提醒:</span>{{::(item.IsEnable?'是':'否')}}</p>    
+                                  
+                      
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+    
+    var paramsData = {
+        LoadApi: '@ViewBag.LoadApi',
+        TargetId: '',
+        BhzApi: "",
+    }
+
+    $(function () {
+
+    });
+
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $timeout) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $timeout);
+        initNgQuery($scope, $http, $timeout);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+        $scope.paramsData = paramsData;
+        $scope.paramsData.TargetId = parent.selData.TargetId;
+        $scope.paramsData.BhzApi = parent.selData.ExtraData;
+
+        var idxData = parent.idxData;
+        if (idxData.idx_mod1 == 4 && idxData.idx_mod2 == 2) {
+            $scope.paramsData.LoadApi = 1;
+        } else {
+            $scope.paramsData.LoadApi = 0;
+        }
+
+        $scope.model = [];
+        $scope.supers = [];
+        $scope.items = [];    
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $timeout) {
+
+        $scope.queryData = function () {
+
+            QBO.plu.ng.http({ http: $http, method: 'GET', isLoad: true, chkLogin: true, url: '/MsSys/BhzOper/GetBhzTipData', params: $scope.paramsData }, function (data) {
+
+                //console.log(JSON.stringify(data));
+
+                $scope.model = data;
+
+                if ($scope.model.length > 0) {
+                    $scope.supers = [];
+                    $scope.items = [];
+                    $scope.initItems();
+                } else {
+                    $scope.supers = [];
+                    $scope.items = [];
+                }
+
+                //console.log(JSON.stringify($scope.supers));
+                //console.log(JSON.stringify($scope.items));
+
+            });
+        };
+
+        $scope.initItems = function () {
+
+            var model = angular.copy($scope.model);
+
+            var list = [];
+            var index = 6;
+
+            for (var key in model) {
+
+                var item = model[key];
+
+                if (item.ParentID == null) {
+                    $scope.supers.push(item);
+                } else {
+                    index--;
+                    list.push(item);
+                    if (index == 0) {
+                        $scope.items.push(list);
+                        index = 6;
+                        list = [];
+                    }
+                }
+            }
+
+            if (index != 6) {
+                $scope.items.push(list);
+            }
+
+
+        }
+
+    }
+
+    //初始化ng查询数据
+    function initNgQuery($scope, $http, $timeout) {
+        var BhzApi = $scope.paramsData.BhzApi;
+        if (BhzApi == null || BhzApi == "") {
+            return;
+        }
+        if ($scope.paramsData.LoadApi == 1) {
+            $scope.queryData();
+        }
+
+    }
+
+    function ModuleQuery(data) {
+        //alert("查询数据" + JSON.stringify(data));
+        var appElement = document.querySelector('[ng-controller=pageCtrl]');
+        var $scope = angular.element(appElement).scope();
+        $scope.paramsData.LoadApi = 1;
+        $scope.paramsData.TargetId = data.TargetId;
+        $scope.paramsData.BhzApi = data.ExtraData;
+        $scope.$apply();
+        $scope.queryData();
+    }
+
+
+</script>

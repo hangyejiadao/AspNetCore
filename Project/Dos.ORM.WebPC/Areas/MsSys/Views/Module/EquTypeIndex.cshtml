@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "EquTypeIndex";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+
+
+<div id="toolBarMain" class="list-toolbar">
+
+    <div class="row">
+        <span class="titleFont">
+            <a href="javascript:;" onclick="viewChg()">
+                <i class="fa fa-th" title="切换为图标模式"></i>
+            </a>
+        </span>
+        功能室：<input id="F_FilterText" name="FilterText" class="easyui-textbox" data-options="type:'text',required:false,isShowFill:true,width:120,height:28,tipPosition:'right',readonly:false,buttonAlign:'right',multiline:false,iconAlign:'right',disabled:false" />
+        <a href="javascript:;" class="easyui-linkbutton" id="lbtnSearch" data-options="iconCls:'fa fa-search-plus',plain:false">查询</a>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    var gridObj, gdKeyId = 'ID'; paramsData = { LoadApi: '@ViewBag.LoadApi', TargetId: '@ViewBag.TargetId', TypeId: '', FilterText: '' }
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+
+    function ModuleQuery(data) {
+        //alert("查询数据" + JSON.stringify(data));
+        paramsData.LoadApi = 1;
+        paramsData.TargetId = data.TargetId;
+        queryData();
+    }
+
+
+    //查询数据
+    function queryData() {
+        var url = '/MsSys/Module/GetEquType';      
+        paramsData.FilterText = $('#F_FilterText').textbox('getValue');
+        QBO.plu.grid.queryUrl(gridObj, paramsData, url);
+    }
+
+    function initData() {
+        gridObj = $('#dg');
+       
+        paramsData.FilterText = $('#F_FilterText').textbox('getValue');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            //method:'GET',
+            pageSize: 30,
+            singleSelect: true,
+            url: '/MsSys/Module/GetEquType',
+            colFro: [                
+                { field: 'EquipmentTypeName', title: '功能室', width: 300 }
+            ],
+            col: [
+                { field: 'EquipmentTypeSort', title: '排序', width: 150, align: 'center' }
+
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $("span.eui-opt-acc").imgPreview();
+            }
+        });
+
+
+    }
+
+    function initEvent() {
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'search':
+                queryData();
+                break;
+        }
+    }
+
+
+    function viewChg() {
+        location.href = 'EquTypeIndex1?TargetId=' + paramsData.TargetId + '&LoadApi=1';
+    }
+</script>
+

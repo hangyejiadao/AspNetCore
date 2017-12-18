@@ -1,0 +1,416 @@
+﻿@{
+    ViewBag.Title = "BhzIndex2_1";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<link href="~/Content/assets/global/daterangepicker/boot/bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/assets/global/daterangepicker/boot/font-awesome.min.css" rel="stylesheet" />*@
+<link href="~/Content/assets/global/daterangepicker/boot/daterangepicker.css" rel="stylesheet" />
+<link href="~/Content/assets/global/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<script src="~/Content/assets/global/daterangepicker/boot/bootstrap.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/daterangepicker.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/moment.min.js"></script>
+
+<style>
+    .panel-body {
+        padding: 2px 0px;
+    }
+
+    .btn-default {
+        color: #02a9f3;
+        background-color: #fff;
+        border: 1px solid #02a9f3;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #02a9f3;
+        border: 1px solid #02a9f3;
+    }
+    .btn-primary.focus, .btn-primary:focus {
+        color: #fff;
+        background-color: #02a9f3;
+        border: 1px solid #02a9f3;
+    }
+    .kx-search { 
+        background-color:#eee;
+        border: 1px solid #ccc;
+        color:#313131
+    }
+    .kx-search:focus { 
+        background-color:#eee;
+        border: 1px solid #ccc;
+        color:#313131
+    }
+    .form-inline .btn:hover {
+        background:#0da6ea;
+        border-color:#0da6ea;
+        color:#fff;
+    }
+   
+</style>
+<div id="toolBarMain" class="list-toolbar">
+
+    <div class="row">
+
+        <div class="form-inline" style="padding-left:20px;">
+
+            <div class="input-group input-group-sm">
+                <input type="text" id="F_StartEnd" class="form-control" placeholder="请选择时间" style="width:180px;" />
+                <span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span>
+            </div>
+
+            <div class="form-group input-group-sm">
+                <label class="sr-only" for="F_QDDJ"></label>
+                <select id="F_QDDJ" class="form-control">
+                    <option selected="selected" value="">强度等级</option>
+                    <option value="C10">C10</option>
+                    <option value="C15">C15</option>
+                    <option value="C20">C20</option>
+                    <option value="C25">C25</option>
+                    <option value="C30">C30</option>
+                    <option value="C35">C35</option>
+                    <option value="C40">C40</option>
+                    <option value="C45">C45</option>
+                    <option value="C50">C50</option>
+                    <option value="C55">C55</option>
+                    <option value="C60">C60</option>
+                    <option value="C65">C65</option>
+                    <option value="C70">C70</option>
+                    <option value="C75">C75</option>
+                    <option value="C80">C80</option>
+                    <option value="C85">C85</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+
+            <div class="form-group input-group-sm">
+                <label class="sr-only" for="F_FilterText"></label>
+                <input type="text" id="F_FilterText" class="form-control" placeholder="请输入单号/名称/部位">
+            </div>
+
+            <div class="form-group input-group-sm">
+                <a href="javascript:;" class="btn btn-sm btn-primary kx-search" onclick="queryData()">查询</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    var gridObj, gdKeyId = 'ID', selRowData = {};
+
+    var tabCol = {}, hideCols = [], initHideCols = ["XNZB"];
+
+    var paramsData = {
+        "LoadApi": '@ViewBag.LoadApi',
+        "OrganID": "",
+        "BhzApi": "",
+        "StartEnd": "",
+        "StartDate": "",
+        "EndDate": "",
+        "QDDJ": "",
+        "FilterText": ""
+    }
+
+    $(function () {
+        paramsData.OrganID = parent.selData.TargetId;
+        paramsData.BhzApi = parent.selData.ExtraData;      
+
+        if (paramsData.BhzApi == null || paramsData.BhzApi == "") {
+            return;
+        }
+
+        var idxData = parent.idxData;
+        if (idxData.idx_mod1 == 1 && idxData.idx_mod2 == 0) {
+            paramsData.LoadApi = 1;
+        } else {
+            paramsData.LoadApi = 0;
+        }
+
+        getCookieData();
+        loadTabColSet();
+        initData();
+        setDateRange();
+    });
+    
+    //选择时间设置
+    function setDateRange() {
+
+        var startDate = paramsData.StartDate;
+        var endDate = paramsData.EndDate;
+
+        $('#F_StartEnd').daterangepicker(
+               {
+                   startDate: startDate,//moment().startOf('day'),
+                   endDate: endDate,//moment(),
+                   //minDate: '01/01/2012',    //最小时间  
+                   maxDate: moment(), //最大时间   
+                   //dateLimit: {
+                   //    days: 30
+                   //}, //起止时间的最大间隔  
+                   singleDatePicker: false,
+                   showDropdowns: true,
+                   showWeekNumbers: false, //是否显示第几周  
+                   timePicker: false, //是否显示小时和分钟  
+                   timePickerIncrement: 60, //时间的增量，单位为分钟  
+                   timePicker12Hour: false, //是否使用12小时制来显示时间                    
+                   ranges: {
+
+                       '今日': [moment().startOf('day'), moment()],
+                       '昨日': [moment().subtract('days', 1).startOf('day'), moment().subtract('days', 1).endOf('day')],
+                       '最近7日': [moment().subtract('days', 6), moment()],
+                       //'最近15日': [moment().subtract('days', 15), moment()],
+                       '最近30日': [moment().subtract('days', 29), moment()],
+                       '最近3月': [moment().subtract(3, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                       '本周': [moment().startOf("week"), moment().endOf("week")],
+                       //'上周': [moment().subtract(1, "week").startOf("week"), moment().subtract(1, "week").endOf("week")],
+                       '本月': [moment().startOf("month"), moment().endOf("month")],
+                       '上月': [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                       //'本季': [moment().startOf("QUARTER"), moment().endOf("QUARTER")],
+                       '本年': [moment().startOf("year"), moment().endOf("year")],
+                       //'上年': [moment().subtract(1, "year").startOf("year"), moment().subtract(1, "year").endOf("year")]
+                   },
+                   opens: 'right', //日期选择框的弹出位置  
+                   buttonClasses: ['btn btn-default'],
+                   applyClass: 'btn-small btn-primary blue',
+                   cancelClass: 'btn-small',
+                   format: 'YYYY-MM-DD', //控件中from和to 显示的日期格式  
+                   separator: ' 至 ',
+                   autoUpdateInput: false,
+                   locale: {
+                       applyLabel: '确定',
+                       cancelLabel: '取消',
+                       fromLabel: '起始时间',
+                       toLabel: '结束时间',
+                       customRangeLabel: '自定义',
+                       daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                       monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+                               '七月', '八月', '九月', '十月', '十一月', '十二月'],
+                       firstDay: 1
+                   }
+               }, function (start, end, label) {//格式化日期显示框                               
+                   var startDate = start.format('YYYY-MM-DD');
+                   var endDate = end.format('YYYY-MM-DD');
+                   queryDate(startDate, endDate);
+                   QBO.plu.cookie.set("StartEnd", (startDate + ' 至 ' + endDate), { expires: 7, path: '/' });
+               });
+
+
+    }
+    
+    //获取拌合机cookie
+    function getCookieData()
+    {
+        var startEnd = QBO.plu.cookie.get("StartEnd");
+        if (startEnd != '') {
+            var seDate = startEnd.split(' 至 ');
+            paramsData.StartEnd = startEnd;
+            paramsData.StartDate = seDate[0];;
+            paramsData.EndDate = seDate[1];
+        } else {
+            var startDate = moment().subtract('days', 6).format('YYYY-MM-DD');
+            var endDate = moment().format('YYYY-MM-DD');
+            startEnd = (startDate + ' 至 ' + endDate);
+            paramsData.StartEnd = startEnd;
+            paramsData.StartDate = startDate;
+            paramsData.EndDate = endDate;
+        }
+
+        $('#F_StartEnd').val(startEnd);
+    }
+
+    //查询数据
+    function ModuleQuery(data) {   
+        paramsData.LoadApi = 1;
+        paramsData.OrganID = data.TargetId;
+        paramsData.BhzApi = data.ExtraData;
+        getCookieData();
+        queryData();
+    }
+
+    //查询数据
+    function queryData() {
+
+        var StartEnd = $('#F_StartEnd').val();
+        var seDate = StartEnd.split(' 至 ');
+        paramsData.StartDate = seDate[0];
+        paramsData.EndDate = seDate[1];
+
+        paramsData.QDDJ = $('#F_QDDJ').val();
+        paramsData.FilterText = $('#F_FilterText').val();
+    
+        QBO.plu.grid.query(gridObj, paramsData);
+
+    }
+
+    //选择时间查询
+    function queryDate(startDate, endDate) {
+      
+        paramsData.StartEnd = startDate + ' 至 ' + endDate;
+        paramsData.StartDate = startDate;
+        paramsData.EndDate = endDate;
+      
+        QBO.plu.grid.query(gridObj, paramsData);
+    }
+         
+    //显示列
+    function onHeaderColumnsMenu(e) {
+        var obj = $('.datagrid-header-rownumber_icon');
+        var X = obj.position().top;
+        var Y = obj.position().left;
+
+        if (!QBC.easyUi.grid.cmenu) {
+            QBO.plu.grid.createColumnMenu(gridObj, onHideCallBack);
+        }
+        QBC.easyUi.grid.cmenu.menu('show', {
+            left: X,
+            top: Y + 66
+        });
+    }
+
+    //加载列设置
+    function loadTabColSet() {
+
+        var params = { BhzApi: paramsData.BhzApi, TableCode: 'BhzIndex2_1' };
+
+        QBO.plu.ajax({
+            chkLogin: false,
+            async: false,
+            type: 'GET',
+            url: 'GetTabColSet',
+            data: params
+        }, function (result) {
+            tabCol = result;
+            if (tabCol.ColumnCode == null) {
+                hideCols = initHideCols;
+            }
+            else {
+                hideCols = JSON.parse(tabCol.ColumnCode);
+            }
+        });
+    }
+
+    //点击保存隐藏列
+    function onHideCallBack(item) {
+        var field = item.name;
+        if (hideCols.indexOf(field) == -1) {
+            //不存在 则添加
+            hideCols.push(field);
+        } else {
+            //存在 删除
+            hideCols.splice(hideCols.indexOf(field), 1);
+        }
+
+        //保存列设置
+        tabCol.ColumnCode = JSON.stringify(hideCols);
+        var params = { BhzApi: paramsData.BhzApi, TabCol: JSON.stringify(tabCol) };
+        QBO.plu.ajax({
+            chkLogin: false,
+            type: 'POST',
+            data: params,
+            url: 'SaveTabColSet'
+        }, function (result) {
+
+        });
+    }
+
+    //初始化列表
+    function initData() {
+        gridObj = $('#dg');
+        
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            queryParams: paramsData,
+            //method:'GET',
+            pageSize: 30,
+            singleSelect: true,
+            nowrap: false,
+            url: '/MsSys/BhzOper/GetBhzZbData',
+            col: [
+                {
+                    field: 'SCRWBH', title: '生产任务单号', width: 180,
+                    formatter: function (value, row, index) {
+                        return "<a href=\'#\' style=\'color:#31b0d5\' onclick=\'ViewWin(" + JSON.stringify(row) + ")\'>" + value + "</a>";
+                    }
+                },
+                { field: 'GCMC', title: '工程名称', width: 180},       
+                {
+                    field: 'GCBW', title: '工程部位', width: 200,
+                    formatter: function (value, data, index) {
+                        if (value == null || value == '')
+                            return '';
+                        else
+                            return '<span title="' + value + '"  class="easyui-tooltip">' + value + '</span>';
+                    }
+                },
+                { field: 'QDDJ_BAK', title: '强度等级', width: 80, },
+                { field: 'XNZB', title: '性能指标', width: 80 },
+                { field: 'SCSJ', title: '生产时间', width: 130 },
+                { field: 'BHZBH', title: '拌和站编号', width: 180 },
+                { field: 'BHJBH', title: '拌和机编号', width: 180 },
+                {
+                    field: 'BHJMC', title: '拌和机名称', width: 200,
+                    formatter: function (value, data, index) {
+                        if (value == null || value == '')
+                            return '';
+                        else
+                            return '<span title="' + value + '"  class="easyui-tooltip">' + value + '</span>';
+                    }
+                },               
+                { field: 'SJZ_FL', title: '实际方量', width: 80 }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $(".easyui-tooltip").tooltip({
+                    onShow: function () {
+                        $(this).tooltip('tip').css({
+                            borderColor: '#000'
+                        });
+                    }
+                });
+                $("span.eui-opt-acc").imgPreview();
+            },
+            onBeforeLoad: function (param) {
+                if (hideCols != undefined && hideCols != null) {
+                    for (var key in hideCols) {
+                        var field = hideCols[key];
+                        if (hideCols.indexOf(field) == -1) {
+                            gridObj.datagrid('showColumn', field);//不存在则显示 
+                        }
+                        else {
+                            gridObj.datagrid('hideColumn', field);//存在则隐藏 
+                        }
+                    }
+                }
+            },
+            onClickRow: function (index, row) {
+                //selRowData = row;
+                //ViewWin(row.ID);
+            }
+        });
+    }
+    
+    //查看
+    function ViewWin(row) {
+        selRowData = row;
+        var url = "/MsSys/BhzOper/BhzView?KeyId=" + row.ID + "&BhzApi=" + paramsData.BhzApi;
+        QBO.frm.openWin(url, { title: '查看详细', isFull: true });
+    }
+
+    function formatOper(value, row, index) {
+
+        var name = "<i class=\'fa fa-file-text-o\' title=\'查看\' style=\'color: rgb(80, 185, 255);\'></i>"
+
+        var R_Value = "<span>" + name + "</span>";
+
+        return R_Value;
+
+    }
+
+
+</script>

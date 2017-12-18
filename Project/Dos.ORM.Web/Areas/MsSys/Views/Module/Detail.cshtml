@@ -1,0 +1,174 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@model Dos.ORM.Model.System.SYS_Module
+@{
+    ViewBag.Title = "模块管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSimple.cshtml";
+}
+<style>
+    .module-type { padding: 5px 0 5px 10px; border-bottom: 1px dashed #c2c2c2; }
+</style>
+<script src="~/Content/Components/zTree/js/jquery.ztree.core.min.js"></script>
+<script src="~/Content/Components/zTree/js/jquery.ztree.excheck.min.js"></script>
+<div data-options="region:'west',border:false,split:true" style="width: 250px;">
+    <div class="module-type">
+        模块类型：
+        @Html.ExtDropDown("ModuleType", (SelectList)ViewBag.ModuleTypes, new { width = 150, onChange = "moduleTypeChg" })
+    </div>
+    <ul id="zTreePanel" class="ztree"></ul>
+</div>
+<div data-options="region:'south',border:false" class="frm-toolbar">
+    @Html.ExtAuthBtn()
+</div>
+<div data-options="region:'center',border:false">
+    <form class="easyui-form" id="frmMain" method="post">
+        <table class="frm-tb">
+            <tbody>
+                <tr>
+                    <td>模块名称：</td>
+                    <td colspan="3">
+                        @Html.ExtTextBoxFor(m => m.ModuleName, new { required = true, validType = "maxLength[100]", width = 160 })
+                    </td>
+                </tr>
+                <tr>
+                    <td>模块类型：</td>
+                    <td>
+                        @Html.ExtDropDownFor(m => m.ModuleType, (SelectList)ViewBag.ModuleTypes, new { required = true, width = 160 })
+                    </td>
+                    <td>模块序号：</td>
+                    <td>
+                        @Html.ExtNumberSpinnerFor(m => m.SortNo, new { width = 160 })
+                    </td>
+                </tr>
+                <tr>
+                    <td>是否为操作页面：</td>
+                    <td>
+                        @Html.ExtRadioBoxList(m => m.IsOperatePage, (SelectList)ViewBag.StatusType, new { id = "thisIsOperatePage" })
+                    </td>
+                    <td>操作页面类型：</td>
+                    <td>
+                        @Html.ExtDropDownFor(m => m.OperatePageType, (SelectList)ViewBag.OperatePageTypes, new { required = true, width = 160 })
+                    </td>
+                </tr>
+                <tr>
+                    <td>模块路径：</td>
+                    <td>
+                        @Html.ExtTextBoxFor(m => m.ModulePath, new { validType = "maxLength[200]", width = 160 })
+                    </td>
+                    <td>图标名称：</td>
+                    <td>
+                        @Html.ExtHiddenFor(m => m.IconPath)
+                        @Html.ExtTextBoxFor(m => m.IconName, new { validType = "maxLength[50]", width = 160, @readonly = true, buttonIcon = Model.IconName })
+                        <a href="javascript:;" class="easyui-linkbutton" id="lbtnChooseIcon" data-options="iconCls:'fa fa-search-plus',plain:true">选择</a>
+                        <a href="javascript:;" class="easyui-linkbutton" id="lbtnClearIcon" data-options="iconCls:'fa fa-times',plain:true">清除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>是否展开：</td>
+                    <td>
+                        @Html.ExtRadioBoxList(m => m.IsExpand, (SelectList)ViewBag.StatusType, new { id = "thisIsExpand" })
+                    </td>
+                    <td>是否启用：</td>
+                    <td>
+                        @Html.ExtRadioBoxList(m => m.IsEnable, (SelectList)ViewBag.StatusType, new { id = "thisIsEnable" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>模块描述：</td>
+                    <td colspan="3">@Html.ExtTextBoxFor(m => m.Desc, new { validType = "maxLength[200]", width = 472, multiline = true })</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<div data-options="region:'east',border:false,split:true" style="width: 200px;">
+    <ul id="zTreePanelBtn" class="ztree"></ul>
+</div>
+<script>
+    var thisForm;
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+
+        getModules(0);
+        QBO.plu.ajax({
+            url: '/MsSys/Module/GetButton'
+        }, function (data) {
+            QBO.plu.zt.init('zTreePanelBtn', data, { check: true });
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnChooseIcon').on('click', function () {
+            QBO.frm.openWin('/MsSys/Common/ChooseIconFontAwesome?type=module', { title: '选择图标', width: 650, height: 450 });
+        });
+        $('#lbtnClearIcon').on('click', function () {
+            $('#IconName').textbox('setValue', '');
+            $('#IconPath').val('');
+        });
+    }
+
+    //获取左侧模块树
+    function getModules(type) {
+        QBO.plu.ajax({
+            url: '/MsSys/Module/GetModule',
+            data: { moduleType: type, parentId: '@ViewBag.parentId' }
+        }, function (data) {
+            QBO.plu.zt.init('zTreePanel', data, { check: true, isCheckbox: false });
+        });
+    }
+
+    function saveData() {
+        if (QBO.plu.zt.get('zTreePanel').str.length <= 0) {
+            QBO.dia.confirm('当前未选择所属模块，确定要继续？', function () {
+                saveModule();
+            });
+        }
+        else if (QBO.plu.zt.get('zTreePanelBtn').str.length <= 0) {
+            QBO.dia.confirm('当前未选择包含的按钮，确定要继续？', function () {
+                saveModule(true);
+            });
+        } else {
+            saveModule(true);
+        }
+    }
+    function saveModule(isSavePId) {
+        QBO.frm.submit(thisForm, {
+            url: '/MsSys/Module/SaveData',
+            onSubmit: function (param) {
+                //父Id
+                if (isSavePId && QBO.plu.zt.get('zTreePanel').str.length > 0) {
+                    param.ParentId = QBO.plu.zt.get('zTreePanel').str;
+                }
+                if (QBO.plu.zt.get('zTreePanelBtn').str.length > 0) {
+                    param.buttonIds = QBO.plu.zt.get('zTreePanelBtn').str;
+                }
+                param.IsOperatePage = $('#thisIsOperatePage').checkbox('getValue').IsOperatePage;
+                param.IsExpand = $('#thisIsExpand').checkbox('getValue').IsExpand;
+                param.IsEnable = $('#thisIsEnable').checkbox('getValue').IsEnable;
+            },
+            success: function (data) {
+                QBO.dia.msg(data.Msg, {
+                    icon: data.Result === 100 ? 'right' : 'error',
+                    endCallback: function () {
+                        if (data.Result === 100) { QBO.frm.closeWin(function () { QBO.frm.getWin().reloadGridData('tg'); }); }
+                    }
+                });
+            }
+        });
+    }
+
+    function moduleTypeChg(newValue, oldValue) {
+        getModules(!newValue || newValue.length <= 0 ? 0 : newValue);
+    }
+
+    //设置图标
+    function setIcon(iconObj) {
+        $('#IconName').textbox('setValue', iconObj.name).textbox({ buttonIcon: iconObj.name });
+        $('#IconPath').val(iconObj.path);
+    }
+</script>

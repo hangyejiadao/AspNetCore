@@ -1,0 +1,194 @@
+
+
+
+body {
+	padding-top: 0px;
+}
+.sub-header {
+	padding-bottom: 10px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.navbar-fixed-top {
+	border: 0px currentColor; border-image: none;
+}
+@media all and (min-width:768px)
+{
+.sidebar {
+	background:#71bec8; margin-right:15px; left: 0px; top: 60px; height: 100%; position:absolute;
+z-index:3;}
+}
+.nav-sidebar {
+	margin-bottom: 20px; margin-left: -20px; position: relative;
+}
+.nav-sidebar > li > a {
+	padding-right: 20px; padding-left: 20px;
+}
+/*.nav-sidebar > .active > a {
+	color: rgb(42, 115, 188);
+}
+.nav-sidebar > .active > a:hover {
+	color: rgb(42, 115, 188); 
+}
+.nav-sidebar > .active > a:focus {
+	color: rgb(42, 115, 188); 
+}*/
+.main {
+	padding: 17px 0px 20px;
+}
+@media all and (min-width:768px)
+{
+.main {
+	padding-right: 40px; padding-left: 40px;
+}
+}
+.main .page-header {
+	margin-top: 0px;
+}
+.placeholders {
+	text-align: center; overflow: visible; margin-top: 20px;
+}
+.placeholders h4 {
+	margin-bottom: 0px;
+}
+.placeholder {
+	margin-bottom: 20px;
+}
+.placeholder img {
+	border-radius: 50%; display: inline-block;
+}
+.nav-tabs > li > a {
+	border-radius: 8px 8px 0px 0px; border: 1px solid transparent; border-image: none; line-height: 1.4285; margin-right: 15px;
+}
+.nav > li > a {
+	padding: 6px 11px; display: block; position: relative;
+}
+.nav > li > a:hover {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(42, 115, 188);
+}
+.nav > li > a:focus {
+	/*color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(42, 115, 188);*/
+}
+.navbar {
+	background:#1f3948; width: 100%; height: 70px;
+}
+.logo{ display:block; float:left; width:157px; height:58px; background:url(../../images/logo.png) no-repeat; margin-left:15px; margin-top:5px; margin-right:20px; text-indent:-9999px; overflow:hidden;  display:inline; }
+
+.kx-title { float:left;color: rgb(255, 255, 255); line-height: 30px; letter-spacing: 4px; padding-left:20px; font-family: "微软雅黑"; font-size:22px; border-left:1px solid #fff; background:url(../images/logo_03.jpg) left center no-repeat;
+}
+.navbar-nav {
+	color: rgb(255, 255, 255); padding-top: 15px; padding-right: 15px;
+}
+.navbar-nav li {
+	text-align: center;
+}
+.navbar-nav li a {
+	padding: 15px 5px 10px; width: 70px; height: 31px;  color: rgb(255, 255, 255); display: block;
+}
+.navbar-nav li a:hover {
+	background: url("../images/a_hover.png") no-repeat;
+}
+.navbar-nav li a:focus {
+	background: none;
+}
+
+.col-sm-3 {
+	padding: 0px;
+}
+.col-md-2 {
+	padding: 0px;
+}
+.nav-sidebar li {
+	background: url("../images/border.jpg") repeat-x bottom; margin-left: 20px;
+}
+.nav-sidebar li a {
+	padding: 15px 0px; text-align: center; color:#fff; line-height: 30px;
+}
+.nav-sidebar li.active {
+	/*background:#f9dd7a; color:#856c36;  position: relative;*/
+}
+.nav-sidebar li.active a {
+	color:#856c36;
+}
+.nav-sidebar li.active span {
+	left: -1px; top: 45px; color:#856c36; position: absolute; z-index: 9;
+}
+.nav-sidebar li a:hover {
+	/*background:#f9dd7a; color:#856c36;*/
+}
+.nav-sidebar li a:focus {
+	/*background:#f9dd7a; color:#856c36;*/
+}
+.kx-zjm {
+	background:#d7d7d7; height: 25px; line-height: 25px;  font-size: 12px;
+}
+.col-sm-9 {
+	padding: 17px 0px;
+}
+.col-sm-offset-3 {
+	padding: 17px 0px;
+}
+.col-md-10 {
+	
+}
+.col-md-offset-2 {
+	padding: 17px 0px;
+}
+.jl-footer {
+	background: #1f3948; margin: 50px auto auto; width: 100%; height: 40px; bottom: 0px; color: rgb(255, 255, 255); position: fixed;z-index:5;
+}
+.jl-footer p {
+	text-align: center; line-height: 40px;
+}
+.table {
+	 border-collapse: collapse !important;
+ border:none;}
+
+.table td {
+	text-align: center; 
+}
+.table tbody tr:hover{ background:#cff0f5;}
+
+.table-bordered > thead > tr > th {
+	background:#dce7e9; color:#213848; border-right:1px solid #fff; text-align:center;
+}
+.table  th {
+	background:#dce7e9; color:#213848; border-right:1px solid #fff; text-align:center;
+}
+.container-fluid {
+	overflow: hidden;
+}
+.sub-nav {
+	background: rgb(255, 255, 255); left: 0px; top: 12%; height: 100%; padding-right: 20px; border-right-color: rgb(213, 213, 213); border-right-width: 1px; border-right-style: solid; position: absolute; z-index: 5; opacity: 0.8; -moz-opacity: 0.8; -khtml-opacity: 0.8;
+}
+.sub-nav li {
+	list-style: none; padding: 10px 20px; line-height: 25px; font-size: 14px; position: relative;
+}
+.sub-nav li a {
+	color: rgb(0, 0, 0); position: relative;
+}
+.sub-nav li a:hover {
+	text-decoration: none;
+}
+.nav-tabs {
+	padding-left: 30px; 
+	 border-bottom:none;
+}
+.nav-tabs > li { position:relative; }
+.nav-tabs > li > a{color:#436d86; cursor: default; background:#c8e1e5;}
+.nav-tabs > li > a:hover {border: 1px solid #cfe2e8; border-bottom:none; color: #436d86; cursor: default; background: #e1eff0;
+}
+.nav-tabs > li.active > a { 
+	 color:#436d86; cursor: default; background: #e1eff0;border: 1px solid #cfe2e8;border-bottom:1px solid #e1eff0;  z-index:100;
+}
+
+.img-top {
+	background: url("../images/new_01.jpg") no-repeat top; width: 100%; height: 660px;
+}
+.img-mid {
+	background: url("../images/new1_04.jpg") repeat-x top; width: 100%; height: 469px;
+}
+.img-r {
+	background: url("../images/new1_05.jpg") no-repeat right top; width: 100%; height: 470px;
+}
+.img-fot {
+	background: url("../images/new_07.jpg") repeat-x bottom; width: 100%; height: 170px;
+}

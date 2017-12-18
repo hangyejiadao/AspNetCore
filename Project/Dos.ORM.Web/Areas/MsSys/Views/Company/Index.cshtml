@@ -1,0 +1,98 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "公司管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        公司名称：@Html.ExtTextBox("txtKeyName", new { width = 100 })
+        联系人：@Html.ExtTextBox("ConMan", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'CompanyId';
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsSys/Company/GetList',
+            colFro: [
+                { field: gdKeyId, checkbox: true, title: '选择' },
+                { field: 'CompanyName', title: '公司名称', width: 200, sortable: true, formatter: getComImg },
+                { field: 'ConMan', title: '联系人', width: 100 },
+                { field: 'Mobile', title: '联系电话', width: 100 }
+            ],
+            col: [
+                { field: 'WeChat', title: '微信', width: 100 },
+                { field: 'Microblog', title: '微博', width: 100 },
+                { field: 'Email', title: '邮箱地址', width: 100 },
+                { field: 'Lng', title: '经纬度', width: 200, formatter: formatCoor },
+                { field: 'Address', title: '联系地址', width: 200 },
+                { field: 'CrtTime', title: '添加时间', width: 200, sortable: true }
+            ],
+            toolbar: 'toolBarMain',
+            onLoadSuccess: function (data) {
+                $("span.eui-opt-com").imgPreview();
+            }
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加公司', url: '/MsSys/Company/Detail' });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改公司', url: '/MsSys/Company/Detail', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看公司', url: '/MsSys/Company/Detail', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                QBO.frm.doPage('delete', { url: '/MsSys/Company/DeleteData', dgObj: gridObj, keyId: gdKeyId });
+                break;
+        }
+    }
+
+    function getComImg(value, row, index) {
+        var dataImg = '', userIcon = '';
+        if (row.LogoPath != null && row.LogoPath.length > 0) {
+            dataImg = ' data-img="' + row.LogoPath + '"';
+            userIcon = ' eui-icon icon-image';
+        }
+        return value + '&nbsp;<span class="eui-opt-com' + userIcon + '"' + dataImg + '>&nbsp;</span>';
+    }
+
+    //显示经纬度信息
+    function formatCoor(value, row, index) {
+        return value == null || value.length <= 0 ? '' : value + ',' + row.Lat;
+    }
+
+    function queryData() {
+        QBO.plu.grid.query(gridObj, {
+            keyName: $('#txtKeyName').textbox('getValue'),
+            conMan: $('#ConMan').textbox('getValue')
+        });
+    }
+</script>

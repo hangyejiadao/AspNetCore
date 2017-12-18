@@ -1,0 +1,583 @@
+﻿@{
+    ViewBag.Title = "BhzIndex2_1";
+    Layout = "~/Views/BasePage/_LayoutMsSysEmpty.cshtml";
+}
+
+<link href="~/Content/assets/global/daterangepicker/boot/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/assets/global/daterangepicker/boot/daterangepicker.css" rel="stylesheet" />
+<link href="~/Content/Components/echars/css/style.min.css" rel="stylesheet" />
+<link href="~/Content/assets/global/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<script src="~/Content/assets/global/daterangepicker/boot/bootstrap.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/daterangepicker.min.js"></script>
+<script src="~/Content/assets/global/daterangepicker/boot/moment.min.js"></script>
+
+<script src="~/Content/Components/echars/echarts.js"></script>
+<script src="~/Content/Components/echars/theme/walden.js"></script>
+
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+
+<style type="text/css">
+    body {
+        background-color: rgb(240, 245, 246);
+    }
+
+    .ibox-title {
+        padding: 5px 5px;
+        min-height: 40px;
+    }
+
+    .ibox-content {
+        padding: 5px 5px;
+        height: auto;
+    }
+
+    .ibox_echart {
+        min-height: 550px;
+    }
+
+
+    .ibox-body {
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        height: 99%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .btn-default {
+        color: #02a9f3;
+        background-color: #fff;
+        border: 1px solid #02a9f3;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #02a9f3;
+        border: 1px solid #02a9f3;
+    }
+
+        .btn-primary.focus, .btn-primary:focus {
+            color: #fff;
+            background-color: #02a9f3;
+            border: 1px solid #02a9f3;
+        }
+
+    .kx-search {
+        background-color: #eee;
+        border: 1px solid #ccc;
+        color: #313131;
+    }
+
+        .kx-search:focus {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            color: #313131;
+        }
+
+    .form-inline .btn:hover {
+        background: #0da6ea;
+        border-color: #0da6ea;
+        color: #fff;
+    }
+</style>
+
+<div ng-app="pageApp" ng-controller="pageCtrl">
+
+    <div class="container-fluid ibox-body">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+                <div class="ibox-title form-inline " style="text-align: left;">
+
+                    <div class="input-group input-group-sm">                     
+                        <input type="text" ng-model="paramsData.StartEnd" id="F_StartEnd" class="form-control" placeholder="请选择时间" style="width:180px;" />
+                        <span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span>
+                    </div>
+
+                    <div class="form-group input-group-sm">
+                        <span>强度</span>
+                        <select class="form-control" ng-model="paramsData.GradeCode" ng-change="queryData()">                          
+                            <option value="C10">C10</option>
+                            <option value="C15">C15</option>
+                            <option value="C20">C20</option>
+                            <option value="C25">C25</option>
+                            <option value="C30">C30</option>
+                            <option value="C35">C35</option>
+                            <option value="C40">C40</option>
+                            <option value="C45">C45</option>
+                            <option value="C50">C50</option>
+                            <option value="C55">C55</option>
+                            <option value="C60">C60</option>
+                            <option value="C65">C65</option>
+                            <option value="C70">C70</option>
+                            <option value="C75">C75</option>
+                            <option value="C80">C80</option>
+                            <option value="C85">C85</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group input-group-sm">                         
+                        <span>龄期(天)</span>
+                        <select class="form-control" ng-model="paramsData.AgeDays" ng-change="queryData()">                          
+                            <option value="3">3</option>
+                            <option value="7">7</option>
+                            <option value="28">28</option>
+                            <option value="56">56</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group input-group-sm">
+                        <a href="javascript:;" class="btn btn-sm btn-primary" ng-click="queryData()">查询</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <div class="ibox-content">
+                    <div id="div_one" class="ibox_echart" ng-if="eChart_Data.Result">
+                    </div>
+                    <div class="ibox_echart" ng-if="!eChart_Data.Result">
+                        <p class="text-center" style="font-size: 18px; padding-top: 150px; text-align: center">无数据！</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+    var paramsData = {
+        "BhzApi": "",
+        "LoadApi": '@ViewBag.LoadApi',
+        "OrganID": "",
+        "OrganName": "",
+        "TestType": "HNT",        
+        "StartEnd": "",
+        "StartDate": "",
+        "EndDate": "",    
+        "GradeCode": "C30",
+        "AgeDays": "28",
+    }
+   
+    $(function () {
+      
+
+    });
+
+
+    //查询数据
+    function ModuleQuery(data) {
+        var appElement = document.querySelector('[ng-controller=pageCtrl]');
+        var $scope = angular.element(appElement).scope();
+        $scope.paramsData.LoadApi = 1;
+        $scope.paramsData.OrganID = data.TargetId;
+        $scope.paramsData.OrganName = data.TargetName;
+        $scope.paramsData.BhzApi = data.ExtraData;
+
+        $scope.getCookieData();     
+        $scope.$apply();
+        $scope.queryData();
+    }
+
+    //选择时间查询
+    function queryDate(startDate, endDate) {
+        var appElement = document.querySelector('[ng-controller=pageCtrl]');
+        var $scope = angular.element(appElement).scope();
+        $scope.paramsData.StartEnd = startDate + ' 至 ' + endDate;
+        $scope.paramsData.StartDate = startDate;
+        $scope.paramsData.EndDate = endDate;
+        $scope.$apply()
+        $scope.queryData();
+    }
+
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $timeout) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $timeout);
+        initNgQuery($scope, $http, $timeout);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+        $scope.paramsData = paramsData;
+        $scope.paramsData.OrganID = parent.selData.TargetId;
+        $scope.paramsData.OrganName = parent.selData.TargetName;
+        $scope.paramsData.BhzApi = parent.selData.ExtraData;
+
+        var idxData = parent.idxData;
+        if (idxData.idx_mod1 == 1 && idxData.idx_mod2 == 0) {
+            $scope.paramsData.LoadApi = 1;
+        } else {
+            $scope.paramsData.LoadApi = 0;
+        }
+
+        $scope.items = [];
+        $scope.eChart_Data = {
+            Result: true,
+            Text: "混凝土质量波动图",
+            SubText: "",
+            Message: "",
+            ECharts: {}
+        };
+
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $timeout) {
+
+        //选择时间设置
+        $scope.setDateRange = function () {
+
+            var startDate = $scope.paramsData.StartDate;
+            var endDate = $scope.paramsData.EndDate;
+
+            $('#F_StartEnd').daterangepicker(
+                   {
+                       startDate: startDate,//moment().startOf('day'),
+                       endDate: endDate,//moment(),
+                       //minDate: '01/01/2012',    //最小时间
+                       maxDate: moment(), //最大时间
+                       //dateLimit: {
+                       //    days: 30
+                       //}, //起止时间的最大间隔
+                       singleDatePicker: false,
+                       showDropdowns: true,
+                       showWeekNumbers: false, //是否显示第几周
+                       timePicker: false, //是否显示小时和分钟
+                       timePickerIncrement: 60, //时间的增量，单位为分钟
+                       timePicker12Hour: false, //是否使用12小时制来显示时间
+                       ranges: {
+
+                           '今日': [moment().startOf('day'), moment()],
+                           '昨日': [moment().subtract('days', 1).startOf('day'), moment().subtract('days', 1).endOf('day')],
+                           '最近7日': [moment().subtract('days', 6), moment()],
+                           //'最近15日': [moment().subtract('days', 15), moment()],
+                           '最近30日': [moment().subtract('days', 29), moment()],
+                           '最近3月': [moment().subtract(3, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                           '本周': [moment().startOf("week"), moment().endOf("week")],
+                           //'上周': [moment().subtract(1, "week").startOf("week"), moment().subtract(1, "week").endOf("week")],
+                           '本月': [moment().startOf("month"), moment().endOf("month")],
+                           '上月': [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                           //'本季': [moment().startOf("QUARTER"), moment().endOf("QUARTER")],
+                           '本年': [moment().startOf("year"), moment().endOf("year")],
+                           //'上年': [moment().subtract(1, "year").startOf("year"), moment().subtract(1, "year").endOf("year")]
+                       },
+                       opens: 'right', //日期选择框的弹出位置
+                       buttonClasses: ['btn btn-default'],
+                       applyClass: 'btn-small btn-primary blue',
+                       cancelClass: 'btn-small',
+                       format: 'YYYY-MM-DD', //控件中from和to 显示的日期格式
+                       separator: ' 至 ',
+                       autoUpdateInput: false,
+                       locale: {
+                           applyLabel: '确定',
+                           cancelLabel: '取消',
+                           fromLabel: '起始时间',
+                           toLabel: '结束时间',
+                           customRangeLabel: '自定义',
+                           daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                           monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+                                   '七月', '八月', '九月', '十月', '十一月', '十二月'],
+                           firstDay: 1
+                       }
+                   }, function (start, end, label) {//格式化日期显示框
+                       var startDate = start.format('YYYY-MM-DD');
+                       var endDate = end.format('YYYY-MM-DD');
+                       queryDate(startDate, endDate);
+                       QBO.plu.cookie.set("StartEnd", (startDate + ' 至 ' + endDate), { expires: 7, path: '/' });
+                   });
+
+
+        }
+
+        //获取拌合机cookie
+        $scope.getCookieData = function () {
+            var startEnd = QBO.plu.cookie.get("StartEnd");
+            if (startEnd != '') {
+                var seDate = startEnd.split(' 至 ');
+                $scope.paramsData.StartEnd = startEnd;
+                $scope.paramsData.StartDate = seDate[0];;
+                $scope.paramsData.EndDate = seDate[1];
+            } else {
+                var startDate = moment().subtract('days', 6).format('YYYY-MM-DD');
+                var endDate = moment().format('YYYY-MM-DD');
+                $scope.paramsData.StartEnd = (startDate + ' 至 ' + endDate);
+                $scope.paramsData.StartDate = startDate;
+                $scope.paramsData.EndDate = endDate;
+            }
+        }
+
+        //查询类型
+        $scope.queryData = function () {         
+            $scope.loadRptTable();
+            
+        }
+
+        //统计表
+        $scope.loadRptTable = function () {
+
+            if ($scope.paramsData.LoadApi != 1) return;
+
+            QBO.plu.ng.http({ http: $http, method: 'POST', isLoad: true, chkLogin: true, url: '/MsSys/SyjOper/GetHNTFx1Data', params: $scope.paramsData }, function (data) {
+                if (data.Result === 100) {
+                    $scope.items = data.Data;
+                } else {
+                    $scope.items = [];
+                }
+               
+                $scope.loadRptEchart();
+            });
+
+        };
+
+
+        //统计图
+        $scope.loadRptEchart = function () {
+                                 
+            var items = angular.copy($scope.items);            
+            //console.log(JSON.stringify(items));
+            if (items != null && items.length > 0) {
+
+                $scope.eChart_Data.Result = true;
+
+                var num = items.length;
+                var sum = 0;
+                var xAxis_data = [];
+                var series_data = [];
+                for (var key in items) {
+                    var QDDBZ=items[key].QDDBZ;
+                    xAxis_data.push(items[key].SYDate);
+                    series_data.push(QDDBZ);
+                    sum += (QDDBZ==''?0:parseFloat(QDDBZ));
+                }
+             
+                var avg = sum / num;
+                var top_text = paramsData.StartDate + '至' + paramsData.EndDate + '【' + paramsData.GradeCode + '、龄期' + paramsData.AgeDays + '天】混凝土质量波动图';
+                var top_subtext = paramsData.OrganName;
+                
+                var std_c = GetS(series_data);
+                var std_x = "";
+                if (std_c != "" && avg > 0) {
+                    std_x = (std_c / avg * 100).toFixed(2);
+                    std_c = std_c.toFixed(2);
+                }
+                
+                var bottom_subtext = '组数:' + num + '  平均值:' + avg.toFixed(2) + '  标准差:' + std_c + '  变异系数:' + std_x + '%';
+
+                $scope.eChart_Data.ECharts = {
+                    title: [{
+                        text: top_text,
+                        subtext: top_subtext,
+                        x: 'center'
+                    },
+                    {
+                        text: bottom_subtext,
+                        x: 'center',
+                        bottom: '20',
+                        textStyle: {
+                            fontSize:14
+                        }
+                    }],
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            animation: false
+                        },
+                        formatter: function (params, ticket, callback) {
+                            //callback(ticket, params.name);  
+                            var content = '';
+                            if (params != null && params[0] != null) {
+                                var index = params[0].dataIndex;
+                                var item = items[index];
+                                content = '试验日期：' + QBO.com.filterDate(item.SYDate, "yyyy-MM-dd hh:mm") + '<br/>样品编号：' + item.SJBH + '<br/>工程部位/用途：' + item.CJMC + '<br/>强度：' + item.QDDBZ + '(MPa)'
+                                //console.log(JSON.stringify(params));
+                            } else {
+                                content = params.name + '：' + params.value + '(MPa)'
+                                //console.log(JSON.stringify(params));
+                            }
+                            return content;
+                        }
+                    },
+                    legend: {
+                        show: false,
+                        data: ['强度'],
+                        x: 'left'
+                    },
+                    toolbox: {
+                        feature: {
+                            dataZoom: {
+                                yAxisIndex: 'none'
+                            },
+                            restore: {},
+                            saveAsImage: {}
+                        }
+                    },
+                    axisPointer: {
+                        link: { xAxisIndex: 'all' }
+                    },                  
+                    grid: [{
+                        left: "5%",
+                        top: "80",
+                        right: "5%",
+                        bottom: "100"                       
+                    }],
+                    xAxis: [
+                        {
+                            name: '时间',
+                            type: 'category',
+                            boundaryGap: false,
+                            axisLine: { onZero: true },                          
+                            data: xAxis_data
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            name: '强度(MPa)',
+                            type: 'value'
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '强度',
+                            type: 'line',
+                            symbolSize: 8,
+                            hoverAnimation: false,
+                            data: series_data,
+                            markPoint: {
+                                data: [
+                                    { type: 'max', name: '最大值' },
+                                    { type: 'min', name: '最小值' }
+                                ]
+                            },
+                            markLine: {
+                                data: [
+                                    { type: 'average', name: '平均值' }
+                                ]
+                            }
+                        }
+                    ]
+                };
+                
+                if ($scope.eChart_Data.Result) {
+                    $timeout(function () {
+                        setOption_OneData($scope);
+                    });
+                }
+
+            } else {
+                $scope.eChart_Data.Result = false;
+            }
+
+        }
+
+    }
+
+    //初始化ng查询数据
+    function initNgQuery($scope, $http, $timeout) {
+
+        var BhzApi = $scope.paramsData.BhzApi;
+        if (BhzApi == null || BhzApi == "") {
+            return;
+        }
+
+        $scope.getCookieData();
+
+        $scope.queryData();
+
+        $scope.setDateRange();
+
+    }
+
+    function setOption_OneData($scope) {
+        $scope.eChart_Data.ECharts.toolbox = {
+            show: true,
+            feature: {
+                dataView: {
+                    show: false,
+                    readOnly: true,
+                    lang: [$scope.eChart_Data.ECharts.title.text, '关闭', '刷新'],
+                    optionToContent: function (opt) {
+                        var series = opt.series;
+                        var xAxis = opt.xAxis;
+                      
+                        var table = '<div style="height: 100%;overflow-y:auto"><table class="table table-striped table-condensed" >'
+                                    + '<thead><tr><th></th>'
+                                    + '<th>' + xAxis[0].name + '</th>'
+                                    + '<th>' + series[0].name + '</th>'
+                                    + '</tr></thead>';
+
+                        table += '<tbody>';
+                        for (var i in xAxis[0].data) {
+                            table += '<tr>'
+                                  + '<td>' + xAxis[0].data[i] + '</td>'
+                                  + '<td>' + series[0].data[i] + '</td>'                                
+                                  + '</tr>';
+                        }
+
+                        table += '</tbody></table></div>';
+                        return table;
+
+
+                    }
+                },
+              
+                restore: { show: true },
+                saveAsImage: {
+                    show: true,
+                    backgroundColor: 'white'
+                }
+            }
+        };
+        var myChart_One = echarts.init(document.getElementById('div_one'), "walden");
+     
+        myChart_One.setOption($scope.eChart_Data.ECharts);
+
+        //console.log(JSON.stringify($scope.eChart_Data.ECharts))
+    }
+
+
+    function GetS() {
+        if (typeof (arguments[0]) == "object") {
+            arguments = arguments[0];
+        }
+        var total = 0;//表示求和
+        var len = arguments.length;//数组长度
+        var x = 0;//平均值
+        var s1 = 0;//求平方和
+        var s;//标准差
+        for (i = 0; i < len; i++) {          
+            total = total + arguments[i] * 1;
+        }
+        x = total / len;
+        for (j = 0; j < len; j++) {
+            s1 = s1 + (arguments[j] - x) * (arguments[j] - x);
+        }
+        s = Math.sqrt(s1 / (len - 1));
+        if (!s)
+            s = "";
+        return s;
+    }
+
+
+</script>
+

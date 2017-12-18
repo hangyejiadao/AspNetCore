@@ -1,0 +1,188 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BhzDetail</title>
+
+    <link href="/Content/Components/Animate/animate.min.css" rel="stylesheet" />
+    <link href="/Content/Components/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Content/Components/EasyUI/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="/Content/Css/Themes/base.blue.css" rel="stylesheet" />
+
+    <script src="/Content/Components/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="/Content/Components/EasyUI/jquery.easyui.min.js"></script>
+    <script src="/Content/Components/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+
+    <script src="/Content/Components/AngularJS/angular.min.js"></script>
+    <script src="/Content/Js/Base/base.core.js"></script>
+    <script src="/Content/Js/Base/base.loading.js"></script>
+
+</head>
+<body class="easyui-layout animated fadeIn">
+
+    <form class="easyui-form" id="thisForm" method="post" enctype="multipart/form-data" style="width: 100%; height:100%"
+          ng-app="pageApp" ng-controller="pageCtrl">
+
+        <div data-options="region:'south',border:false" class="frm-toolbar">
+            <a href="javascript:;" id="lbtnSave" class="easyui-linkbutton" data-options="iconCls:'fa fa-save',plain:true" ng-click="saveData()">保存</a>
+            <a href="javascript:QBO.frm.closeWin();" class="easyui-linkbutton" id="lbtnCancel" data-options="iconCls:'fa fa-times-circle',plain:true">取消</a>
+        </div>
+
+        <div data-options="region:'center',border:false">
+
+            <div style="overflow-y: auto;">
+
+                <table class="frm-tb">
+                    <tbody>
+                                               
+                        <tr>
+                            <td>异常天数：</td>
+                            <td>
+                                <input name="UnUpDay" class="txt-main" ng-model="model.UnUpDay" data-rule="异常天数:required;length[1~30]:UnUpDay" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>负责人：</td>
+                            <td>
+                                <input name="AdminName" class="txt-main" ng-model="model.AdminName" data-rule="负责人:required;length[1~60]:AdminName" style="width: 300px;height:26px">
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>负责人手机号：</td>
+                            <td>
+                                <input name="AdminPhone" class="txt-main" ng-model="model.AdminPhone" data-rule="负责人手机号:required;length[1~30]:AdminPhone" style="width: 300px;height:26px">
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>通知手机号：</td>
+                            <td>
+                                <textarea name="NoticePhone" class="txta-main" ng-model="model.NoticePhone" data-rule="通知手机号:length[0~120]:NoticePhone" rows="3" style="width: 300px; "></textarea>
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td>是否启动：</td>
+                            <td>
+
+                                <input id="IsEnable1" name="IsEnable1" type="checkbox" ng-checked="model.IsEnable==true" ng-click="selectIsEnable(1,$event)" /><label for="IsEnable1"></label>
+
+                                @*<input id="IsEnable_Y" name="IsEnable" type="radio" ng-checked="model.IsEnable==true" ng-click="selectIsEnable(1,$event)" /><label for="IsEnable_Y">是</label>
+
+                                <input id="IsEnable_N" name="IsEnable" type="radio" ng-checked="model.IsEnable==false" ng-click="selectIsEnable(0,$event)" /><label for="IsEnable_N">否</label>*@
+
+                            </td>
+                        </tr>  
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+
+
+    </form>
+</body>
+
+</html>
+
+<script>
+
+
+    var thisForm = $("#thisForm");
+
+    var paramsData = {
+        "BhzApi": '@ViewBag.BhzApi',
+        "KeyId": '@ViewBag.KeyID'
+    }
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $sce) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $sce);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+        $scope.model = {};
+        QBO.plu.ng.http({ http: $http, method: 'GET', chkLogin: true, url: 'GetSmsExceptByID', params: paramsData }, function (data) {
+            $scope.model = data;
+            //console.log(JSON.stringify($scope.model));
+        });
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $sce) {
+
+        //是否生效
+        $scope.selectIsEnable = function (value, $event) {
+
+            var thisObj = $($event.target);
+
+            if (thisObj.is(':checked')) {
+                $scope.model.IsEnable = true;
+            }
+            else {
+                $scope.model.IsEnable = false;
+            }
+
+        }
+
+        //保存数据
+        $scope.saveData = function () {
+
+            var model = angular.copy($scope.model);
+
+            if (model.AdminName == null || model.AdminName == '') {
+                QBO.dia.msg('请填写负责人！', 'info');
+                return;
+            }
+
+            if (model.AdminPhone == null || model.AdminPhone == '') {
+                QBO.dia.msg('请填写负责人手机号！', 'info');
+                return;
+            }
+
+            var UnUpDay = parseInt(model.UnUpDay);
+            $scope.model.UnUpDay = (isNaN(UnUpDay) ? 0 : UnUpDay);
+            if (isNaN(UnUpDay)) {
+                QBO.dia.msg('请填写异常天数！', 'info');
+                return;
+            }
+
+            QBO.plu.ng.http({
+                http: $http,
+                method: 'POST',
+                isLoad: true,
+                chkLogin: true,
+                url: 'SaveSmsExceptData',
+                params: paramsData,
+                data: model
+            }, function (result) {
+
+                //console.log(JSON.stringify(result));
+
+                QBO.dia.msg(result.Msg, {
+                    icon: result.Result === 100 ? 'right' : 'error',
+                    endCallback: function () {
+                        if (result.Result === 100) { QBO.frm.closeWin(function () { QBO.frm.getWin().reloadGridData('tg'); }); }
+                    }
+                });
+
+            });
+
+
+        }
+
+    }
+
+
+
+</script>

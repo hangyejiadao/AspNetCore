@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "TesterView";
+    Layout = "~/Views/BasePage/_LayoutMsSysEmpty.cshtml";
+}
+
+<style>
+    .table {
+        width: 90%;
+        border: 0px solid #dedede;
+        font-size: 12px;
+        color: #1f3948;
+    }
+
+        .table tr td {
+            height: 30px;
+            line-height: 30px;
+        }
+
+    table tr td {
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .table tr td span {
+        color: #666;
+    }
+
+    .table .t_tit {
+        padding: 10px 0;
+        border-bottom: 3px solid #bbe2e9;
+    }
+</style>
+
+<script src="~/Content/Components/AngularJS/angular.min.js"></script>
+
+<div data-options="region:'center',border:false" ng-app="pageApp">
+
+    <table class="table" ng-controller="pageCtrl">
+        <tbody>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">姓名：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Name}}</span>
+                </td>
+                <td rowspan="4"></td>
+                <td rowspan="4">
+                    <img ng-src="{{model.FilePath!=null?model.FilePath:'/Content/Css/Themes/Images/Design/Default/IconBig/main_nav_jcry.png'}}"
+                         style="display: block; width: 125px; height: 135px; padding: 5px; border: 1px solid #d0d0d0;vertical-align:middle">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">性别：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Sex?'男':'女'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">出生日期：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.DateBirth}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">工作岗位：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Job}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">学历：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Education}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">专业：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Major}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">职称：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Title}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">工作岗位：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Job}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">试验检测证书编号：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.CertificatNO}}</span>
+                </td>
+                <td align="right" style="width: 20%;border-bottom:none;">是否在母体注册：</td>
+                <td style="width: 30%;text-align:left">
+                    <span>{{model.Isregister?'是':'否'}}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 20%;border-bottom:none;">变更情况：</td>
+                <td style="width: 80%;text-align:left" colspan="3">
+                    <span>{{model.ChangeContent}}</span>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+<script>
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $sce) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $sce);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+        $scope.model = QBO.frm.getWin().SuperData;
+
+        //console.log($scope.model);
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $sce) {
+
+
+
+    }
+
+</script>
+
+
+
+
+
+

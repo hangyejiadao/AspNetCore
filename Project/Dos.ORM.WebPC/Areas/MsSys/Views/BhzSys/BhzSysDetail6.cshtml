@@ -1,0 +1,276 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BhzSysDetail6</title>
+
+    <link href="/Content/Components/Animate/animate.min.css" rel="stylesheet" />
+    <link href="/Content/Components/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Content/Components/EasyUI/themes/bootstrap/easyui.css" rel="stylesheet" />
+    
+    <script src="/Content/Components/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="/Content/Components/EasyUI/jquery.easyui.min.js"></script>
+    <script src="/Content/Components/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+
+    <script src="~/Content/Components/zTree/js/jquery.ztree.core.min.js"></script>
+    <script src="~/Content/Components/zTree/js/jquery.ztree.excheck.min.js"></script>
+
+    <script src="/Content/Components/AngularJS/angular.min.js"></script>
+    <script src="/Content/Js/Base/base.core.js"></script>
+    <script src="/Content/Js/Base/base.loading.js"></script>
+
+</head>
+
+<body class="easyui-layout animated fadeIn">
+
+    <form class="easyui-form" id="thisForm" method="post" enctype="multipart/form-data" style="width: 100%; height:100%"
+          ng-app="pageApp" ng-controller="pageCtrl">
+
+        <div data-options="region:'south',border:false" class="frm-toolbar">
+            <a href="javascript:;" id="lbtnSave" class="easyui-linkbutton" data-options="iconCls:'fa fa-save',plain:true" ng-click="saveData()">保存</a>
+            <a href="javascript:QBO.frm.closeWin();" class="easyui-linkbutton" id="lbtnCancel" data-options="iconCls:'fa fa-times-circle',plain:true">取消</a>
+        </div>
+
+        <div data-options="region:'west',border:false,split:true" style="width: 255px;">
+            <div class="role-select">
+                <a class="easyui-linkbutton" data-options="height:28,text:'全选',iconCls:'icon-apply',iconAlign:'left',plain:true,disabled:false,onClick:function(){QBO.plu.zt.checkAll('zTreePanel');}" href="javascript:;" id="modAll" name="modAll"></a>
+                <a class="easyui-linkbutton" data-options="height:28,text:'取消',iconCls:'icon-cancel',iconAlign:'left',plain:true,disabled:false,onClick:function(){QBO.plu.zt.checkAll('zTreePanel',false);}" href="javascript:;" id="modAllCancel" name="modAllCancel"></a>
+
+            </div>
+            <ul id="zTreePanel" class="ztree"></ul>
+        </div>
+        <div data-options="region:'center',border:false">
+
+            <div style="overflow-y: auto;">
+
+                <table class="frm-tb">
+                    <tbody>
+
+                        <tr>
+                            <td>账户：</td>
+                            <td>
+                                <input type="text" name="Account" class="txt-main" ng-model="user.Account" data-rule="账户:required;length[1~30]:Account" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>密码：</td>
+                            <td>
+                                <input type="password" name="Password" class="txt-main" ng-model="user.Password" data-rule="密码:required;length[1~30]:Password" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>启用：</td>
+                            <td>
+
+                                <input id="IsEnable_Y" name="IsEnable" type="radio" ng-checked="user.IsEnable==true" ng-click="selectLock(1,$event)" /><label for="IsEnable_Y">是</label>
+
+                                <input id="IsEnable_N" name="IsEnable" type="radio" ng-checked="user.IsEnable==false" ng-click="selectLock(0,$event)" /><label for="IsEnable_N">否</label>
+                                                              
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>角色：</td>
+                            <td>
+                                <select name="RoleID" class="txt-main" style="width: 300px;height:26px"
+                                        ng-model="userRole.RoleID">
+                                    <option value="{{item.ID}}" ng-r ng-repeat="item in roles" ng-selected="item.ID==userRole.RoleID">{{item.RoleName}}</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>姓名：</td>
+                            <td>
+                                <input type="text" name="FullName" class="txt-main" ng-model="user.FullName" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机：</td>
+                            <td>
+                                <input type="text" name="Mobile" class="txt-main" ng-model="user.Mobile" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>职位：</td>
+                            <td>
+                                <input type="text" name="Job" class="txt-main" ng-model="user.Job" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>机构：</td>
+                            <td>
+                                <input type="text" name="OrganName" class="txt-main" ng-model="user.OrganName" style="width: 300px;height:26px">
+                            </td>
+                        </tr>
+
+                                         
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+
+
+    </form>
+</body>
+
+</html>
+
+<link href="/Content/Css/Themes/base.blue.css" rel="stylesheet" />
+
+<script>
+
+
+    var thisForm = $("#thisForm");
+
+    var paramsData = {
+        "keyId": '@ViewBag.keyId'
+    }
+
+    //初始化Angular
+    var pageApp = angular.module('pageApp', []);
+    pageApp.controller('pageCtrl', function ($scope, $http, $timeout) {
+        initNgData($scope, $http);
+        initNgEvent($scope, $http, $timeout);
+        initNgQuery($scope, $http, $timeout);
+    });
+
+    //初始化ng数据
+    function initNgData($scope, $http) {
+        $scope.model = {};
+        $scope.user = {};
+        $scope.userRole = {};
+        $scope.roles = [];
+        $scope.trees = [];
+    }
+
+    //初始化ng事件
+    function initNgEvent($scope, $http, $timeout) {
+
+        //是否锁定
+        $scope.selectLock = function (value, $event) {
+            $scope.user.IsEnable = value;
+        }
+
+        //加载数据
+        $scope.loadInitData = function () {
+
+            QBO.plu.ng.http({ http: $http, method: 'GET', chkLogin: true, url: 'GetUserByID', params: paramsData }, function (result) {
+
+                if (result.Result === 100) {
+                    $scope.model = result.Data;
+                    $scope.user = $scope.model.User;
+                    $scope.userRole = $scope.model.UserRole;
+                    $scope.roles = $scope.model.Roles;
+                    $scope.trees = $scope.model.Trees;
+
+                    $scope.loadTreeData();
+                }
+                else {
+                    $scope.model = {};
+                    $scope.user = {};
+                    $scope.userRole = {};
+                    $scope.roles = [];
+                    $scope.trees = {};
+                }
+
+                //console.log(JSON.stringify($scope.user));
+            });
+
+        }
+
+        //加载树
+        $scope.loadTreeData = function () {
+
+            var setting = {
+                check: {
+                    enable: true,
+                },
+                chkboxTypeY: 'ps',
+                chkboxTypeN: 'ps',
+                data: {
+                    simpleData: {
+                        enable: true
+                    }
+                }
+            };
+
+            var zNodes = $scope.trees;
+
+            QBO.plu.zt.init('zTreePanel', zNodes, setting);
+
+            //$.fn.zTree.init($("#zTreePanel"), setting, zNodes);
+
+        }
+    
+        //保存数据
+        $scope.saveData = function () {
+
+            var model = angular.copy($scope.model);          
+            model.Trees = null;
+            model.UserLabs = null;
+            model.Roles = null;
+            model.TreeID_List = QBO.plu.zt.get('zTreePanel').arr;
+
+            //console.log(JSON.stringify(model))
+
+            if (model.User.Account == null || model.User.Account == '') {
+                QBO.dia.msg('请填写账户！', 'info');
+                return;
+            }
+
+            if (model.User.Password == null || model.User.Password == '') {
+                QBO.dia.msg('请填写密码！', 'info');
+                return;
+            }
+
+            if (model.UserRole.RoleID == null || model.UserRole.RoleID == '') {
+                QBO.dia.msg('请选择角色！', 'info');
+                return;
+            }
+
+            QBO.plu.ng.http({
+                http: $http,
+                method: 'POST',
+                isLoad: true,
+                chkLogin: true,
+                url: 'SaveUserData',
+                params: { OType: model.OType },
+                data: model
+            }, function (result) {
+
+                QBO.dia.msg(result.Msg, {
+                    icon: result.Result === 100 ? 'right' : 'error',
+                    endCallback: function () {
+                        if (result.Result === 100) { QBO.frm.closeWin(function () { QBO.frm.getWin().reloadGridData(); }); }
+                    }
+                });
+
+            });
+
+
+        }
+
+    }
+
+
+    //初始化ng查询数据
+    function initNgQuery($scope, $http, $timeout) {
+
+        $scope.loadInitData();
+
+
+
+    }
+
+
+
+</script>
+

@@ -1,0 +1,56 @@
+﻿@using System.Web.Optimization
+@using Dos.ORM.WebPC.App_Common.Mvc
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Components/Animate/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/Components/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Components/EasyUI/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <script src="~/Content/Components/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="~/Content/Components/Cookie/jquery.cookie.min.js"></script>
+    <script src="~/Content/Components/EasyUI/jquery.easyui.min.js"></script>
+    <script src="~/Content/Components/EasyUI/locale/easyui-lang-zh_CN.js"></script>
+   
+    <script src="~/Content/Js/Base/base.core.js"></script>
+    <script src="~/Content/Js/Base/base.loading.js"></script>
+</head>
+<body class="easyui-layout animated fadeIn">
+    @RenderSection("Quber", required: false)
+
+    @RenderBody()
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajaxSetup({
+            dataFilter: function (data, type) {
+                if (data === '-401') {
+                    $.ajaxSetup({
+                        beforeSend: function (xhr) {
+                            return false;
+                        }
+                    });
+                    QBO.dia.msg("抱歉!登录已超时，请重新登录！", {
+                        icon: "info",
+                        endCallback: function () {
+                            if (window.parent != undefined) {
+                                window.parent.location.href = "/MsSys/Login/Index";
+                            } else {
+                                window.location.href = "/MsSys/Login/Index";
+                            }
+                        }
+                    });
+                }
+                else {
+                    return data;
+                }
+            }
+        });
+    });
+</script>

@@ -1,0 +1,122 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@{
+    ViewBag.Title = "新闻管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysList.cshtml";
+}
+<table id="dg"></table>
+
+<div id="toolBarMain" class="list-toolbar">
+    <div class="row">
+        @Html.ExtAuthBtn()
+    </div>
+    <div class="row">
+        @{
+            if (ViewBag.IsSuperAdmin)
+            {
+                <text>所属公司：</text>
+                @Html.ExtComboTree("CompanyId", new { width = 100, url = "/MsSys/Company/GetChooseCompanys", queryParams = "{type:1}", onClick = "companyChg" })
+            }
+        }
+        新闻类型：@Html.ExtDropDown("NewsType", (List<SelectListItem>)ViewBag.NewsTypeIds, new { width = 100, onChange = "newsTypeChg", valueField = "Value", textField = "Text" })
+        标题关键字：@Html.ExtTextBox("txtKeyName", new { width = 100 })
+    </div>
+</div>
+<script>
+    var gridObj, gdKeyId = 'NewsInfoId',
+        comId;
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        gridObj = $('#dg');
+
+        QBO.plu.grid.init(gridObj, {
+            keyId: gdKeyId,
+            url: '/MsBus/NewsInfo/GetList',
+            colFro: [
+                { field: gdKeyId, checkbox: true },
+                { field: 'Title', title: '新闻标题', width: 200, sortable: true, formatter: setTitle },
+                { field: 'NewsTypeName', title: '新闻类型', width: 200 },
+                { field: 'Subtitle', title: '副标题', width: 200 },
+                { field: 'IsTop', title: '是否置顶', width: 80, align: 'center', formatter: QBO.plu.grid.formatIf },
+                { field: 'IsEnable', title: '是否启用', width: 80, align: 'center', formatter: QBO.plu.grid.formatIf }
+            ],
+            col: [
+                { field: 'Source', title: '来源', width: 200 },
+                { field: 'Keyword', title: '关键字', width: 200 },
+                { field: 'Summary', title: '摘要', width: 200 },
+                { field: 'ViewCount', title: '浏览次数', width: 200 },
+                { field: 'CrtTime', title: '添加时间', width: 200, sortable: true }
+            ],
+            toolbar: 'toolBarMain'
+        });
+    }
+
+    function initEvent() {
+        $('#lbtnAdd').linkbutton({ onClick: function () { doHanlder('add'); } });
+        $('#lbtnModify').linkbutton({ onClick: function () { doHanlder('modify'); } });
+        $('#lbtnView').linkbutton({ onClick: function () { doHanlder('view'); } });
+        $('#lbtnSearch').linkbutton({ onClick: function () { doHanlder('search'); } });
+        $('#lbtnDelete').linkbutton({ onClick: function () { doHanlder('delete'); } });
+    }
+
+    function doHanlder(type) {
+        switch (type) {
+            case 'add':
+                QBO.frm.doPage('add', { title: '添加新闻', url: '/MsBus/NewsInfo/Detail', icon: 'newspaper-o' });
+                break;
+            case 'modify':
+                QBO.frm.doPage('modify', { title: '修改新闻', url: '/MsBus/NewsInfo/Detail', icon: 'newspaper-o', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'view':
+                QBO.frm.doPage('view', { title: '查看新闻', url: '/MsBus/NewsInfo/Detail', icon: 'newspaper-o', dgObj: gridObj, keyId: gdKeyId });
+                break;
+            case 'search':
+                queryData();
+                break;
+            case 'delete':
+                QBO.frm.doPage('delete', { url: '/MsBus/NewsInfo/DeleteData', dgObj: gridObj, keyId: gdKeyId });
+                break;
+        }
+    }
+
+    //设置标题
+    function setTitle(value, row, index) {
+        return row.TitleColor == null || row.TitleColor.length <= 0 ? value : '<span style="color:' + row.TitleColor + '">' + value + '</span>';
+    }
+
+    //加载公司其下的新闻分类
+    function companyChg(node) {
+        comId = node.id;
+
+        loadComNewsTypes();
+    }
+
+    function newsTypeChg(newValue, oldValue) {
+        queryData();
+    }
+
+    function loadComNewsTypes() {
+        QBO.plu.ajax({
+            url: '/MsBus/NewsInfo/GetNewsTypes',
+            data: { comId: comId }
+        }, function (data) {
+            if (data.Result === 100) {
+                $('#NewsType').combobox('loadData', data.Data).combobox('setValue', '');
+                //queryData();
+            }
+        });
+    }
+
+    //查询数据
+    function queryData() {
+        QBO.plu.grid.query(gridObj, {
+            comId: comId,
+            newsType: $('#NewsType').combobox('getValue'),
+            keyName: $('#txtKeyName').textbox('getValue')
+        });
+    }
+</script>

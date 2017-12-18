@@ -1,0 +1,291 @@
+﻿@using Dos.ORM.Web.App_Common.Mvc
+@model Dos.ORM.Model.System.SYS_Operator
+@{
+    ViewBag.Title = "管理员管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSingle.cshtml";
+}
+<script src="~/Content/Components/UEditor/ueditor.config.js"></script>
+<script src="~/Content/Components/UEditor/ueditor.all.min.js"></script>
+<script src="~/Content/Components/UEditor/lang/zh-cn/zh-cn.js"></script>
+<form class="easyui-form" id="frmMain" method="post">
+    <div class="easyui-tabs" style="width:100%;height:350px;">
+        <div title="基本信息">
+            <table class="frm-tb">
+                <tbody>
+                    <tr class="tr-top-none">
+                        <td>登录账户：</td>
+                        <td>
+                            @Html.ExtTextBoxFor(m => m.Account, new { required = true, validType = "maxLength[50]" }) 默认密码为123456
+                        </td>
+                        <td>账户类型：</td>
+                        <td>
+                            @Html.ExtDropDownFor(m => m.AccountType, (SelectList)ViewBag.OperatorTypes, new { required = true })
+                        </td>
+                    </tr>
+                    @{
+                        //此参数是从主页面传递过来的，如果有此参数，并且该参数的值为main，则为admin的信息，因此该隐藏“所属公司”选项
+                        var fromPage = Request["fromPage"];
+                        if (ViewBag.IsSuperAdmin && (fromPage == null || fromPage != "main"))
+                        {
+                            <tr>
+                                <td>所属公司：</td>
+                                <td colspan="3">
+                                    @Html.ExtComboTreeFor(m => m.CompanyId, new { url = "/MsSys/Company/GetChooseCompanys", queryParams = "{type:2}", onLoadSuccess = "companyLoaded", onChange = "companyChg" })
+                                </td>
+                            </tr>
+                        }
+                    }
+                    <tr>
+                        <td>用户头像：</td>
+                        <td colspan="3">
+                            @Html.HiddenFor(m => m.PhotoPath)
+                            @Html.ExtNumberSpinnerFor(m => m.PhotoWidth, new { min = 100, max = 400, value = 100, buttonText = "头像宽度" })
+                            @Html.ExtNumberSpinnerFor(m => m.PhotoHeight, new { min = 100, max = 400, value = 28, buttonText = "头像高度" })
+                            @Html.ExtImgFor(m => m.PhotoPath)
+                            <a href="javascript:;" class="easyui-linkbutton" id="lbtnPhoto" data-options="iconCls:'icon-image',plain:true">点击修改</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>所属角色：</td>
+                        <td colspan="3">
+                            @Html.ExtTextBoxY("txtRoleNames")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>所属部门：</td>
+                        <td>
+                            @Html.ExtTextBoxY("txtDepNames")
+                        </td>
+                        <td>所属岗位：</td>
+                        <td>
+                            @Html.ExtTextBoxY("txtPostNames")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>昵称：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Nickname, new { validType = "maxLength[20]" })</td>
+                        <td>真实姓名：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Realname, new { validType = "maxLength[20]" })</td>
+                    </tr>
+                    <tr>
+                        <td>手机号码：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Mobile, new { validType = "mobile" })</td>
+                        <td>联系电话：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Tel, new { validType = "tel" })</td>
+                    </tr>
+                    <tr>
+                        <td>省市县镇：</td>
+                        <td colspan="3">
+                            @Html.ExtDropDownForC(m => m.ProvinceId, new { width = 100, url = "/MsSys/Common/GetAreaCode", queryParams = "{type:1,level:1,areaCode:0}", valueField = "AreaCode", textField = "AreaName", onChange = "onSelectChgProvince" })
+                            @Html.ExtDropDownForC(m => m.CityId, new { width = 100, url = "/MsSys/Common/GetAreaCode", queryParams = "{type:2,level:2,areaCode:0}", valueField = "AreaCode", textField = "AreaName", onChange = "onSelectChgCity" })
+                            @Html.ExtDropDownForC(m => m.CountyId, new { width = 100, url = "/MsSys/Common/GetAreaCode", queryParams = "{type:2,level:3,areaCode:0}", valueField = "AreaCode", textField = "AreaName", onChange = "onSelectChgCounty" })
+                            @Html.ExtDropDownForC(m => m.TownId, new { width = 100, url = "/MsSys/Common/GetAreaCode", queryParams = "{type:2,level:4,areaCode:0}", valueField = "AreaCode", textField = "AreaName", onChange = "onSelectChgTown" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>详细地址：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Address, new { validType = "maxLength[200]" })</td>
+                        <td>是否启用：</td>
+                        <td>
+                            @Html.ExtRadioBoxList(m => m.IsEnable, (SelectList)ViewBag.StatusType, new { id = "thisIsEnable" })
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div title="其他信息">
+            <table class="frm-tb">
+                <tbody>
+                    <tr class="tr-top-none">
+                        <td>QQ号码：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.QQ, new { validType = "qq" })</td>
+                        <td>邮箱地址：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Email, new { validType = "email" })</td>
+                    </tr>
+                    <tr>
+                        <td>微信：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.WeChat, new { validType = "maxLength[100]" })</td>
+                        <td>微博：</td>
+                        <td>@Html.ExtTextBoxFor(m => m.Microblog, new { validType = "maxLength[100]" })</td>
+                    </tr>
+                    <tr>
+                        <td>详细信息：</td>
+                        <td colspan="3">
+                            <script id="editor" type="text/plain" style="width: 100%; height: 200px;">
+                                @Html.Raw(Model.DtlInfo)
+                            </script>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</form>
+<script>
+    var thisForm, oType = '@ViewBag.oType',
+        thisDepObj,
+        thisRoleObj,
+        thisPostObj;
+    var ueObj;
+
+    $(function () {
+        initData();
+        initEvent();
+    });
+
+    function initData() {
+        thisForm = $('#frmMain');
+        thisDepObj = $('#txtDepNames');
+        thisRoleObj = $('#txtRoleNames');
+        thisPostObj = $('#txtPostNames');
+
+        if (oType !== 'add') {
+            $('#Account').textbox('readonly');
+
+            $('#CityId').combobox({ queryParams: { type: 1, level: 2, areaCode: $('#ProvinceId').combobox('getValue') } });
+            $('#CountyId').combobox({ queryParams: { type: 1, level: 3, areaCode: $('#CityId').combobox('getValue') } });
+            $('#TownId').combobox({ queryParams: { type: 1, level: 4, areaCode: $('#CountyId').combobox('getValue') } });
+        } else {
+            $('#CityId,#CountyId,#TownId').combobox('disable');
+        }
+
+        QBO.plu.cbgrid.init(thisDepObj,
+        {
+            multiple: true,
+            idField: 'DepartmentId',
+            textField: 'DepartmentName',
+            url: '/MsSys/Operator/GetDepartments',
+            col: [
+                { field: 'DepartmentId', checkbox: true },
+                { field: 'DepartmentName', title: '部门名称', width: 150, sortable: true },
+                { field: 'Desc', title: '部门描述' },
+                { field: 'CrtTime', title: '添加时间', sortable: true }
+            ]
+        });
+
+        QBO.plu.cbgrid.init(thisRoleObj,
+        {
+            multiple: true,
+            idField: 'RoleId',
+            textField: 'RoleName',
+            url: '/MsSys/Operator/GetRoles',
+            col: [
+                { field: 'RoleId', checkbox: true },
+                { field: 'RoleName', title: '角色名称', width: 200, sortable: true },
+                { field: 'Desc', title: '角色描述' },
+                { field: 'CrtTime', title: '添加时间', sortable: true }
+            ]
+        });
+
+        QBO.plu.cbgrid.init(thisPostObj,
+        {
+            multiple: true,
+            idField: 'PostId',
+            textField: 'PostName',
+            url: '/MsSys/Operator/GetPosts',
+            col: [
+                { field: 'PostId', checkbox: true },
+                { field: 'PostName', title: '岗位名称', width: 200, sortable: true },
+                { field: 'Desc', title: '岗位描述' },
+                { field: 'CrtTime', title: '添加时间', sortable: true }
+            ]
+        });
+
+        if (oType !== 'add') {
+            loadDepRoles();
+        }
+    }
+
+    function initEvent() {
+        ueObj = QBO.plu.ue.init();
+
+        $('#lbtnPhoto').on('click', function () {
+            QBO.frm.openWin('/MsSys/Common/UploadImg?folder=SysOperator&isCut=1&cutWidth=200&cutHeight=200&oldPath=@Model.PhotoPath', { title: '上传头像', width: 1000, height: 450 });
+        });
+    }
+
+    function saveData() {
+        QBO.frm.submit(thisForm, {
+            url: '/MsSys/Operator/SaveData',
+            onSubmit: function (param) {
+                param.depIds = QBO.plu.cbgrid.getVal(thisDepObj).join(',');
+                param.roleIds = QBO.plu.cbgrid.getVal(thisRoleObj).join(',');
+                param.postIds = QBO.plu.cbgrid.getVal(thisPostObj).join(',');
+
+                param.DtlInfo = QBO.plu.ue.get(ueObj);
+                param.IsEnable = $('#thisIsEnable').checkbox('getValue').IsEnable;
+            },
+            success: function (data) {
+                QBO.dia.msg(data.Msg, {
+                    icon: data.Result === 100 ? 'right' : 'error',
+                    endCallback: function () {
+                        if (data.Result === 100) {
+                            QBO.frm.closeWin(function () {
+                                if (QBO.com.getUrlVal('dataType') != 'frame') {//此处dataType为frame，代表从框架主页面顶部的个人中心进来的
+                                    QBO.frm.getWin().reloadGridData();
+                                }
+                            });
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    function setImg(imgPath) {
+        $('#PhotoPathShow').attr('src', imgPath);
+        $('#PhotoPath').val(imgPath);
+    }
+
+    function loadDepRoles() {
+        QBO.plu.ajax({
+            url: '/MsSys/Operator/GetDepRolePosts'
+        }, function (data) {
+            QBO.plu.cbgrid.setVal(thisDepObj, data.dep);
+            QBO.plu.cbgrid.setVal(thisRoleObj, data.role);
+            QBO.plu.cbgrid.setVal(thisPostObj, data.post);
+        });
+    }
+
+    //加载公司其下的部门和角色
+    function companyChg(newValue, oldValue) {
+        loadComDepsRols(newValue);
+    }
+    function companyLoaded() {
+        loadComDepsRols($('#CompanyId').combotree('getValue'));
+    }
+    function loadComDepsRols(comId) {
+        if (!comId || comId.length <= 0) return;
+
+        QBO.plu.ajax({
+            url: '/MsSys/Operator/GetDepsRolPoss',
+            data: { comId: comId }
+        }, function (data) {
+            thisDepObj.combogrid("grid").datagrid("loadData", data.dep);
+            thisRoleObj.combogrid("grid").datagrid('loadData', data.role);
+            thisPostObj.combogrid("grid").datagrid('loadData', data.post);
+        });
+    }
+
+    //省市县镇选择事件
+    function onSelectChgProvince(newValue, oldValue) {
+        newValue = !newValue || newValue.length <= 0 ? 0 : newValue;
+
+        $('#CityId').combobox({ queryParams: { type: 1, level: 2, areaCode: newValue } }).combobox('setValue', '-1').combobox('enable');
+        $('#CountyId,#TownId').combobox('clear').combobox('setValue', '-1').combobox('disable');
+    }
+    function onSelectChgCity(newValue, oldValue) {
+        newValue = !newValue || newValue.length <= 0 ? 0 : newValue;
+
+        $('#CountyId').combobox({ queryParams: { type: 1, level: 3, areaCode: newValue } }).combobox('setValue', '-1').combobox('enable');
+        $('#TownId').combobox('clear').combobox('setValue', '-1').combobox('disable');
+    }
+    function onSelectChgCounty(newValue, oldValue) {
+        newValue = !newValue || newValue.length <= 0 ? 0 : newValue;
+
+        $('#TownId').combobox({ queryParams: { type: 1, level: 4, areaCode: newValue } }).combobox('setValue', '-1').combobox('enable');
+    }
+    function onSelectChgTown(newValue, oldValue) {
+    }
+</script>

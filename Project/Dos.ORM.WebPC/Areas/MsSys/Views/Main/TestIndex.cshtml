@@ -1,0 +1,625 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <title> 科信信息化监管平台 </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="科信交通信息化平台第一版网页版" name="description" />
+    <meta content="科信交通" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="~/Content/assets/global/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/components/css/components.css" id="style_components" rel="stylesheet" />
+    <link href="~/Content/assets/global/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/bootstrip-tabs/bootstrap-addtabs.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/jquery-confirm/jquery-confirm.min.css" rel="stylesheet" />
+    @*<link href="~/Content/assets/global/bootstrap-progress/themes/progress-theme-minimal.css" rel="stylesheet" />*@
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="~/Content/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/admin/layout/css/themes/blue/ui.css" rel="stylesheet" id="style_color" />
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!--[if lt IE 9]>
+    <script src="~/Content/assets/global/respond.min.js"></script>
+    <script src="~/Content/assets/global/excanvas.min.js"></script>
+    <![endif]-->    
+    <script src="~/Content/assets/global/jquery.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/global/jquery.sparkline.min.js" type="text/javascript"></script>   
+    <script src="~/Content/assets/global/jquery-confirm/jquery-confirm.min.js"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="~/Content/assets/global/metronic.js" type="text/javascript"></script>
+   <!-- <script src="~/Content/assets/global/bootstrip-tabs/bootstrap-addtabs.js"></script>
+    <script src="~/Content/assets/global/bootstrap-progress/bootstrap-progress.min.js"></script> -->
+    <!-- admin begin-->
+    <script src="~/Content/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+    @*<script src="~/Content/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>*@
+    <script src="~/Content/assets/admin/layout/scripts/loader.js"></script>
+
+
+    @*<link href="~/Content/Components/Animate/animate.min.css" rel="stylesheet" /> 
+    <link href="~/Content/Css/Themes/base.blue.css" rel="stylesheet" />*@
+    <script src="~/Content/Components/AngularJS/angular.min.js"></script>
+    <script src="~/Content/Components/Layer/layer.min.js"></script>
+    <script src="~/Content/Js/Base/base.core.js"></script>
+    <script src="~/Content/Js/Base/base.loading.js"></script>
+    
+    <style type="text/css">
+        .page-nav {
+            height: 75px;
+        }
+
+        .nav-tabs > li {
+            text-align: center;
+        }
+
+        .page-nav .nav-tabs a {
+            height: 70px;
+            /*padding: 10px 20px;*/
+            line-height: 1.8;
+        }
+
+
+        .tt-inner {
+            display: inline-block;
+            line-height: 12px;
+            padding: 5px 5px;
+        }
+
+            .tt-inner img {
+                border: 0;
+                width: 35px;
+            }
+
+            .tt-inner .tt-title {
+                padding-top: 7px;
+                display: inline-block;
+            }
+    </style>
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo page-container-bg-solid page-footer-fixed"
+      ng-app="ngApp" ng-controller="mainCtrl" style="overflow:hidden;">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top" id="page-header">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="/Admin/Index">
+                    <img src="~/Content/assets/admin/layout/img/jshclogo.png" alt="logo" class="logo-default" />
+                </a>
+                <div class="menu-toggler sidebar-toggler hide">
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-extended dropdown-settings" id="header_theme_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i class="icon-settings"></i>
+                        </a>
+                        <ul></ul>
+                    </li>
+                    <!-- END INBOX DROPDOWN -->
+                    <!-- BEGIN TODO DROPDOWN -->
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <i class="icon-bell"></i>
+                            <span class="badge badge-default">
+                                1
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="external">
+                                <h3><span class="bold">1 条</span> 消息</h3>
+                                <a href="extra_profile.html">查看全部</a>
+                            </li>
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">刚刚</span>
+                                            <span class="details">
+                                                <span class="label label-sm label-icon label-success">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                新添加了用户
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-addtab="Calendar" url="/Common/partial_System_Calendar">
+                            <i class="icon-calendar"></i>
+                            <span>今天</span>
+                        </a>
+                        <ul>
+                            @*  data-toggle="modal" data-target="#modal_Calendar"  *@
+                        </ul>
+                    </li>
+                    <!-- END TODO DROPDOWN -->
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <img alt="" class="img-circle" src="~/Content/assets/admin/layout/img/@(ViewBag.Photo).png" />
+                            <span class="username username-hide-on-mobile">
+                                @ViewBag.Name
+                            </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="javascript:;" data-addtab="Log1" url="/Logger/Index?type=操作">
+                                    <i class="fa fa-file-text-o"></i> 操作记录
+                                    @*<span class="badge badge-danger">
+                                            3
+                                        </span>*@
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-addtab="Log2" url="/Logger/Index?type=登陆">
+                                    <i class="fa fa-file-text"></i> 登陆日志
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Common/partial_System_Password" data-toggle="modal" data-target="#modal_Password">
+                                    <i class="icon-user"></i> 修改密码
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="btnConfirmQuit" att-href="/Admin/Login">
+                                    <i class="icon-key"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                    <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-quick-sidebar-toggler">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <i class="icon-logout"></i>
+                        </a>
+                    </li>
+                    <!-- END QUICK SIDEBAR TOGGLER -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <div class="clearfix">
+    </div>
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <ul id="sys-sidebar-menu" class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                    <li class="sidebar-toggler-wrapper">
+                        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        <div class="sidebar-toggler">
+                        </div>
+                        <!-- END SIDEBAR TOGGLER BUTTON -->
+                    </li>
+                    <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                    <li ng-repeat="super in trees"
+                        ng-class="{'start active open':$index==0}">
+                        <a href="javascript:;">
+                            @*<i class="icon-home"></i>*@
+                            <i class="icon-folder"></i>
+                            <span class="title">{{::super.name}}</span>
+                            <span ng-class="{'selected':$index==0}"></span>
+                            @*<span ng-class="{true:'selected',false:'unselected'}[$index==0]"></span>*@
+                            <span ng-class="{true:'arrow open',false:'arrow'}[$index==0]"></span>
+                            <ul class="sub-menu">
+                                <li ng-repeat="sub in super.children" ng-class="{'selected':$index==0}">
+                                    <a href="javascript:;" ng-click="selLabItem(sub.id,sub.name,sub.extraData)">
+                                        {{::sub.name}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                    <!-- END SIDEBAR MENU -->
+            </div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="theme-panel hidden-xs hidden-sm">
+                <div class="toggler-close">
+                </div>
+                <div class="theme-options">
+                    <div class="theme-option theme-colors clearfix">
+                        <span>
+                            主题颜色
+                        </span>
+                        <ul>
+                            <li class="color-default tooltips" data-style="default" data-container="body" data-original-title="Default">
+                            </li>
+                            <li class="color-darkblue tooltips" data-style="darkblue" data-container="body" data-original-title="Dark Blue">
+                            </li>
+                            <li class="color-blue current tooltips" data-style="blue" data-container="body" data-original-title="Blue">
+                            </li>
+                            <li class="color-grey tooltips" data-style="grey" data-container="body" data-original-title="Grey">
+                            </li>
+                            <li class="color-light tooltips" data-style="light" data-container="body" data-original-title="Light">
+                            </li>
+                            <li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="theme-option">
+                        <span>
+                            主题样式
+                        </span>
+                        <select class="layout-style-option form-control input-sm">
+                            <option value="square" selected="selected">方角</option>
+                            <option value="rounded">圆角</option>
+                        </select>
+                    </div>
+                    <div class="theme-option">
+                        <span>
+                            布局
+                        </span>
+                        <select class="layout-option form-control input-sm">
+                            <option value="fluid" selected="selected">填充</option>
+                            <option value="boxed">方格</option>
+                        </select>
+                    </div>
+                    <div class="theme-option">
+                        <span>
+                            头部
+                        </span>
+                        <select class="page-header-option form-control input-sm">
+                            <option value="fixed" selected="selected">固定</option>
+                            <option value="default">默认</option>
+                        </select>
+                    </div>
+                    <div class="theme-option">
+                        <span>
+                            头部下拉菜单
+                        </span>
+                        <select class="page-header-top-dropdown-style-option form-control input-sm">
+                            <option value="light" selected="selected">浅色</option>
+                            <option value="dark">深色</option>
+                        </select>
+                    </div>
+                    <div class="theme-option">
+                        <span>
+                            尾头
+                        </span>
+                        <select class="page-footer-option form-control input-sm">
+                            <option value="fixed" selected="selected">固定</option>
+                            <option value="default">默认</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- BEGIN PAGE HEADER-->
+            <div class="page-content">
+
+                @*<div id="tabs" class="page-nav nav-container">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist"><li class="dropdown pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-align-justify"></i><b class="caret"></b></a><ul class="dropdown-menu" id="dropdown-menu"><li class="list-tab"><a id="drop_tab_fe5cafdc-21d0-4288-b5e8-06d231e19f84" tid="fe5cafdc-21d0-4288-b5e8-06d231e19f84" href="#" url="/MsSys/Module/BasicIndex?TargetId=6bebfb29-61a6-47b6-8a44-95b5401aa3ad&amp;LoadApi=0"><span class="tt-inner" data-id="fe5cafdc-21d0-4288-b5e8-06d231e19f84">  <img src="/Content/Css/Themes/Images/Design/Default/IconBig/main_nav_jbxx.png"><br>  <span class="tt-title">基本信息</span></span></a></li><li class="list-tab"><a id="drop_tab_1ba3b516-720c-4e3b-9145-2267c391b1b8" tid="1ba3b516-720c-4e3b-9145-2267c391b1b8" href="#" url="/MsSys/Module/TesterIndex1?TargetId=6bebfb29-61a6-47b6-8a44-95b5401aa3ad&amp;LoadApi=0"><span class="tt-inner" data-id="1ba3b516-720c-4e3b-9145-2267c391b1b8">  <img src="/Content/Css/Themes/Images/Design/Default/IconBig/main_nav_jcry.png"><br>  <span class="tt-title">检测人员</span></span></a></li></ul></li><li role="presentation" id="tab_tab_fe5cafdc-21d0-4288-b5e8-06d231e19f84" class="active"><a id="tab_href_tab_fe5cafdc-21d0-4288-b5e8-06d231e19f84" href="#tab_fe5cafdc-21d0-4288-b5e8-06d231e19f84" toggled="false" aria-controls="tab_fe5cafdc-21d0-4288-b5e8-06d231e19f84" role="tab" data-toggle="tab" aria-expanded="true"><span class="tt-inner" data-id="fe5cafdc-21d0-4288-b5e8-06d231e19f84">  <img src="/Content/Css/Themes/Images/Design/Default/IconBig/main_nav_jbxx.png"><br>  <span class="tt-title">基本信息</span></span></a></li><li role="presentation" id="tab_tab_1ba3b516-720c-4e3b-9145-2267c391b1b8" class=""><a id="tab_href_tab_1ba3b516-720c-4e3b-9145-2267c391b1b8" href="#tab_1ba3b516-720c-4e3b-9145-2267c391b1b8" toggled="false" aria-controls="tab_1ba3b516-720c-4e3b-9145-2267c391b1b8" role="tab" data-toggle="tab" aria-expanded="false"><span class="tt-inner" data-id="1ba3b516-720c-4e3b-9145-2267c391b1b8">  <img src="/Content/Css/Themes/Images/Design/Default/IconBig/main_nav_jcry.png"><br>  <span class="tt-title">检测人员</span></span></a></li></ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                        <div class="tab-pane active" id="tab_fe5cafdc-21d0-4288-b5e8-06d231e19f84" role="tabpanel"><iframe class="iframeClass" frameborder="no" border="0" src="/MsSys/Module/BasicIndex?TargetId=6bebfb29-61a6-47b6-8a44-95b5401aa3ad&amp;LoadApi=0&amp;theme=blue" style="height: 873px;"></iframe></div><div class="tab-pane" id="tab_1ba3b516-720c-4e3b-9145-2267c391b1b8" role="tabpanel"><iframe class="iframeClass" frameborder="no" border="0" src="/MsSys/Module/TesterIndex1?TargetId=6bebfb29-61a6-47b6-8a44-95b5401aa3ad&amp;LoadApi=0&amp;theme=blue" style="height: 873px;"></iframe></div>
+                    </div>
+                </div>*@
+
+                <div class="page-nav nav-container">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="dropdown pull-right tabdrop">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="glyphicon glyphicon-align-justify"></i>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li class="list-tab" ng-repeat="item in modules">
+                                    <a href="#" id="drop_tab_{{::item.id}}" tid="{{::item.id}}" url="{{item.src+'?TargetId='+item.id+'&amp;LoadApi='+($index==0?1:0)}}">
+                                        <span class="tt-inner" data-id="{{::item.id}}">
+                                            <img src="/Content/Css/Themes/Images/Design/Default/IconBig/{{::item.iconCls}}.png"><br>
+                                            <span class="tt-title">{{::item.name}}</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" ng-repeat="item in modules" id="tab_tab_{{::item.id}}" ng-class="{true:'active',false:''}[$index==0]">
+                            <a id="tab_href_tab_{{::item.id}}" href="#tab_{{::item.id}}" aria-controls="tab_{{::item.id}}"
+                               ng-click="selectTabItem($index,item.id,item.name)" toggled="false" role="tab" data-toggle="tab" aria-expanded="true">
+                                <span class="tt-inner" data-id="{{::item.id}}">
+                                    <img src="/Content/Css/Themes/Images/Design/Default/IconBig/{{::item.iconCls}}.png"><br>
+                                    <span class="tt-title">{{::item.name}}</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" ng-repeat="item in modules" id="tab_{{::item.id}}"
+                             ng-class="{true:'tab-pane active',false:'tab-pane'}[$index==0]">
+                            <iframe class="iframeClass" frameborder="no" border="0"
+                                    ng-src="{{item.src+'?TargetId='+item.id+'&amp;LoadApi='+($index==0?1:0)+'&amp;theme=blue'}}" style="height: 873px;"></iframe>
+                        </div>
+                    </div>
+
+                    @*<!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist"></ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                        </div>*@
+                </div>
+
+            </div>
+            <!-- END STYLE CUSTOMIZER -->
+        </div>
+        <!-- END CONTENT -->
+        <!-- BEGIN QUICK SIDEBAR -->
+        <a href="javascript:;" class="page-quick-sidebar-toggler"><i class="icon-close"></i></a>
+        <div class="page-quick-sidebar-wrapper">
+            <div class="page-quick-sidebar">
+                <div class="nav-justified">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active">
+                            <a href="#quick_sidebar_tab_1" data-toggle="tab">
+                                <i class="glyphicon glyphicon-exclamation-sign"></i>
+                                关于
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#quick_sidebar_tab_2" data-toggle="tab">
+                                <i class="glyphicon glyphicon-file"></i>
+                                帮助
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active page-quick-sidebar-alerts" id="quick_sidebar_tab_1">
+                            <h5 class="list-heading"> 版权：江苏华创光电科技有限公司 </h5>
+                            <h5 class="list-heading"> 版本：V1.0.0 Build160726 </h5>
+                        </div>
+                        <div class="tab-pane page-quick-sidebar-chat" id="quick_sidebar_tab_2">
+                            <div class="page-quick-sidebar-settings-list">
+                                <h5 class="list-heading">1.权限设置：</h5>
+                                <ul class="list-items borderless">
+                                    <li>
+                                        <a href="#">1.0如何创建用户</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1.1如何分配权限</a>
+                                    </li>
+                                </ul>
+                                <h5 class="list-heading">2.诊断分析：</h5>
+                                <ul class="list-items borderless">
+                                    <li>
+                                        <a href="#">2.0如何选择数据源</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END QUICK SIDEBAR -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer" id="page-footer">
+        <div class="page-footer-inner page-footer-version">
+            CMS ON WEB  <a href="#" title="科信交通" target="_blank">科信交通</a>  &copy; 2017
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <div tabindex="0" class="modal fade" id="modal_Password" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-unpas">
+            <div class="modal-content">
+            </div>
+            <!-- /.modal-content modal-lg -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div tabindex="1" class="modal fade" id="modal_Calendar" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-unpas">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <button class="close" aria-hidden="true" type="button" data-dismiss="modal"></button>
+                        <h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> 日历 </h5>
+                    </div>
+                    <div class="modal-body" style="min-height:480px;">
+                        <iframe scrolling="no" src="/Common/partial_System_Calendar?random=2345" frameborder="0" style="width:100%; height:480px;"></iframe>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content modal-lg -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <script type="text/javascript">
+
+        //$('#tabs').addtabs();
+
+
+        jQuery(document).ready(function () {
+            //Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            //QuickSidebar.init(); // init quick sidebar
+            Loader.init(); // init demo features
+        });
+
+
+    </script>
+
+
+    <script type="text/javascript">
+
+
+        var modulePid = '@ViewBag.ModulePid';
+
+        var ngApp = angular.module('ngApp', []);
+        ngApp.controller('mainCtrl', function ($scope, $http, $timeout) {
+            initNgData($scope, $http);
+            initNgEvent($scope, $http, $timeout);
+        });
+
+        //初始化ng数据
+        function initNgData($scope, $http) {
+            $scope.index = 0;
+            $scope.selData = { TargetId: '', TargetName: '', ModuleId: '', ModuleName: '', ExtraData: {} };
+            $scope.modulePid = modulePid;
+
+            //项目实验室菜单
+            $scope.trees = [];
+            $scope.modules = [];
+            QBO.plu.ng.http({ http: $http, isLoad: false, chkLogin: true, url: '/MsSys/Main/GetLabModule', params: { ModulePid: $scope.modulePid } }, function (result) {
+                //console.log(JSON.stringify(result.Data))
+                if (result.Result === 100) {
+                    $scope.trees = result.Data.Trees;
+                    $scope.modules = result.Data.Modules;
+
+                    var item = $scope.trees[0].children[0];
+                    $scope.selData.TargetId = item.id;
+                    $scope.selData.TargetName = item.name;
+                    $scope.selData.ExtraData = item.extraData;
+                    //console.log(JSON.stringify($scope.trees))
+
+                    //$scope.initModules();
+
+                    //$scope.moduleQuery();
+                   
+                }
+            });
+        }
+
+        //初始化ng事件
+        function initNgEvent($scope, $http, $timeout) {
+
+            $scope.initModules = function () {
+
+                var modules = angular.copy($scope.modules);
+
+                for (var i = 0; i < 2; i++) {
+
+                    var id = modules[i].id;
+                    var name = modules[i].name;
+                    var iconCls = modules[i].iconCls;
+                    var src = modules[i].src;
+
+                    if (i == 0) {
+                        $scope.index = 1;
+                        $scope.selData.ModuleId = id;
+                        $scope.selData.ModuleName = name;
+                    }
+
+                    var title = "<span class='tt-inner' data-id='" + id + "'>"
+                              + "  <img src='/Content/Css/Themes/Images/Design/Default/IconBig/" + iconCls + ".png' /><br>"
+                              + "  <span class='tt-title'>" + name + "</span>"
+                              + "</span>"
+
+                    var url = '';
+                    if (src != null) {
+                        url = src + ((src.indexOf('?') === -1) ? '?' : '&') + 'TargetId=' + $scope.selData.TargetId + '&LoadApi=0';
+                    }
+
+                    Addtabs.add({
+                        id: id,
+                        title: title,
+                        content: '',
+                        iframeHeight: 80,
+                        toggled: false,
+                        url: url,
+                        close: false,
+                        ajax: false
+                    });
+                }
+            };
+
+            //选择菜单事件 
+            $scope.selLabItem = function (id, name, extraData) {
+                $scope.selData.TargetId = id;
+                $scope.selData.TargetName = name;
+                $scope.selData.ExtraData = extraData;
+                $scope.moduleQuery($scope.selData);
+            };
+
+            //选择模块事件
+            $scope.selectTabItem= function (index,id,name) {                
+                if ($scope.index != index) {
+                    $scope.index = index;
+                    $scope.selData.ModuleId = id;
+                    $scope.selData.ModuleName = name;
+                    $scope.moduleQuery();
+                }
+            }
+
+            //查询数据
+            $scope.moduleQuery = function () {
+            
+                var frame = $(window.parent.document).contents().find(".iframeClass")[$scope.index];
+
+                if (frame != undefined && frame.contentWindow != undefined) {
+                    var Module_Method = frame.contentWindow.ModuleQuery;
+                    if (jQuery.isFunction(Module_Method)) {
+                        eval(Module_Method($scope.selData));
+                    }
+                }
+             
+            };
+
+
+
+        }
+
+
+    </script>
+
+    <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

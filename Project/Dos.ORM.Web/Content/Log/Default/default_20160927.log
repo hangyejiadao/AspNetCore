@@ -1,0 +1,3480 @@
+
+#############################################################################
+
+1、时间：2016-09-27 13:55:02,144
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：10940
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:55:01:7607
+    详细数据：【{"LogId":"88883c66-b7e1-4585-866d-c1508bd8de89","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 13:55:01","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 13:56:47,942
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：116738
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:56:47:8465
+    详细数据：【{"LogId":"8cc44a51-675a-4ce4-a4e4-c77880544f32","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 13:56:47","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 13:57:12,719
+2、优先级别：INFO
+3、线程ID：16
+4、耗时：141514
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【退出系統】进行“登出”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/LoginOut
+    操作结果：退出成功
+    操作描述：系统退出成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:57:12:6915
+    详细数据：【{"LogId":"1795fab9-8302-41ec-b90d-ee57464e02d6","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 13:57:12","OptModuleName":"退出系統","OptModulePath":"/MsSys/Login/LoginOut","OptTypeId":2002,"OptTypeName":"登出","OptResultId":360,"OptResultName":"退出成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"系统退出成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 13:57:21,403
+2、优先级别：INFO
+3、线程ID：15
+4、耗时：150198
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：系统管理员对【登录系统】进行“登录”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:57:21:3258
+    详细数据：【{"LogId":"f3f214d4-446b-4846-bf3b-53c9ed60f87a","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 13:57:21","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 13:57:29,976
+2、优先级别：INFO
+3、线程ID：5
+4、耗时：158771
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【角色管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsSys/Role/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:57:29:9563
+    详细数据：【{"LogId":"71595627-c679-498d-98a2-847ce279a1af","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 13:57:29","OptModuleName":"角色管理","OptModulePath":"/MsSys/Role/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 13:57:42,492
+2、优先级别：INFO
+3、线程ID：16
+4、耗时：171287
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【模块管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsSys/Module/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:57:42:4366
+    详细数据：【{"LogId":"e1014e47-0279-45cb-9ac5-78a45fafbf57","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 13:57:42","OptModuleName":"模块管理","OptModulePath":"/MsSys/Module/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 13:59:44,127
+2、优先级别：INFO
+3、线程ID：19
+4、耗时：292922
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【部门管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsSys/Department/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 13:59:43:7916
+    详细数据：【{"LogId":"d7fc2d19-1bfc-4a90-8d32-ccd02579abb1","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 13:59:43","OptModuleName":"部门管理","OptModulePath":"/MsSys/Department/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 14:03:44,989
+2、优先级别：INFO
+3、线程ID：5
+4、耗时：533785
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【新闻信息管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 14:03:44:9615
+    详细数据：【{"LogId":"dd835942-3b8c-4206-ac99-4839f652e062","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 14:03:44","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 14:03:57,756
+2、优先级别：INFO
+3、线程ID：22
+4、耗时：546551
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【新闻信息管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 14:03:57:7395
+    详细数据：【{"LogId":"bef1b150-3c5c-4557-99bb-799cb0fbb001","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 14:03:57","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 14:03:59,197
+2、优先级别：INFO
+3、线程ID：22
+4、耗时：547992
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【新闻信息管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 14:03:59:1379
+    详细数据：【{"LogId":"cf859384-bed1-482a-83a4-06d51760f420","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 14:03:59","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 14:04:11,977
+2、优先级别：INFO
+3、线程ID：22
+4、耗时：560772
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【新闻信息管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 14:04:11:9572
+    详细数据：【{"LogId":"a3580c63-0b5d-406d-b053-04be24f206c7","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 14:04:11","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 14:04:13,082
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：561878
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【新闻信息管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 14:04:13:0216
+    详细数据：【{"LogId":"fc75e817-b4d3-4b14-a8d1-27a3cdbdebc3","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 14:04:13","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 14:04:14,647
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：563443
+5、行号：120
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：系统管理员对【新闻信息管理】进行“查询”操作
+    操作人员：系统管理员[0ad06755-9fde-4ddd-9dcb-448462155a02]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：127.0.0.1
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 14:04:14:6277
+    详细数据：【{"LogId":"cf903892-0e24-4bd8-8b40-124c4bb7fe70","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":null,"DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a02","OptUserName":"系统管理员","OptTime":"2016-09-27 14:04:14","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"127.0.0.1","Mac":"","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:03:31,872
+2、优先级别：INFO
+3、线程ID：11
+4、耗时：43036
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:03:31:5115
+    详细数据：【{"LogId":"29acc519-34ff-4a8f-b8ba-7410d8c54207","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:03:31","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:03:42,175
+2、优先级别：INFO
+3、线程ID：7
+4、耗时：53340
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:03:42:1168
+    详细数据：【{"LogId":"aa4b9939-2a43-4ff9-99f2-5279d199790e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:03:42","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:05:03,411
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：134575
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:05:03:3399
+    详细数据：【{"LogId":"81aa1dd5-f96c-4947-befb-4bf76987c39e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:05:03","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:17:14,218
+2、优先级别：INFO
+3、线程ID：32
+4、耗时：10135
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:17:14:0301
+    详细数据：【{"LogId":"a38fc6a3-2c47-4e62-9485-fd4e8399251b","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:17:14","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:17:25,780
+2、优先级别：INFO
+3、线程ID：28
+4、耗时：21696
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:17:25:7207
+    详细数据：【{"LogId":"9a457fad-a255-4180-ad7e-052cc2c17396","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:17:25","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:17:30,540
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：26457
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:17:30:5153
+    详细数据：【{"LogId":"34230070-8ce4-412e-a433-30e6a4f75b94","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:17:30","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:21:13,693
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：6434
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:21:13:5649
+    详细数据：【{"LogId":"fdc3edec-c6ed-45f9-8391-077f8ec94b80","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:21:13","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:21:23,627
+2、优先级别：INFO
+3、线程ID：26
+4、耗时：16368
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:21:23:5741
+    详细数据：【{"LogId":"bb843454-3960-41fe-ae63-f5b0078cf016","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:21:23","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:25:15,984
+2、优先级别：INFO
+3、线程ID：17
+4、耗时：248726
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:25:15:9069
+    详细数据：【{"LogId":"022bd1d0-4861-474f-85f6-726b79ce23f8","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:25:15","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:25:16,799
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：249541
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:25:16:7441
+    详细数据：【{"LogId":"1de82725-8a3e-4f75-a340-1dc7bced71b3","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:25:16","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:25:20,377
+2、优先级别：INFO
+3、线程ID：16
+4、耗时：253118
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:25:20:3472
+    详细数据：【{"LogId":"642204dc-4f86-40d4-8834-8756714c1caa","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:25:20","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:31:35,299
+2、优先级别：INFO
+3、线程ID：17
+4、耗时：8105
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:31:34:7827
+    详细数据：【{"LogId":"12498f6e-cccf-441f-a2f7-02aab0c3674b","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:31:34","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:32:22,041
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：54848
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：
+    操作描述：
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:32:21:9956
+    详细数据：【{"LogId":"7256d4ad-2751-4d31-9544-08b98aa95b17","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:32:21","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":null,"OptResultName":null,"OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":null,"Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:17,870
+2、优先级别：INFO
+3、线程ID：56
+4、耗时：6680
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:17:7121
+    详细数据：【{"LogId":"7de792b6-ea81-4586-afa4-822d4aa5e95e","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:17","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:31,998
+2、优先级别：INFO
+3、线程ID：57
+4、耗时：20808
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:31:9435
+    详细数据：【{"LogId":"f2b6c729-9aa6-4152-8e71-26a71cf9eb8a","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:31","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:37,422
+2、优先级别：INFO
+3、线程ID：49
+4、耗时：26232
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:37:3944
+    详细数据：【{"LogId":"928044b6-0fac-4b28-8c2f-c527d955bc05","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:37","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:39,695
+2、优先级别：INFO
+3、线程ID：49
+4、耗时：28506
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:39:6712
+    详细数据：【{"LogId":"e86325b5-6dd3-4b18-880c-bfcf79e96ec0","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:39","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:40,442
+2、优先级别：INFO
+3、线程ID：49
+4、耗时：29252
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:40:3846
+    详细数据：【{"LogId":"29251068-b921-4647-84e0-ee81abee0506","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:40","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:42,987
+2、优先级别：INFO
+3、线程ID：52
+4、耗时：31797
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:42:9639
+    详细数据：【{"LogId":"b5567e6b-0d05-437a-af4b-84e6b74d2ee3","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:42","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:49:43,561
+2、优先级别：INFO
+3、线程ID：57
+4、耗时：32371
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:49:43:5373
+    详细数据：【{"LogId":"6d9222d5-f257-4a4e-addb-42fa6a56cf73","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:49:43","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:26,049
+2、优先级别：INFO
+3、线程ID：54
+4、耗时：74859
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:26:0129
+    详细数据：【{"LogId":"33bab5e6-23d6-4dd0-9c1f-5b7e3fa590c4","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:26","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:28,354
+2、优先级别：INFO
+3、线程ID：55
+4、耗时：77165
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:28:3288
+    详细数据：【{"LogId":"ffb96401-ed85-4661-8716-33dc91894103","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:28","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:32,201
+2、优先级别：INFO
+3、线程ID：52
+4、耗时：81012
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:32:1805
+    详细数据：【{"LogId":"ace76445-75b8-44b1-b6e2-db655cfaa8f0","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:32","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:32,997
+2、优先级别：INFO
+3、线程ID：49
+4、耗时：81807
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:32:9764
+    详细数据：【{"LogId":"abac149d-e9f8-45f3-b88a-c3d7c817793a","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:32","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:35,402
+2、优先级别：INFO
+3、线程ID：52
+4、耗时：84213
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:35:3787
+    详细数据：【{"LogId":"78201e41-7a7e-4eb4-aea9-a88d587aa1db","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:35","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:35,935
+2、优先级别：INFO
+3、线程ID：55
+4、耗时：84745
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:35:9094
+    详细数据：【{"LogId":"2e523626-0f3e-4d23-aa34-7c9536ce5b4d","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:35","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:39,685
+2、优先级别：INFO
+3、线程ID：57
+4、耗时：88496
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:39:6555
+    详细数据：【{"LogId":"056372d9-b6e9-453f-b22e-5c823916706e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:39","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:40,179
+2、优先级别：INFO
+3、线程ID：55
+4、耗时：88989
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:40:1549
+    详细数据：【{"LogId":"55988882-9ab3-4a86-91ad-b6438b9c9fa8","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:40","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:42,123
+2、优先级别：INFO
+3、线程ID：55
+4、耗时：90934
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:42:0996
+    详细数据：【{"LogId":"5587eb42-2818-4aef-a493-a7784a607ce6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:42","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:42,627
+2、优先级别：INFO
+3、线程ID：55
+4、耗时：91437
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:42:6050
+    详细数据：【{"LogId":"a54cf78d-0c5e-4d38-a745-b24cb8a612f0","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:42","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:45,268
+2、优先级别：INFO
+3、线程ID：52
+4、耗时：94078
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:45:2107
+    详细数据：【{"LogId":"d3f1fafa-aaf9-4fd1-a0f2-1ad00370ca02","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:45","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:45,512
+2、优先级别：INFO
+3、线程ID：57
+4、耗时：94322
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:45:4917
+    详细数据：【{"LogId":"cf9f2fcd-45aa-44fa-8f51-0e0bc45cc384","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:45","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:49,442
+2、优先级别：INFO
+3、线程ID：49
+4、耗时：98252
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:49:4173
+    详细数据：【{"LogId":"6b712408-f97e-4424-a1ed-813bb76292e5","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:49","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:50,934
+2、优先级别：INFO
+3、线程ID：57
+4、耗时：99745
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:50:9138
+    详细数据：【{"LogId":"4dfc929b-990b-41ee-ba38-f76ee9d865ec","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:50","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:53,561
+2、优先级别：INFO
+3、线程ID：49
+4、耗时：102371
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:53:5392
+    详细数据：【{"LogId":"b65aee16-9b8c-4880-8935-ff32b2f59395","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:53","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:50:57,580
+2、优先级别：INFO
+3、线程ID：52
+4、耗时：106390
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:50:57:5560
+    详细数据：【{"LogId":"60767dd3-ba15-458d-b6de-803f3fcc0599","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:50:57","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 21:51:03,743
+2、优先级别：INFO
+3、线程ID：55
+4、耗时：112553
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 21:51:03:7161
+    详细数据：【{"LogId":"3dbb6573-d435-44a1-91d1-64afe99dc65c","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 21:51:03","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:04:36,959
+2、优先级别：INFO
+3、线程ID：40
+4、耗时：13134
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:04:36:8354
+    详细数据：【{"LogId":"f21023fb-2221-4c25-b842-bd0cb6a4add0","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:04:36","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:04:51,313
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：27489
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:04:51:2601
+    详细数据：【{"LogId":"29251d27-84c1-4400-bfb7-df5fac6a14d1","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:04:51","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:04:55,008
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：31184
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:04:54:9838
+    详细数据：【{"LogId":"6b43cad2-e832-4739-b86f-6a41d76a4cf7","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:04:54","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:04:58,764
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：34940
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:04:58:7410
+    详细数据：【{"LogId":"4804c234-1b7e-4853-83c2-7b438d24be4f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:04:58","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:04:59,498
+2、优先级别：INFO
+3、线程ID：34
+4、耗时：35674
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:04:59:4769
+    详细数据：【{"LogId":"08f4868a-7941-4ce8-a873-8b5c435fa1ac","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:04:59","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:05:01,848
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：38024
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:05:01:8251
+    详细数据：【{"LogId":"3986d4ca-1db1-4424-8902-69c5c44d94ac","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:05:01","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:05:02,177
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：38353
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:05:02:1409
+    详细数据：【{"LogId":"306821c8-5fce-445b-b152-c8c4726a023f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:05:02","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:11,996
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：108172
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:11:9693
+    详细数据：【{"LogId":"e3c49214-a09d-4d93-a0dd-ced29e9c8b12","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:11","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:18,406
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：114582
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:18:3828
+    详细数据：【{"LogId":"f98e127c-abe1-4e46-9ef8-def2ecd73cfd","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:18","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:23,366
+2、优先级别：INFO
+3、线程ID：7
+4、耗时：119542
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:23:3451
+    详细数据：【{"LogId":"f7c39ad7-a783-4955-a2ad-be33d36b75a8","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:23","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:23,901
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：120077
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:23:8743
+    详细数据：【{"LogId":"24af0dfe-5fe6-41ba-952b-2938ce459259","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:23","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:27,117
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：123293
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:27:0968
+    详细数据：【{"LogId":"25055ad4-13c6-4390-8ebc-138b0234c62f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:27","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:27,768
+2、优先级别：INFO
+3、线程ID：7
+4、耗时：123944
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:27:7471
+    详细数据：【{"LogId":"0334aa84-b67c-4e01-8582-8157158bbb71","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:27","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:28,632
+2、优先级别：INFO
+3、线程ID：16
+4、耗时：124808
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:28:6102
+    详细数据：【{"LogId":"486aa83e-e863-4971-aa0e-c0988047d602","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:28","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:28,975
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：125151
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:28:9510
+    详细数据：【{"LogId":"0d57e312-12cb-42ef-b366-a865e8a114d1","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:28","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:29,572
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：125748
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:29:5473
+    详细数据：【{"LogId":"41a263de-1d7a-4857-ada2-5ecd0122242e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:29","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:30,509
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：126685
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:30:4813
+    详细数据：【{"LogId":"b066f3ab-144e-4d2f-bc46-ec3a13e5d494","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:30","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:32,309
+2、优先级别：INFO
+3、线程ID：16
+4、耗时：128485
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:32:2480
+    详细数据：【{"LogId":"da7c8f9a-e0a1-4dba-9bb3-36653c0e6bee","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:32","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:44,231
+2、优先级别：INFO
+3、线程ID：32
+4、耗时：140407
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:44:1470
+    详细数据：【{"LogId":"d109d5c2-e3f8-45bf-b868-e9d2d691deea","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:44","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:06:52,962
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：149138
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:06:52:9403
+    详细数据：【{"LogId":"93e716fd-26a7-4c35-98d8-9002a2ebd3f8","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:06:52","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:03,437
+2、优先级别：INFO
+3、线程ID：8
+4、耗时：159613
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:03:4142
+    详细数据：【{"LogId":"c28e6eff-2eda-4ff5-b4a7-038409b6b2ad","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:03","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:04,120
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：160296
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:04:0996
+    详细数据：【{"LogId":"5e8b1bbc-71ed-4ce9-9607-05600b669cad","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:04","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:04,649
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：160825
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:04:6252
+    详细数据：【{"LogId":"e5381faf-2529-408f-9a9c-bd972e19e492","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:04","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:06,932
+2、优先级别：INFO
+3、线程ID：7
+4、耗时：163108
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:06:9085
+    详细数据：【{"LogId":"1a1b6c13-948a-492d-acc9-a4d9778dd913","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:06","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:07,768
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：163944
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:07:7150
+    详细数据：【{"LogId":"32819044-39af-413e-a279-fd3d33fab43b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:07","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:08,344
+2、优先级别：INFO
+3、线程ID：7
+4、耗时：164520
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:08:3156
+    详细数据：【{"LogId":"6b660f2a-0097-4b3d-b420-a55b29dc1770","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:08","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:07:08,851
+2、优先级别：INFO
+3、线程ID：13
+4、耗时：165027
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:07:08:8221
+    详细数据：【{"LogId":"fc3d4c3c-a504-4efe-8745-4e75195879c0","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:07:08","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:22,917
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：8270
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:22:7147
+    详细数据：【{"LogId":"04f4f843-f02c-4c43-94ae-a3f94a0f71c5","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:22","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:31,881
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：17235
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:31:7960
+    详细数据：【{"LogId":"5101ea27-1e32-4203-9e4e-47f2bec1a667","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:31","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:37,817
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：23171
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:37:7892
+    详细数据：【{"LogId":"141301ab-4165-4e80-9eaf-0a92171cd0c9","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:37","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:39,992
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：25346
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:39:9641
+    详细数据：【{"LogId":"21ca4457-cf47-4c10-85fd-948d906408ed","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:39","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:40,053
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：25407
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:40:0208
+    详细数据：【{"LogId":"570da91a-5e13-4386-ac71-3eef0a29275b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:40","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:40,719
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：26073
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:40:6923
+    详细数据：【{"LogId":"b1b3430c-7a00-46bd-967d-8b9482eb1f4c","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:40","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:40,781
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：26135
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:40:7544
+    详细数据：【{"LogId":"b8c9937d-068c-4871-8225-9d64c28dabd8","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:40","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:46,889
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：32243
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:46:8597
+    详细数据：【{"LogId":"4cbead48-44cb-4e84-aee9-63ff027a018c","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:46","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:46,955
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：32309
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:46:9224
+    详细数据：【{"LogId":"996fa408-9753-4ea3-96a8-4dde46072444","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:46","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:47,886
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：33240
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:47:8584
+    详细数据：【{"LogId":"77fee0c9-448f-41f8-8af3-86e012998484","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:47","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:47,933
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：33287
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:47:9088
+    详细数据：【{"LogId":"5fd6123f-1062-4dab-b057-1a496283a3fd","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:47","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:48,514
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：33868
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:48:4898
+    详细数据：【{"LogId":"13d06144-dda5-4bdd-ad63-1ef3b5bfa43f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:48","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:48,567
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：33921
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:48:5408
+    详细数据：【{"LogId":"d1749b42-9211-460b-857a-190c2092e5a2","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:48","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:49,450
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：34804
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:49:4268
+    详细数据：【{"LogId":"e940d4b9-72da-47cc-9f50-2a5c6b99ab68","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:49","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:49,498
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：34852
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:49:4748
+    详细数据：【{"LogId":"a4f94370-3ef6-4324-a28a-c30b047f8574","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:49","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:50,115
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：35468
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:50:0915
+    详细数据：【{"LogId":"35654ead-944f-40a2-a311-e2e9a3096f44","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:50","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:50,165
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：35519
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:50:1383
+    详细数据：【{"LogId":"576674e3-2cae-477f-b514-4aa8e1919e73","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:50","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:50,680
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：36034
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:50:6572
+    详细数据：【{"LogId":"485fde32-a04e-41c7-b082-a517f65c1754","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:50","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:50,726
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：36080
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:50:7027
+    详细数据：【{"LogId":"579e0ab4-31dd-48b2-97ae-5e7d2099de2f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:50","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:51,956
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：37310
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:51:9344
+    详细数据：【{"LogId":"e0d79114-a8ff-490b-90fd-b7f8234ba304","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:51","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:52,026
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：37380
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:51:9813
+    详细数据：【{"LogId":"e984c759-c81e-45b9-83e8-534cc2d3a4bd","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:51","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:52,665
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：38019
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:52:6109
+    详细数据：【{"LogId":"3db64b64-dd5d-406f-8939-fc88fa87c523","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:52","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:52,731
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：38085
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:52:6884
+    详细数据：【{"LogId":"dcfd7ae9-2c6b-4848-912e-220b728c49f1","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:52","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:53,190
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：38544
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:53:1588
+    详细数据：【{"LogId":"5e3055d7-efb1-4309-b0a2-913344866d6e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:53","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:53,241
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：38595
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:53:2148
+    详细数据：【{"LogId":"392d91de-97a7-46a9-893c-a3d386c0431d","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:53","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:53,734
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：39088
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:53:7105
+    详细数据：【{"LogId":"93bbb837-3bd1-4c4a-9f45-e721b5992d09","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:53","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:53,785
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：39139
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:53:7592
+    详细数据：【{"LogId":"89ed17f1-fd67-4a86-90b4-dc36a8515517","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:53","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:54,357
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：39711
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:54:3328
+    详细数据：【{"LogId":"4e113d17-2f83-4a0f-9107-3a43b22edde1","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:54","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:54,404
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：39758
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:54:3797
+    详细数据：【{"LogId":"28857722-cb52-4bcd-9797-e8b44d0a8623","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:54","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:54,915
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：40269
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:54:8926
+    详细数据：【{"LogId":"d867d73e-9131-44a6-8b70-54099df1e962","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:54","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:54,963
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：40317
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:54:9376
+    详细数据：【{"LogId":"8b42be0f-fb9e-4d22-a1f3-59a439ca2fbe","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:54","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:55,506
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：40860
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:55:4814
+    详细数据：【{"LogId":"42907b15-6b80-4bdc-96c9-f19cd090993f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:55","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:55,592
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：40946
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:55:5274
+    详细数据：【{"LogId":"b607d3d8-fe44-4fb7-8e2a-660bc9f85da5","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:55","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:55,947
+2、优先级别：INFO
+3、线程ID：24
+4、耗时：41301
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:55:9216
+    详细数据：【{"LogId":"3ba88009-65f9-4579-b5dd-fa2d5438684b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:55","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:55,993
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：41347
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:55:9677
+    详细数据：【{"LogId":"ca77dde3-8c10-47a4-a462-ba6fcbc7695b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:55","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:56,497
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：41851
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:56:4734
+    详细数据：【{"LogId":"ba5601ad-bbb6-4f8f-a5a3-58ab88a9b623","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:56","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:56,545
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：41899
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:56:5192
+    详细数据：【{"LogId":"94f0af95-2ac3-4a81-b2d3-8c52ecd7836b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:56","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:56,916
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：42270
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:56:8918
+    详细数据：【{"LogId":"e2929c2a-ccfa-46ed-978d-cf204ae2ac61","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:56","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:13:56,963
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：42317
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:13:56:9389
+    详细数据：【{"LogId":"f072234d-f1d4-495a-bef3-ed76fbdd78b7","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:13:56","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:37,000
+2、优先级别：INFO
+3、线程ID：12
+4、耗时：24166
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:36:8822
+    详细数据：【{"LogId":"cedc1141-81be-4a1b-bd74-f88b8fd146f2","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:36","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:45,663
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：32829
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:45:6041
+    详细数据：【{"LogId":"dda50050-ec4f-4e1b-88ec-bce8f468a992","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:45","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:49,149
+2、优先级别：INFO
+3、线程ID：20
+4、耗时：36314
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:49:1210
+    详细数据：【{"LogId":"a7dd3326-648f-48a7-ac79-50a9f2aa1737","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:49","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:51,793
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：38958
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:51:7606
+    详细数据：【{"LogId":"573a80ad-2134-40b8-a2b2-8bb13362d369","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:51","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:53,199
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：40364
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:53:0891
+    详细数据：【{"LogId":"3a43cb13-3b8a-468e-a670-4fd62cf2a459","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:53","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:55,035
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：42200
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:55:0104
+    详细数据：【{"LogId":"63b44964-2b96-44d3-9a73-9d5ddaac2922","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:55","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:55,654
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：42819
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:55:6296
+    详细数据：【{"LogId":"b5abdcf4-d7d7-4cc8-9640-204af917ee68","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:55","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:14:59,546
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：46711
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:14:59:5175
+    详细数据：【{"LogId":"7a15d027-6cba-4455-9c7a-2477f093f041","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:14:59","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:05,624
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：52790
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:05:6013
+    详细数据：【{"LogId":"0209eb35-e9eb-4cbd-96f1-a2bbd82dfbfc","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:05","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:06,271
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：53437
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:06:2486
+    详细数据：【{"LogId":"e11d9df7-7d4a-4ac5-a813-1d75dc418a61","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:06","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:06,835
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：54001
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:06:8096
+    详细数据：【{"LogId":"efd8f635-58ab-475e-ac06-2f7cd07d92fd","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:06","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:07,554
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：54719
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:07:5267
+    详细数据：【{"LogId":"94e9a8a4-1040-41ea-ac10-82ed23b46c2c","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:07","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:08,371
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：55537
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:08:3438
+    详细数据：【{"LogId":"5d86d2bd-2a26-47eb-9fb3-701368e5fee5","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:08","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:09,541
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：56706
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:09:5154
+    详细数据：【{"LogId":"c0f0ddce-9e08-4970-877e-3225a39b67bd","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:09","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:10,176
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：57342
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:10:1540
+    详细数据：【{"LogId":"10dfac0d-d98c-41ee-963c-7ce85ef55af6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:10","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:11,508
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：58674
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:11:4890
+    详细数据：【{"LogId":"2d246e82-9cff-4b28-bc59-1f474621e91b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:11","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:12,097
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：59262
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:12:0744
+    详细数据：【{"LogId":"0891cad3-5fa9-49fd-9102-bc2c985ca516","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:12","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:12,664
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：59830
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:12:6392
+    详细数据：【{"LogId":"a99fc261-76c4-4e5f-95de-184240f2e8f6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:12","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:13,557
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：60723
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:13:5283
+    详细数据：【{"LogId":"fe5921d3-f343-4627-bdc0-2b9da71aef95","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:13","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:14,275
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：61440
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:14:2471
+    详细数据：【{"LogId":"c4aafd7b-f10f-4d1d-969a-84536989e4a8","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:14","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:15,516
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：62682
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:15:4906
+    详细数据：【{"LogId":"28cfdcf8-b5b2-44ac-a3a1-6b5f42de23fc","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:15","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:16,103
+2、优先级别：INFO
+3、线程ID：29
+4、耗时：63269
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:16:0797
+    详细数据：【{"LogId":"be74168d-65d1-4e93-8c8b-65d14b54d86d","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:16","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:19,291
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：66456
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:19:2616
+    详细数据：【{"LogId":"23683482-e909-4fa0-bca5-5a75e8d83853","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:19","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:20,914
+2、优先级别：INFO
+3、线程ID：25
+4、耗时：68079
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:20:8893
+    详细数据：【{"LogId":"d5def9f9-e2b5-48d7-bd62-ba3d1414be2d","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:20","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:21,476
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：68642
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:21:4462
+    详细数据：【{"LogId":"faf6613e-f41f-4e98-b53d-4bf157cc77c3","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:21","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:23,297
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：70463
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:23:2740
+    详细数据：【{"LogId":"7eb51602-3c07-4802-b103-953dfd163b4f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:23","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:15:23,728
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：70893
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【友情链接信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/LinkInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:15:23:7050
+    详细数据：【{"LogId":"63bd17ab-347c-4574-9bce-05e006675819","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:15:23","OptModuleName":"友情链接信息管理","OptModulePath":"/MsBus/LinkInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:07,933
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：8114
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：登录登出
+    日志描述：秦波对【登录系统】进行“登录”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Login/CheckLogin
+    操作结果：登录成功
+    操作描述：登录成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:07:7726
+    详细数据：【{"LogId":"795f3229-0ab9-44d3-b9ac-efa9078ff5aa","LogTypeId":100,"LogTypeName":"登录登出","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:07","OptModuleName":"登录系统","OptModulePath":"/MsSys/Login/CheckLogin","OptTypeId":2001,"OptTypeName":"登录","OptResultId":300,"OptResultName":"登录成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"登录成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:20,063
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：20244
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:20:0070
+    详细数据：【{"LogId":"d6ca2b1a-e567-4a7e-8ca5-d4cb66202481","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:20","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:24,206
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：24388
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:24:1813
+    详细数据：【{"LogId":"a4b06a7b-59a3-4fe0-828e-71647c392e1f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:24","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:29,730
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：29912
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:29:7051
+    详细数据：【{"LogId":"502761ab-4ce2-4eb7-989b-08f60cedf3b7","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:29","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:31,871
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：32052
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:31:8436
+    详细数据：【{"LogId":"0ccddb8f-ebc5-45e4-85e5-c3044280eaa3","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:31","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:35,984
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：36166
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:35:9597
+    详细数据：【{"LogId":"3ebba467-20d3-4d0f-bc44-43481b0c998f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:35","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:37,768
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：37949
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:37:7458
+    详细数据：【{"LogId":"dc52b7ba-56ad-43b5-bb47-c8a7e61444c5","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:37","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:39,932
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：40114
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:39:9114
+    详细数据：【{"LogId":"b81f98e3-5cbc-410b-9a07-662dfa01d632","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:39","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:43,109
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：43291
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:43:0817
+    详细数据：【{"LogId":"7a78273d-4f32-44f8-9727-117fd78d2a1b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:43","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:45,455
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：45637
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:45:4318
+    详细数据：【{"LogId":"0f3d6219-5011-4409-84ba-00b47a126f56","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:45","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:46,144
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：46325
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【新闻信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/NewsInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:46:0614
+    详细数据：【{"LogId":"0c5b4c27-d6e4-45e0-a573-80c131de849b","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:46","OptModuleName":"新闻信息管理","OptModulePath":"/MsBus/NewsInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:51,199
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：51380
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:51:1650
+    详细数据：【{"LogId":"a9dbc8fd-4823-4b1f-bfbf-8b03aae2ac52","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:51","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:53,908
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：54089
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:53:8818
+    详细数据：【{"LogId":"8f30b009-fe24-4871-a8cb-c661b8bf19c6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:53","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:55,212
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：55393
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:55:1887
+    详细数据：【{"LogId":"606b09a4-7ce9-4292-adfe-acc01ff4af4d","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:55","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:56,431
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：56612
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:56:4017
+    详细数据：【{"LogId":"ec0b8b0c-4eef-456d-ba6e-0c23b6268656","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:56","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:20:58,344
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：58526
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:20:58:3167
+    详细数据：【{"LogId":"41028284-8e3c-4f98-9cf8-64963a0afdd6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:20:58","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:03,153
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：63334
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:03:1299
+    详细数据：【{"LogId":"2d997658-9624-49b8-b149-30704ef9f472","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:03","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:05,048
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：65229
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:05:0160
+    详细数据：【{"LogId":"1eed9e61-a0f3-4526-be93-801223e3e7c6","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:05","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:06,900
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：67082
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:06:8734
+    详细数据：【{"LogId":"6e147640-e4d9-4049-aa8e-8940dce00c3e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:06","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:10,032
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：70214
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:10:0092
+    详细数据：【{"LogId":"d79fc056-772b-4d0d-86f1-93326832bdf4","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:10","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:11,694
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：71876
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:11:6704
+    详细数据：【{"LogId":"11eab182-e0f5-483d-86cd-ce2b3be8d772","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:11","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:12,209
+2、优先级别：INFO
+3、线程ID：18
+4、耗时：72390
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:12:1830
+    详细数据：【{"LogId":"0d59cc57-e73b-464a-a704-4b75e198c653","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:12","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:15,128
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：75310
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:15:1059
+    详细数据：【{"LogId":"b8d10cd8-c6fe-4a87-a083-f51678f7f67f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:15","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:15,640
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：75821
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:15:6155
+    详细数据：【{"LogId":"6bea1ff7-8478-469a-9464-70cf5419c71f","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:15","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:23,993
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：84174
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:23:9630
+    详细数据：【{"LogId":"37c09478-d2b2-4ac2-a678-9642d0d9c657","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:23","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:25,053
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：85235
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:25:0167
+    详细数据：【{"LogId":"d542be7e-87a6-4fe9-a38f-51cc7742f532","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:25","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:25,668
+2、优先级别：INFO
+3、线程ID：14
+4、耗时：85849
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:25:6378
+    详细数据：【{"LogId":"873ee960-3d41-4d64-ae20-8942bf6c21d7","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:25","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:27,111
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：87292
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:27:0839
+    详细数据：【{"LogId":"a7a3d9bb-8079-4bae-aef9-3995ba3c0a4e","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:27","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:27,737
+2、优先级别：INFO
+3、线程ID：30
+4、耗时：87918
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【横幅信息管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsBus/BannerInfo/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:27:7053
+    详细数据：【{"LogId":"1ef2ae43-68f6-4967-93e8-ad57b8e539a9","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:27","OptModuleName":"横幅信息管理","OptModulePath":"/MsBus/BannerInfo/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:21:45,840
+2、优先级别：INFO
+3、线程ID：21
+4、耗时：106022
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【角色管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Role/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:21:45:8051
+    详细数据：【{"LogId":"4186aaf6-7e4a-4d76-b9b9-0457009d2f99","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:21:45","OptModuleName":"角色管理","OptModulePath":"/MsSys/Role/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】
+
+#############################################################################
+
+1、时间：2016-09-27 22:22:02,219
+2、优先级别：INFO
+3、线程ID：23
+4、耗时：122400
+5、行号：120
+6、文件名：f:\Net_Project.DosORM\Project\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：数据操作
+    日志描述：秦波对【管理员管理】进行“查询”操作
+    操作人员：秦波[0ad06755-9fde-4ddd-9dcb-448462155a03]
+    操作地址：/MsSys/Operator/GetList
+    操作结果：操作成功
+    操作描述：数据查询成功！
+    IP地址：192.168.1.102
+    浏览器：Chrome 53.0
+    操作系统：Windows 10
+    记录时间：2016 09 27 22:22:02:1887
+    详细数据：【{"LogId":"5851752e-7e27-49dc-9f8e-9ea4961722ab","LogTypeId":101,"LogTypeName":"数据操作","CompanyId":"078736e6-0cc2-48dc-80f1-6330419b4af1","DataId":null,"OptUserId":"0ad06755-9fde-4ddd-9dcb-448462155a03","OptUserName":"秦波","OptTime":"2016-09-27 22:22:02","OptModuleName":"管理员管理","OptModulePath":"/MsSys/Operator/GetList","OptTypeId":1003,"OptTypeName":"查询","OptResultId":100,"OptResultName":"操作成功","OptSystem":"Windows 10","Browser":"Chrome 53.0","IP":"192.168.1.102","Mac":"B8:76:3F:1F:BC:40","Desc":"数据查询成功！","Status":1}】

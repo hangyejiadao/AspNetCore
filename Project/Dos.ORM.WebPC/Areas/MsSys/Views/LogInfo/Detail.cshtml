@@ -1,0 +1,24 @@
+﻿@using Dos.ORM.WebPC.App_Common.Mvc
+@model Dos.ORM.Model.System.SYS_LogInfo
+@{
+    ViewBag.Title = "日志信息管理";
+    Layout = "~/Views/BasePage/_LayoutMsSysDetailSingle.cshtml";
+}
+<form class="easyui-form" id="frmMain" method="post">
+    <table class="frm-tb frm-tb-title-bold">
+        <tbody>
+            <tr><td>日志类型：</td><td>@Model.LogTypeName</td></tr>
+            <tr><td>操作人员：</td><td>@Model.OptUserName</td></tr>
+            <tr><td>操作模块：</td><td>@Model.OptModuleName</td></tr>
+            <tr><td>操作地址：</td><td>@Model.OptModulePath</td></tr>
+            <tr><td>操作类型：</td><td>@Model.OptTypeName</td></tr>
+            <tr><td>操作结果：</td><td>@Model.OptResultName</td></tr>
+            <tr><td>操作时间：</td><td>@Model.OptTime.ToString("yyyy年MM月dd日 HH:mm:ss")</td></tr>
+            <tr><td>操作系统：</td><td>@Model.OptSystem</td></tr>
+            <tr><td>浏览器：</td><td>@Model.Browser</td></tr>
+            <tr><td>IP地址：</td><td>@Model.IP</td></tr>
+            <tr><td>MAC地址：</td><td>@Model.Mac</td></tr>
+            <tr><td>日志描述：</td><td>@Html.Raw(Model.Desc)</td></tr>
+        </tbody>
+    </table>
+</form>

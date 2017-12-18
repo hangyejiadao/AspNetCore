@@ -1,0 +1,26 @@
+
+#############################################################################
+
+1、时间：2016-12-29 13:33:18,255
+2、优先级别：DEBUG
+3、线程ID：7
+4、耗时：166960
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project.WithWebApi\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
+
+#############################################################################
+
+1、时间：2016-12-29 13:42:03,131
+2、优先级别：DEBUG
+3、线程ID：25
+4、耗时：1057
+5、行号：140
+6、文件名：e:\Net_03.Personal\Net_Project.DosORM\Project.WithWebApi\Dos.ORM\Dos.ORM.Common\Helpers\LogHelper.cs
+7、详细信息：
+Text:	 SELECT   * FROM [SYS_Department]  WHERE  1=1  	
+
+
