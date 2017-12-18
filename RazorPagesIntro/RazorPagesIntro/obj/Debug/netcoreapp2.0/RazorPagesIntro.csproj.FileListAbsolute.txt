@@ -9,3 +9,14 @@ E:\Net\AspNetCore\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreap
 E:\Net\AspNetCore\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.AssemblyInfo.cs
 E:\Net\AspNetCore\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.dll
 E:\Net\AspNetCore\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.pdb
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\bin\Debug\netcoreapp2.0\RazorPagesIntro.deps.json
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\bin\Debug\netcoreapp2.0\RazorPagesIntro.runtimeconfig.json
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\bin\Debug\netcoreapp2.0\RazorPagesIntro.runtimeconfig.dev.json
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\bin\Debug\netcoreapp2.0\RazorPagesIntro.dll
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\bin\Debug\netcoreapp2.0\RazorPagesIntro.pdb
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.csprojResolveAssemblyReference.cache
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.csproj.CoreCompileInputs.cache
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.AssemblyInfoInputs.cache
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.AssemblyInfo.cs
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.dll
+E:\AspNetCore\RazorPagesIntro\RazorPagesIntro\obj\Debug\netcoreapp2.0\RazorPagesIntro.pdb
