@@ -1,1 +1,0 @@
-D:\WebApi_15i\Project\Dos.ORM.Web\obj\Release\Dos.ORM.Web.csprojResolveAssemblyReference.cache
