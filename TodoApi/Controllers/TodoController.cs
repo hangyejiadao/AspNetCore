@@ -21,15 +21,7 @@ namespace TodoApi.Controllers {
         public IEnumerable<TodoItem> GetAll () {
             return _context.TodoItem.ToList ();
         }
-
-        [HttpGet ("{id}", Name = "GetTodo")]
-        public IActionResult GetById (long id) {
-            var item = _context.TodoItem.FirstOrDefault (t => t.Id == id);
-            if (item == null) {
-                return NotFound ();
-            }
-            return new ObjectResult (item);
-        }
+ 
 
         [HttpPost]
         public IActionResult Create ([FromBody] TodoItem item) {
@@ -45,7 +37,7 @@ namespace TodoApi.Controllers {
 
         [HttpGet ("{id}", Name = "GetTodo")]
         public IActionResult GetById (long id) {
-            var item = _context.TodoItems.FirstOrDefault (t => t.Id == id);
+            var item = _context.TodoItem.FirstOrDefault (t => t.Id == id);
             if (item == null) {
                 return NotFound ();
             }
@@ -58,7 +50,7 @@ namespace TodoApi.Controllers {
                 return BadRequest ();
             }
 
-            var todo = _context.TodoItems.FirstOrDefault (t => t.Id == id);
+            var todo = _context.TodoItem.FirstOrDefault (t => t.Id == id);
             if (todo == null) {
                 return NotFound ();
             }

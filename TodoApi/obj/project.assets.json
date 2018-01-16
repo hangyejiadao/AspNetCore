@@ -12592,11 +12592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore\\TodoApi\\TodoApi.csproj",
+      "projectUniqueName": "e:\\AspNetCore\\TodoApi\\TodoApi.csproj",
       "projectName": "TodoApi",
-      "projectPath": "E:\\AspNetCore\\TodoApi\\TodoApi.csproj",
+      "projectPath": "e:\\AspNetCore\\TodoApi\\TodoApi.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore\\TodoApi\\obj\\",
+      "outputPath": "e:\\AspNetCore\\TodoApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
