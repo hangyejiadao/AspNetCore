@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectUniqueName": "e:\\AspNetCore\\RazorPagesMovie\\RazorPagesMovie.csproj",
       "projectName": "RazorPagesMovie",
-      "projectPath": "E:\\AspNetCore\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectPath": "e:\\AspNetCore\\RazorPagesMovie\\RazorPagesMovie.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore\\RazorPagesMovie\\obj\\",
+      "outputPath": "e:\\AspNetCore\\RazorPagesMovie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
