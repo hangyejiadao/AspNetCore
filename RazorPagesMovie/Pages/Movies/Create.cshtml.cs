@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RazorPagesMovie.Models;
-namespace RazorPagesMovie.Pages.Models {
+namespace RazorPagesMovie.Pages.Movies {
     public class CreateModel : PageModel {
         private readonly RazorPagesMovie.Models.MovieContext _context;
 
