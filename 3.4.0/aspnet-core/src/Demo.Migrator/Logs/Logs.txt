@@ -1,0 +1,38 @@
+﻿DEBUG 2018-01-16 11:30:45,536 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-01-16 11:30:45,634 [2    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-01-16 11:30:45,828 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.Migrator.DemoMigratorModule, Demo.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,831 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.EntityFrameworkCore.DemoEntityFrameworkModule, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,832 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoCoreModule, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,832 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,833 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,833 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,833 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,833 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,833 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:45,836 [2    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-01-16 11:30:46,143 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Demo.EntityFrameworkCore.DemoDbContext, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:30:46,876 [2    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-01-16 11:30:46,894 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-01-16 11:30:46,897 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-01-16 11:30:46,898 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Demo
+INFO  2018-01-16 11:30:47,059 [2    ] Demo.Migrator.Log                        - Host database: Server=localhost; Database=DemoDb; Trusted_Connection=True;
+INFO  2018-01-16 11:30:47,059 [2    ] Demo.Migrator.Log                        - Continue to migration for this host database and all tenants..? (Y/N): 
+DEBUG 2018-01-16 11:35:39,576 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-01-16 11:35:39,658 [2    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2018-01-16 11:35:39,854 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.Migrator.DemoMigratorModule, Demo.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,856 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.EntityFrameworkCore.DemoEntityFrameworkModule, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,857 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoCoreModule, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,857 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,857 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,857 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,857 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,858 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,858 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:39,860 [2    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2018-01-16 11:35:40,253 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Demo.EntityFrameworkCore.DemoDbContext, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-01-16 11:35:40,785 [2    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-01-16 11:35:40,794 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-01-16 11:35:40,797 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-01-16 11:35:40,799 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Demo
+INFO  2018-01-16 11:35:40,941 [2    ] Demo.Migrator.Log                        - Host database: Server=localhost; Database=DemoDb; Trusted_Connection=True;
+INFO  2018-01-16 11:35:40,941 [2    ] Demo.Migrator.Log                        - Continue to migration for this host database and all tenants..? (Y/N): 
