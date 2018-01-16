@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a7aa306d2e264d92ffef06296341a5e29b6e41eb"
+    "signature": "08166af81d8c606770e186491f533a8a25cad718"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "TodoApi/1.0.0": {
         "dependencies": {
+          "EntityFramework": "7.0.0-beta4",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0"
         },
@@ -31,6 +32,19 @@
         },
         "compile": {
           "TodoApi.dll": {}
+        }
+      },
+      "EntityFramework/7.0.0-beta4": {
+        "dependencies": {
+          "EntityFramework.Commands": "7.0.0-beta4"
+        }
+      },
+      "EntityFramework.Commands/7.0.0-beta4": {
+        "runtime": {
+          "lib/net451/EntityFramework.Commands.dll": {}
+        },
+        "compile": {
+          "lib/net451/EntityFramework.Commands.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3977,6 +3991,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EntityFramework/7.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KTplgz4PBKb33t8O0I5S8yBwkU+l9PTymzoTVav8/FGikck55Amf28EOpOZAqnkGIzCGYD5/k26P7AmVyYyTHw==",
+      "path": "entityframework/7.0.0-beta4",
+      "hashPath": "entityframework.7.0.0-beta4.nupkg.sha512"
+    },
+    "EntityFramework.Commands/7.0.0-beta4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gPx5U4fQhLJHcertKOZLEja22rk/V5j3eGvXp3/umh8JAgnKDw+GhycCrZtXNd/b2X3MvCMUf7nLDX6+pg8/YQ==",
+      "path": "entityframework.commands/7.0.0-beta4",
+      "hashPath": "entityframework.commands.7.0.0-beta4.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
