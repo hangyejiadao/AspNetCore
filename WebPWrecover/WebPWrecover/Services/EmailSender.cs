@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace WebPWrecover.Services
 {
@@ -9,9 +12,30 @@ namespace WebPWrecover.Services
     // For more details see https://go.microsoft.com/fwlink/?LinkID=532713
     public class EmailSender : IEmailSender
     {
+        public EmailSender(IOptions<AuthMessageSenderOptions> optionsAccessor)
+        {
+            Options = optionsAccessor.Value;
+        }
+        public AuthMessageSenderOptions Options { get; }
+
         public Task SendEmailAsync(string email, string subject, string message)
         {
-            return Task.CompletedTask;
+            return Execute(Options.SendGridKey, subject, message, email);
+
+        }
+
+        public Task Execute(string apikey, string subject, string message, string email)
+        {
+            var client = new SendGridClient(apikey);
+            var msg = new SendGridMessage()
+            {
+                From=new EmailAddress("953917332@qq.com"),
+                Subject=subject,
+                PlainTextContent=message,
+                HtmlContent=message
+            };
+            msg.AddTo(new EmailAddress(email));
+            return client.SendEmailAsync(msg);
         }
     }
 }
