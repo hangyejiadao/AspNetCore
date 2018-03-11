@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("RazorPagesIntro")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("数据保护")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("RazorPagesIntro")]
-[assembly: System.Reflection.AssemblyTitleAttribute("RazorPagesIntro")]
+[assembly: System.Reflection.AssemblyProductAttribute("数据保护")]
+[assembly: System.Reflection.AssemblyTitleAttribute("数据保护")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

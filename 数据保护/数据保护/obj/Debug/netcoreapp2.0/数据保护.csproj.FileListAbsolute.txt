@@ -1,0 +1,8 @@
+E:\Github\AspNetCore\数据保护\数据保护\bin\Debug\netcoreapp2.0\数据保护.deps.json
+E:\Github\AspNetCore\数据保护\数据保护\bin\Debug\netcoreapp2.0\数据保护.runtimeconfig.json
+E:\Github\AspNetCore\数据保护\数据保护\bin\Debug\netcoreapp2.0\数据保护.runtimeconfig.dev.json
+E:\Github\AspNetCore\数据保护\数据保护\bin\Debug\netcoreapp2.0\数据保护.dll
+E:\Github\AspNetCore\数据保护\数据保护\obj\Debug\netcoreapp2.0\数据保护.csprojResolveAssemblyReference.cache
+E:\Github\AspNetCore\数据保护\数据保护\obj\Debug\netcoreapp2.0\数据保护.csproj.CoreCompileInputs.cache
+E:\Github\AspNetCore\数据保护\数据保护\obj\Debug\netcoreapp2.0\数据保护.AssemblyInfoInputs.cache
+E:\Github\AspNetCore\数据保护\数据保护\obj\Debug\netcoreapp2.0\数据保护.AssemblyInfo.cs

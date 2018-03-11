@@ -1,3 +1,5 @@
 *.agdai
 /RazorPagesIntro/.vs/RazorPagesIntro/v15/Server/sqlite3
 /RazorPagesIntro/.vs/RazorPagesIntro/v15
+/数据保护/.vs/数据保护/v15/Server/sqlite3/db.lock
+/数据保护/.vs/数据保护/v15/Server/sqlite3
