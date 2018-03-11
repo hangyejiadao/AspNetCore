@@ -1,0 +1,10 @@
+E:\Github\AspNetCore\单例测试\单例测试\bin\Debug\单例测试.exe.config
+E:\Github\AspNetCore\单例测试\单例测试\bin\Debug\单例测试.exe
+E:\Github\AspNetCore\单例测试\单例测试\bin\Debug\单例测试.pdb
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.csprojResolveAssemblyReference.cache
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.Form1.resources
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.Properties.Resources.resources
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.csproj.GenerateResource.Cache
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.csproj.CoreCompileInputs.cache
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.exe
+E:\Github\AspNetCore\单例测试\单例测试\obj\Debug\单例测试.pdb
