@@ -41,7 +41,7 @@ namespace 内存缓存.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult CacheTryGetValuesSet()
+        public IActionResult CacheTryGetValueSet()
         {
             DateTime cacheEntry;
             //Look for cache key;
@@ -63,18 +63,25 @@ namespace 内存缓存.Controllers
                 entry.SlidingExpiration = TimeSpan.FromSeconds(3);
                 return DateTime.Now;
             });
+
             return View("Cache", cacheEntry);
         }
 
+
         public async Task<IActionResult> CacheGetOrCreateAsync()
         {
-            var cacheEntry = await _cache.GetOrCreateAsync(CacheKeys.Entry, entry =>
-            {
-                entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                return Task.FromResult(DateTime.Now);
-            });
+            var cacheEntry = await
+                _cache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                {
+                    entry.SlidingExpiration = TimeSpan.FromSeconds(3);
+                    return Task.FromResult(DateTime.Now);
+                });
+
             return View("Cache", cacheEntry);
         }
+
+
+
 
         public IActionResult CacheGet()
         {
