@@ -13185,15 +13185,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore.git\\trunk\\Eson\\Eson\\Eson.csproj",
+      "projectUniqueName": "E:\\Github\\AspNetCore\\Eson\\Eson\\Eson.csproj",
       "projectName": "Eson",
-      "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\Eson\\Eson.csproj",
+      "projectPath": "E:\\Github\\AspNetCore\\Eson\\Eson\\Eson.csproj",
       "packagesPath": "C:\\Users\\lh\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore.git\\trunk\\Eson\\Eson\\obj\\",
+      "outputPath": "E:\\Github\\AspNetCore\\Eson\\Eson\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -13214,11 +13211,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\AspNetCore.git\\trunk\\Eson\\ApplicationService\\Application.csproj": {
-              "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\ApplicationService\\Application.csproj"
+            "E:\\Github\\AspNetCore\\Eson\\ApplicationService\\Application.csproj": {
+              "projectPath": "E:\\Github\\AspNetCore\\Eson\\ApplicationService\\Application.csproj"
             },
-            "E:\\AspNetCore.git\\trunk\\Eson\\Model\\Model.csproj": {
-              "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\Model\\Model.csproj"
+            "E:\\Github\\AspNetCore\\Eson\\Model\\Model.csproj": {
+              "projectPath": "E:\\Github\\AspNetCore\\Eson\\Model\\Model.csproj"
             }
           }
         }

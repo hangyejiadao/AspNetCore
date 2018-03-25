@@ -4940,15 +4940,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore.git\\trunk\\Eson\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "E:\\Github\\AspNetCore\\Eson\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "E:\\Github\\AspNetCore\\Eson\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\lh\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore.git\\trunk\\Eson\\Infrastructure\\obj\\",
+      "outputPath": "E:\\Github\\AspNetCore\\Eson\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -4969,8 +4966,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\AspNetCore.git\\trunk\\Eson\\Model\\Model.csproj": {
-              "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\Model\\Model.csproj"
+            "E:\\Github\\AspNetCore\\Eson\\Model\\Model.csproj": {
+              "projectPath": "E:\\Github\\AspNetCore\\Eson\\Model\\Model.csproj"
             }
           }
         }

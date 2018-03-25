@@ -686,15 +686,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore.git\\trunk\\Eson\\ApplicationService\\Application.csproj",
+      "projectUniqueName": "E:\\Github\\AspNetCore\\Eson\\ApplicationService\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\ApplicationService\\Application.csproj",
+      "projectPath": "E:\\Github\\AspNetCore\\Eson\\ApplicationService\\Application.csproj",
       "packagesPath": "C:\\Users\\lh\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore.git\\trunk\\Eson\\ApplicationService\\obj\\",
+      "outputPath": "E:\\Github\\AspNetCore\\Eson\\ApplicationService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -715,8 +712,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\AspNetCore.git\\trunk\\Eson\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\Domain\\Domain.csproj"
+            "E:\\Github\\AspNetCore\\Eson\\Domain\\Domain.csproj": {
+              "projectPath": "E:\\Github\\AspNetCore\\Eson\\Domain\\Domain.csproj"
             }
           }
         }

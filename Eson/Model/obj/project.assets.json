@@ -3000,15 +3000,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore.git\\trunk\\Eson\\Model\\Model.csproj",
+      "projectUniqueName": "E:\\Github\\AspNetCore\\Eson\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\Model\\Model.csproj",
+      "projectPath": "E:\\Github\\AspNetCore\\Eson\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\lh\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore.git\\trunk\\Eson\\Model\\obj\\",
+      "outputPath": "E:\\Github\\AspNetCore\\Eson\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

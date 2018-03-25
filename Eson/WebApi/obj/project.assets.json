@@ -12541,15 +12541,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\AspNetCore.git\\trunk\\Eson\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "E:\\Github\\AspNetCore\\Eson\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "E:\\AspNetCore.git\\trunk\\Eson\\WebApi\\WebApi.csproj",
+      "projectPath": "E:\\Github\\AspNetCore\\Eson\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\lh\\.nuget\\packages\\",
-      "outputPath": "E:\\AspNetCore.git\\trunk\\Eson\\WebApi\\obj\\",
+      "outputPath": "E:\\Github\\AspNetCore\\Eson\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
