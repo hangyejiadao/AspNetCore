@@ -1,0 +1,11 @@
+E:\AspNetCore.git\trunk\Eson\WebApi\bin\Debug\netcoreapp2.0\WebApi.deps.json
+E:\AspNetCore.git\trunk\Eson\WebApi\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.json
+E:\AspNetCore.git\trunk\Eson\WebApi\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.dev.json
+E:\AspNetCore.git\trunk\Eson\WebApi\bin\Debug\netcoreapp2.0\WebApi.dll
+E:\AspNetCore.git\trunk\Eson\WebApi\bin\Debug\netcoreapp2.0\WebApi.pdb
+E:\AspNetCore.git\trunk\Eson\WebApi\obj\Debug\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache
+E:\AspNetCore.git\trunk\Eson\WebApi\obj\Debug\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
+E:\AspNetCore.git\trunk\Eson\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
+E:\AspNetCore.git\trunk\Eson\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
+E:\AspNetCore.git\trunk\Eson\WebApi\obj\Debug\netcoreapp2.0\WebApi.dll
+E:\AspNetCore.git\trunk\Eson\WebApi\obj\Debug\netcoreapp2.0\WebApi.pdb

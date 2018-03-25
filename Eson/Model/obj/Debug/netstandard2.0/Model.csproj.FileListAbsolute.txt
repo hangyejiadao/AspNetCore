@@ -1,0 +1,9 @@
+E:\AspNetCore.git\trunk\Eson\Model\bin\Debug\netstandard2.0\Model.deps.json
+E:\AspNetCore.git\trunk\Eson\Model\bin\Debug\netstandard2.0\Model.dll
+E:\AspNetCore.git\trunk\Eson\Model\bin\Debug\netstandard2.0\Model.pdb
+E:\AspNetCore.git\trunk\Eson\Model\obj\Debug\netstandard2.0\Model.csprojResolveAssemblyReference.cache
+E:\AspNetCore.git\trunk\Eson\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
+E:\AspNetCore.git\trunk\Eson\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+E:\AspNetCore.git\trunk\Eson\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+E:\AspNetCore.git\trunk\Eson\Model\obj\Debug\netstandard2.0\Model.dll
+E:\AspNetCore.git\trunk\Eson\Model\obj\Debug\netstandard2.0\Model.pdb

@@ -1,0 +1,17 @@
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Eson.deps.json
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Eson.runtimeconfig.json
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Eson.runtimeconfig.dev.json
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Eson.dll
+E:\AspNetCore.git\trunk\Eson\Eson\obj\Debug\netcoreapp2.0\Eson.csprojResolveAssemblyReference.cache
+E:\AspNetCore.git\trunk\Eson\Eson\obj\Debug\netcoreapp2.0\Eson.csproj.CoreCompileInputs.cache
+E:\AspNetCore.git\trunk\Eson\Eson\obj\Debug\netcoreapp2.0\Eson.AssemblyInfoInputs.cache
+E:\AspNetCore.git\trunk\Eson\Eson\obj\Debug\netcoreapp2.0\Eson.AssemblyInfo.cs
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Eson.pdb
+E:\AspNetCore.git\trunk\Eson\Eson\obj\Debug\netcoreapp2.0\Eson.dll
+E:\AspNetCore.git\trunk\Eson\Eson\obj\Debug\netcoreapp2.0\Eson.pdb
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Model.dll
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Model.pdb
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Application.dll
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Domain.dll
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Application.pdb
+E:\AspNetCore.git\trunk\Eson\Eson\bin\Debug\netcoreapp2.0\Domain.pdb

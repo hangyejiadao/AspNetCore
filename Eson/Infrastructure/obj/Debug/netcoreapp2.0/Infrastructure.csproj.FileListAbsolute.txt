@@ -1,0 +1,11 @@
+E:\AspNetCore.git\trunk\Eson\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.deps.json
+E:\AspNetCore.git\trunk\Eson\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.dll
+E:\AspNetCore.git\trunk\Eson\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csprojResolveAssemblyReference.cache
+E:\AspNetCore.git\trunk\Eson\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csproj.CoreCompileInputs.cache
+E:\AspNetCore.git\trunk\Eson\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfoInputs.cache
+E:\AspNetCore.git\trunk\Eson\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfo.cs
+E:\AspNetCore.git\trunk\Eson\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+E:\AspNetCore.git\trunk\Eson\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.dll
+E:\AspNetCore.git\trunk\Eson\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.pdb
+E:\AspNetCore.git\trunk\Eson\Infrastructure\bin\Debug\netcoreapp2.0\Model.dll
+E:\AspNetCore.git\trunk\Eson\Infrastructure\bin\Debug\netcoreapp2.0\Model.pdb

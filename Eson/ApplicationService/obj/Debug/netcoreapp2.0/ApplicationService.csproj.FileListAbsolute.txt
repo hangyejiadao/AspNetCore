@@ -1,0 +1,9 @@
+E:\AspNetCore.git\trunk\Eson\ApplicationService\bin\Debug\netcoreapp2.0\ApplicationService.deps.json
+E:\AspNetCore.git\trunk\Eson\ApplicationService\bin\Debug\netcoreapp2.0\ApplicationService.dll
+E:\AspNetCore.git\trunk\Eson\ApplicationService\bin\Debug\netcoreapp2.0\ApplicationService.pdb
+E:\AspNetCore.git\trunk\Eson\ApplicationService\obj\Debug\netcoreapp2.0\ApplicationService.csprojResolveAssemblyReference.cache
+E:\AspNetCore.git\trunk\Eson\ApplicationService\obj\Debug\netcoreapp2.0\ApplicationService.csproj.CoreCompileInputs.cache
+E:\AspNetCore.git\trunk\Eson\ApplicationService\obj\Debug\netcoreapp2.0\ApplicationService.AssemblyInfoInputs.cache
+E:\AspNetCore.git\trunk\Eson\ApplicationService\obj\Debug\netcoreapp2.0\ApplicationService.AssemblyInfo.cs
+E:\AspNetCore.git\trunk\Eson\ApplicationService\obj\Debug\netcoreapp2.0\ApplicationService.dll
+E:\AspNetCore.git\trunk\Eson\ApplicationService\obj\Debug\netcoreapp2.0\ApplicationService.pdb
