@@ -1,0 +1,9 @@
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\bin\Debug\netcoreapp2.0\Ywdsoft.Core.deps.json
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\bin\Debug\netcoreapp2.0\Ywdsoft.Core.dll
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\bin\Debug\netcoreapp2.0\Ywdsoft.Core.pdb
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\obj\Debug\netcoreapp2.0\Ywdsoft.Core.csprojResolveAssemblyReference.cache
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\obj\Debug\netcoreapp2.0\Ywdsoft.Core.csproj.CoreCompileInputs.cache
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\obj\Debug\netcoreapp2.0\Ywdsoft.Core.AssemblyInfoInputs.cache
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\obj\Debug\netcoreapp2.0\Ywdsoft.Core.AssemblyInfo.cs
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\obj\Debug\netcoreapp2.0\Ywdsoft.Core.dll
+E:\360Downloads\Ywdsoft.AutofacTest\Ywdsoft.Core\obj\Debug\netcoreapp2.0\Ywdsoft.Core.pdb
